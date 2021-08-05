@@ -1,0 +1,48 @@
+body {
+    margin: auto;
+}
+
+div.topics-container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+div.progress {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(174, 209, 211);
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    
+}
+
+a.topic {
+    margin: 10px;
+    border: solid rgb(216, 211, 211);
+    width: 200px;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    text-decoration: none;
+    background-color: rgb(224, 210, 192);
+}
+
+a.topic:hover,
+a.topic:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+}
+
+span {
+    position: relative;
+}
+
+div.header {
+    font-size: 50px;
+    text-align: center;
+}
