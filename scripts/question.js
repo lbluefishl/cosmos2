@@ -10,7 +10,7 @@ const incorrectAnswers = document.querySelectorAll('.ic');
 const inputs = document.querySelectorAll('input');
 const explanation = document.querySelector('#explanation');
  
-skipButton.addEventListener('click', nextQuestion);
+if (skipButton) skipButton.addEventListener('click', nextQuestion);
 summaryButton.addEventListener('click', goSummary);
 submitButton.addEventListener('click', submitAnswer);
  
@@ -44,4 +44,7 @@ function disableOptions() {
     })
     submitButton.disabled = true;
     explanation.style.display = 'block';
+    if (skipButton) skipButton.innerHTML = 'Next Question';
 }
+
+

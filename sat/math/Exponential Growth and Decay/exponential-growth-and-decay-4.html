@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exponential Growth and Decay Question 4</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='exponential-growth-and-decay'>
+    <main id="4">
+        <div id='question-container'>
+            <p>
+                Suppose a population of bacteria is being grown in a homogenous nutrient medium. It was determined that the population doubled every 30 minutes.
+                 If the initial population of the bacteria is given by \(P_0\), which of the following functions correctly represents
+                the population \(P\) of the bacteria after \(t\) hours? 
+                </p>    
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( P=P_0(2)^{30t} \)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \( P=P_0(2)^{\frac{t}{30}} \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( P=P_0(2)^{\frac{t}{2}} \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( P=P_0(2)^{2t} \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+
+            <h2> Approach 1 </h2>
+
+            <p>
+            The only difference between the answer choices is the value of the exponent. Therefore, we just need to figure out what coefficient goes with \(t\). Calling
+             this coefficient \(a\), we get this general relationship:</p>
+            $$P(t)=P_0(2)^{at} $$
+            
+            
+            <p>Because the bacteria population doubles every 30 minutes, we expect the population to double once every half-hour. 
+            In other words, the population should double twice every hour. The population at the first hour should be quadruple that of the initial population.</p>
+            $$ P(1)=4P(0) \tag*{\tiny comparing population at \(t=1\) vs \(t=0\)}$$
+            $$ P_0(2)^{a(1)}=4P_0(2)^{a(0)} $$
+            $$ P_0(2)^a=4P_0(2)^{0} $$
+            $$ 2^a=4(1) $$
+            $$a=2$$
+            $$ \boxed{P=P_0(2)^{2t}} $$
+            <h2>Approach 2</h2>
+            
+            <p>
+            Using a similar approach to the first, we can infer that after an hour, the population should double twice. If we were to plug in \(t=1\), we should obtain \(4P_0\). A quick inspection of the answer choices reveals:
+        </p>
+            
+            $$ \boxed{P=P_0(2)^{2t}} $$
+            $$ P=P_0(2)^{2(1)} $$
+            $$ P=P_0(2)^{2} $$
+            $$ P=P_0(4) $$
+            <p>
+            None of the other choices would result in the same relationship when \(t=1\) is substituted in.
+            
+            </p>
+            
+            
+        </div>
+    </main>
+</body>
+</html>

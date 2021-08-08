@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Algebraic Equations Question 2</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"
+        integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"
+        integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"
+        integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+
+<body id='simple-algebraic-equations'>
+    <main id="2">
+        <div id='question-container'>
+
+            <p>
+                Given the following equation, what is the value of \(2x+1\)?
+            </p>
+
+            $$6x+3=16$$
+
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(\dfrac{14}{3}\)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \(\dfrac{13}{6}\)
+
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(\dfrac{16}{3}\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(\dfrac{13}{3}\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+
+
+
+
+            <h2> Approach 1 </h2>
+
+            <p>
+                Solve for \(x\)</p>
+            $$6x+3=16$$
+            $$6x=13$$
+            $$x=\frac{13}{6}$$
+            <p>Substitute the value of \(x\) into \(2x+1\).</p>
+            $$2 \left(\frac{13}{6}\right)+1$$
+            $$\frac{13}{3}+1$$
+            $$\frac{13}{3}+\frac{3}{3}$$
+            $$\frac{16}{3}$$
+
+
+            <h2> Approach 2 </h2>
+
+            <p>
+                Recognize that \(6x+3\) is simply \(2x+1\) tripled. You could also factor to come up with a similar
+                conclusion.
+            </p>
+
+            $$6x+3=16$$
+            $$3(2x+1)=16$$
+            <p>We can simply divide by \(3\) on both sides to isolate \(2x+1\).</p>
+            $$2x+1=\frac{16}{3}$$
+
+        </div>
+    </main>
+</body>
+
+</html>

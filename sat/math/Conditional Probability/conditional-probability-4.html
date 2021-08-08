@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conditional Probability Question 4</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='conditional-probability'>
+    <main id="4">
+        <div id='question-container'>
+           
+            <p>
+                A large study was done on sleep habits of preteens and teenagers. Each individual was asked about the number of hours of sleep they normally get on an average night. 
+                </p>
+                $$
+                \begin{array} 
+                {|c||c|c|c|c|} \hline
+                 &  \lt \text{6 hours} & \text{6 to 8 hours} & \gt \text{8 hours} & \text{Total students} \\ \hline 
+                \text{Males thirteen or younger} & 6{,}143 & 10{,}362 & 3{,}411 & 19{,}916 \\ \hline
+                \text{Females thirteen or younger} & 4{,}722 & 13{,}152 & 5{,}151 & 23{,}025  \\ \hline
+                \text{Males older than thirteen} & 1{,}747 & 8{,}122 & 1{,}720 & 11{,}589  \\ \hline
+                \text{Females older than thirteen} & 4{,}555 & 13{,}112 & 7{,}921 & 25{,}588 \\ \hline
+                \text{Total} & 17{,}167 & 44{,}748 & 18{,}201 & 80{,}118 \\ \hline
+                \end{array}
+                $$
+                <p>
+                Based on the table, what is the approximate probability that a preteen (thirteen years or younger) would normally sleep for 8 or less  hours? 
+                
+                
+                </p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(0.43\)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \(0.55\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(0.80\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(0.83\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+
+            <h2> Approach </h2>
+
+            <p>
+            We want to find the following:
+            </p>
+            
+            $$ \frac{\colorbox{aqua}{\text{a preteen that sleeps for 8 or less hours}}}{\colorbox{yellow}{\text{a preteen}}} $$
+            
+            $$
+            \begin{array} 
+            {|c||c|c|c|c|} \hline
+             &  \lt \text{6 hours} & \text{6 to 8 hours} & \gt \text{8 hours} & \text{Total students} \\ \hline 
+            \text{Males thirteen or younger} & \colorbox{aqua}{$6{,}143$} & \colorbox{aqua}{$10{,}362$} & 3{,}411 & \colorbox{yellow}{$19{,}916$} \\ \hline
+            \text{Females thirteen or younger} & \colorbox{aqua}{$4{,}722$} & \colorbox{aqua}{$13{,}152$} & 5{,}151 & \colorbox{yellow}{$23{,}025$}  \\ \hline
+            \text{Males older than thirteen} & 1{,}747 & 8{,}122 & 1{,}720 & 11{,}589  \\ \hline
+            \text{Females older than thirteen} & 4{,}555 & 13{,}112 & 7{,}921 & 25{,}588 \\ \hline
+            \text{Total} & 17{,}167 & 44{,}748 & 18{,}201 & 80{,}118 \\ \hline
+            \end{array}
+            $$
+            Note that because the question does not specify, we include both males and females.  Similarly, 8 or less hours include both the first two columns.
+            $$ \frac{6{,}143+10{,}362+4{,}722+13{,}152}{19{,}916+23{,}025}$$
+            $$ = \frac{34{,}379}{42{,}941} $$
+            $$ \approx \boxed{0.80} $$
+        </div>
+    </main>
+</body>
+</html>

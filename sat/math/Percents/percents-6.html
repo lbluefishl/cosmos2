@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Percents Question 6</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='percents'>
+    <main id="6">
+        <div id='question-container'>
+            <p>
+
+                Users receive reward points for every dollar charged to their credit card. Different numbers of points are received for different categories of purchases, as shown below.
+              </p>
+              
+              $$
+              \begin{array}{|c|c|}
+              \hline
+              \text{Category} & \text{Points per dollar spent} \\ \hline
+              \text{App store} & 5 \\ \hline
+              \text{Utilities} & 3 \\ \hline
+              \text{Other charges} & 1 \\ \hline
+              
+              
+              \end{array}
+              
+              $$
+              
+              <p>Suppose a certain individual spent $50 on the app store, $230 on utilities, and $450 on other items. If the individual charged these amounts to 
+                their credit card, which is closest to the percentage
+                of the reward points in these three categories would they receive from utilities? 
+              </p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( 32\% \)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \(33\%\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( 46\% \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( 50\% \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+
+<h2> Approach </h2>
+
+            <p>
+                We can calculate the number of points an individual would receive from their purchases.
+                </p>
+                
+                $$
+                \begin{array}{|c|c|c|c|}
+                \hline
+                \text{Category} & \text{Points per dollar spent} & \$ \text{ Spent} & \text{Points received}\\ \hline
+                \text{App store} & 5 & \$50 & 5\cdot50=250\\ \hline
+                \text{Utilities} & 3 & \$230 & 3\cdot230=690\\  \hline
+                \text{Other charges} & 1 &\$450 & 1\cdot450=450\\ \hline
+                
+                
+                \end{array}
+                
+                $$
+                
+                
+                <p>The percentage of points from utilities is:</p>
+                
+                $$  \frac{\text{points from utilities}}{\text{total points}} $$
+                $$ =\frac{690}{250+690+450} $$
+                $$ =\frac{690}{1390} $$
+                $$ \approx  0.496 $$
+                $$ =\boxed{50\%} $$
+        </div>
+    </main>
+</body>
+</html>

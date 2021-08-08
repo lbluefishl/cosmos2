@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Interpreting Data Question 6</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='interpreting-data'>
+    <main id="6">
+        <div id='question-container'>
+        
+  <div style="text-align: center;">
+    <embed width="680" height="480" src="../../d.svg" 
+  script=
+  '
+  setBorder(1);
+  initPicture(65,320,-10,40);
+  
+  
+  fontstyle = "normal";
+  text([200,37],"Total Fat and Dietary")
+  text([200,34],"Calories of Sandwiches")
+
+
+  text([200,-7], "Calories");
+  rotate([-20,39],"Total fat (g)")
+  
+  
+  
+  strokewidth="2"
+  
+  line([97,0],[303,0])
+  line([97,5],[303,5])
+  line([97,10],[303,10])
+  line([97,15],[303,15])
+  line([97,20],[303,20])
+  line([97,25],[303,25])
+  line([97,30],[303,30])
+ 
+ 
+
+  line([100,0],[100,31])
+  line([120,-1],[120,31])
+  line([140,0],[140,31])
+  line([160,-1],[160,31])
+  line([180,0],[180,31])
+  line([200,-1],[200,31])
+  line([220,0],[220,31])
+  line([240,-1],[240,31])
+  line([260,0],[260,31])
+  line([280,-1],[280,31])
+  line([300,0],[300,31])
+
+
+  text([120,-1],"120","below")
+
+  text([160,-1],"160","below")
+  
+  text([200,-1],"200","below")
+
+  text([240,-1],"240","below")
+  
+  text([280,-1],"280","below")
+  
+  text([100,0],"0","left")
+  text([100,5],"5","left")
+  text([100,10],"10","left")
+  text([100,15],"15","left")
+  text([100,20],"20","left")
+  text([100,25],"25","left")
+  text([100,30],"30","left")
+
+
+  dot([122,5],"closed")
+  dot([141,7],"closed")
+  dot([150,16],"closed")
+  dot([160,10],"closed")
+  dot([184,10],"closed")
+  dot([190,15],"closed")
+  dot([222,22],"closed")
+  dot([244,24],"closed")
+  dot([277,21],"closed")
+  dot([254,19],"closed")
+  strokewidth="3"
+plot("-6+.11x",100,305)
+  '
+  > 
+  </div>
+
+
+<p>
+The scatterplot above shows the relationship between the amount of calories and the amount of total fat, in grams (g),
+ in the 10 nutrition bars at a certain store. The line of best fit
+predicts the amount of total fat a nutrition bar has based on the amount of calories in the nutrition bar. How many grams of fat are in the nutrition bar for which the 
+prediction is the most accurate?
+</p>
+   
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( 25  \)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \( 20  \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( 15   \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( 5  \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <h2> Approach </h2>
+
+            <p>
+            The line of best fit predicts the best point shown below. 
+            </p>
+            
+            <div style="text-align: center;">
+              <embed width="680" height="480" src="../../d.svg" 
+            script=
+            '
+            setBorder(1);
+            initPicture(65,320,-10,40);
+            
+            
+            fontstyle = "normal";
+            text([200,37],"Total Fat and Dietary")
+            text([200,34],"Calories of Sandwiches")
+            
+            
+            text([200,-7], "Calories");
+            rotate([-20,39],"Total fat (g)")
+            
+            
+            
+            strokewidth="2"
+            
+            line([97,0],[303,0])
+            line([97,5],[303,5])
+            line([97,10],[303,10])
+            line([97,15],[303,15])
+            line([97,20],[303,20])
+            line([97,25],[303,25])
+            line([97,30],[303,30])
+            
+            
+            
+            line([100,0],[100,31])
+            line([120,-1],[120,31])
+            line([140,0],[140,31])
+            line([160,-1],[160,31])
+            line([180,0],[180,31])
+            line([200,-1],[200,31])
+            line([220,0],[220,31])
+            line([240,-1],[240,31])
+            line([260,0],[260,31])
+            line([280,-1],[280,31])
+            line([300,0],[300,31])
+            
+            
+            text([120,-1],"120","below")
+            
+            text([160,-1],"160","below")
+            
+            text([200,-1],"200","below")
+            
+            text([240,-1],"240","below")
+            
+            text([280,-1],"280","below")
+            
+            text([100,0],"0","left")
+            text([100,5],"5","left")
+            text([100,10],"10","left")
+            text([100,15],"15","left")
+            text([100,20],"20","left")
+            text([100,25],"25","left")
+            text([100,30],"30","left")
+            
+            
+            dot([122,5],"closed")
+            dot([141,7],"closed")
+            dot([150,16],"closed")
+            dot([160,10],"closed")
+            dot([184,10],"closed")
+            
+            dot([222,22],"closed")
+            dot([244,24],"closed")
+            dot([277,21],"closed")
+            dot([254,19],"closed")
+            
+            
+            strokewidth="3"
+            plot("-6+.11x",100,305)
+            
+            stroke="red"
+            dot([190,15],"closed")
+            
+            
+            '
+            > 
+            </div>
+            
+            
+            <p>
+            The amount of fat in this sandwich is \(\boxed{15 \text{ g}}\).
+            </p>
+            
+        </div>
+    </main>
+</body>
+</html>

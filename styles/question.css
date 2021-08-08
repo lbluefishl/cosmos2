@@ -7,12 +7,17 @@ html {
 main {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
-    background-color: rgb(236, 231, 231);
+    background-color: rgb(245, 243, 243);
     width: 50%;
     margin: auto;
     padding: 15px;
+}
+
+@media (max-width:500px) {
+    main {
+        width: 100%;
+    }
 }
  
 #question-container {
@@ -33,7 +38,8 @@ hr {
 .option-container {
     margin: 5px;
     background-color: rgb(238, 238, 215);
-    padding: 10px;
+    padding: 5px;
+    display: flex;
 }
  
 input {
@@ -64,14 +70,13 @@ span.option-outcome {
 }
  
 label {
-    margin: 5px;
-    padding: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
   
   div.incorrect {
     opacity: .5;
-    font-size: 1em;
     background-color: salmon;
   }
 
@@ -83,3 +88,26 @@ label {
     border-color: rgb(94, 93, 93);
   
   }
+
+  .katex { font-size: 1em !important;
+    white-space: nowrap;
+  } 
+
+  div.explanation {
+      flex: 1;
+  }
+
+  div.twobytwo-grid {
+      display: grid !important;
+      grid-template-columns: 50% 50% !important;
+      grid-row: auto auto !important;
+  }
+
+  svg embed {
+    object-fit: contain;
+  }
+
+  svg {
+
+    max-width: 100%;
+}

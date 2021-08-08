@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Equivalent Expressions Question 3</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='equivalent-expressions'>
+    <main id="3">
+        <div id='question-container'>
+            <p>
+                Which expression is equivalent to the following?
+                $$ x^4-8x^2+16 $$
+                </p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( (x-2)^4\)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \( (x+2)^2 (x-2)^2\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( (x+4) (x-4)\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( (x-4)^2 \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+
+            <h2> Approach 1 </h2>
+
+            <p>
+            Recognize that the given expression is a perfect square trinomial in the form \(a^2-2ab+b^2\), where \(a=x^2\) and \(b=4\).</p>
+            $$ a^2-2ab+b^2 = (a-b)(a-b)$$
+            $$ x^4-8x^2+16= (x^2)^2-2(x^2)(4)+(4)^2  $$
+            $$= (x^2-4)(x^2-4) $$
+            
+           <p> \(x^2-4\) is also a special quadratic, which can be factored using the difference of squares.</p>
+            $$ a^2-b^2 = (a+b)(a-b) $$
+            $$ (x)^2-(2)^2= (x-2)(x+2) $$
+            
+            <p>To put it all together, </p>
+            $$ x^4-8x^2+16 = (x^2-4)(x^2-4) $$
+            $$= (x+2)(x-2)(x+2)(x-2)$$
+            $$ =\boxed{(x+2)^2(x-2)^2}$$
+            
+            
+            <h2> Approach 2 </h2>
+            <p>
+            If you have difficulty factoring, we can always expand the answer choices. Because the overall power of our expression is 4 \((x^4)\), we can eliminate the 
+            last two answer choices, which both have an overall power of 2. It would take quite a while to show all the work for the expansion of \((x-2)^4\) and \( (x+2)^2 (x-2)^2\), but it may work for other questions.
+            Regardless, we can knock two answers out by simply looking at the overall power of the expression.
+            </p>
+            
+            
+            <h2> Approach 3 </h2>
+<p>
+            For equivalent expression problems, we can substitute a value for \(x\) and check it it satisfies the expressions that are supposed to be equal. Using \(x=1\),</p>
+            $$ x^4-8x^2+16 $$
+            $$ (1)^4-8(1)^2+16 = 1-8+16=9$$
+            
+            <div style="columns: 2;">
+            <center>Choice 1</center>
+            $$ (x-2)^4$$
+            $$ (1-2)^4 = (-1)^4 = 1 &nbsp;  &#10006; $$
+            <center>Choice 2</center>
+            $$ (x+2)^2 (x-2)^2 $$
+            $$ (1+2)^2 (1-2)^2 = (3)^2 (-1)^2 = 9 &nbsp; &#10003; $$
+            </div>
+           <p> Note: Usually we would use \(x=0\), but for this question all three expressions would be equal.</p>
+        </div>
+    </main>
+</body>
+</html>

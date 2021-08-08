@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Circles Question 2</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='circles'>
+    <main id="2">
+        <div id='question-container'>
+           
+            <p>
+                A circle in the \(xy\)-plane has a diameter with endpoints \((-2,-3)\) and \((6,3) \). If the point \((b,0) \) lies on the circle and \(b \gt 0\), what is the value of \(b\)?
+                </p>
+                
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(-8\)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \(-3\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(5\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(7\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <h2> Approach 1</h2>
+
+            <p>
+            Given the endpoints of the diameter, we can find the center of the circle by finding the midpoint of the endpoints. 
+            </p>
+            $$ \text{center}=\left( \frac{-2+6}{2},\frac{-3+3}{2}\right)$$
+            $$ \text{center}=(2,0) $$
+            
+            <p>We are asked to find the a point \((b,0)\), which is either directly left or right of the center \((2,0)\). We need to calculate this distance by finding the radius. The radius is half of the length of the diameter, which can be found with the distance formula or pythagorean theorem.</p>
+            
+            $$ d= \sqrt{(x_1-x_2)^2+(y_1-y_2)^2} $$
+            $$ d = \sqrt{(-2-6)^2+(-3-3)^2} $$
+            $$ d=\sqrt{64+36} $$
+            $$ d=\sqrt{100} $$
+            $$ d=10 $$
+            $$ r=5 $$
+            <p>Therefore, the points 5 left and 5 right of the center are \((-3,0) \) and \((7,0) \). If \(b\gt 0\), the correct value of \(b\) is \(\boxed{7}\).</p>
+            
+            
+            <h2>Approach 2</h2>
+            
+            <p>Once we find the center and diameter through the processes above, we can write the standard equation of the circle.</p>
+            $$ (x-h)^2+(y-k)^2=r^2, \text{ where } (h,k) \text{ is the center and } r \text{ is the radius} $$
+            $$ (x-2)^2+(y-0)^2=5^2 $$
+            $$ (x-2)^2+y^2=25$$
+            <p>We can substitute \((b,0)\).</p>
+            $$ (b-2)^2+0^2=25 $$
+            $$ (b-2)^2=25 $$
+            $$ (b-2)=\pm \sqrt{25} $$
+            $$ b-2=\pm 5 $$
+            $$ b=2+5 \text{ and } 2-5$$
+            $$ b=\boxed{7} \text{ and} -3 $$
+            
+        </div>
+    </main>
+</body>
+</html>

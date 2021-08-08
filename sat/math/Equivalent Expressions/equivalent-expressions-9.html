@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Equivalent Expressions Question 9</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='equivalent-expressions'>
+    <main id="9">
+        <div id='question-container'>
+           
+<p>
+    If \((ax+1)(bx+3)=6x^2+cx+3   \) for all values of \(x\), and \(a+b=5\), what are the two possible values for \(c\) ?
+    </p>
+     
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(2 \text{ and } 3\)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \(5 \text{ and } 6\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(6 \text{ and } 8\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(9 \text{ and } 11\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <h2> Approach </h2>
+
+            <p>
+            Expand the expression on the left side first:
+            </p>
+            $$ (ax+1)(bx+3) $$
+            $$ abx^2+bx+3ax+3 $$
+            <p>Let's compare this with the equation on the other side, taking care to identify corresponding parts:</p>
+            $$ \colorbox{aqua}{$abx^2$}+\colorbox{yellow}{$bx+3ax$}+\colorbox{chartreuse}{$3$} = \colorbox{aqua}{$6x^2$}+\colorbox{yellow}{$cx$}+\colorbox{chartreuse}{$3$} $$
+            <p>From the above, we get the following equations:</p>
+            <div style="columns: 2;">
+            <center>From the \(x^2\) terms</center>
+            $$ abx^2=6x^2 $$
+            $$ ab=6 $$
+            <center>From the linear terms</center>
+            $$ bx+3ax=cx $$
+            $$ b+3a=c $$
+            </div>
+            <p>We are given that \(a+b=5\), which we can use along with \(ab=6\) to identify possible values for \(a\) and \(b\). We can solve the system using tradional methods, or use a bit of mental math.</p>
+            
+            $$ a \text{ and } b = 3 \text{ or } 2 $$
+            
+            <p>\(c\) can have two answers, based on the values we assign \(a\) and \(b\).</p>
+            
+            $$ c=b+3a $$
+            <div style="columns: 2;">
+              <center>\(a=2, b=3\)</center>
+            $$ c=3+3(2) $$
+            $$ c=9 $$
+            <center>\(a=3, b=2\)</center>
+            $$ c=2+3(3) $$
+            $$ c=11 $$
+            
+            
+            </div>
+            $$ c=\boxed{9 \text{ and } 11} $$
+        </div>
+    </main>
+</body>
+</html>

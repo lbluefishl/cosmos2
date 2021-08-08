@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Systems of Equations Question 5</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='systems-of-equations'>
+    <main id="5">
+        <div id='question-container'>
+           
+            <p>
+                If \((x,y)\) is the solution to the following system of equations, what is the value of \(10x-y\)?
+                
+                $$ 5x+3y=31 $$
+                $$ 5x-4y=17 $$
+                </p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(2\)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \(5\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(15\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(48\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+
+
+            <h2> Approach 1</h2>
+
+            <p>
+            If we compare the given equations to the requested expression, we see a clear relationship. 
+            </p>
+            $$ 5x+3y=31 $$
+            $$ 5x-4y=17 $$
+            
+            $$ \begin{array}{  c c c}
+            &5x & 3y & 31 \\ 
+            +&5x & -4y & 17 \\ \hline
+            \end{array} $$
+            $$10x-y=\boxed{48}$$
+            
+            
+            <h2> Approach 2</h2>
+            
+            <p>
+            We can use elimination to find the values of \(x\) and \(y\).
+        </p>
+            
+            $$ 5x+3y=31 $$
+            <p>Multiply each term of the second equation by \(-1\).</p>
+            $$ -1(5x-4y)=17(-1) $$
+            $$  -5x+4y=-17 $$
+            <p>Add the two equations. </p>
+            $$ \begin{array}{  c c c}
+            &5x & 3y & 31 \\ 
+            +&-5x & 4y & -17 \\ \hline
+            \end{array} $$
+            $$7y=14$$
+            $$y=2$$
+          <p>  Substitute the value of \(y\) back into either equation.</p>
+            $$ 5x+3(2)=31$$
+            $$5x+6=31$$
+            $$5x=25$$
+            $$x=5$$
+          <p>  Using the values of \(x\) and \(y\),</p>
+            $$10x-y$$
+            $$=10(5)-2$$
+            $$=50-2$$
+            $$=\boxed{48}$$
+            
+            
+            <h2> Sidenote</h2>
+            
+            <p>Questions like these are especially common on standardized tests like the SAT. A good hint that you would use the first approach would be if the question requests the value of an expression, rather than the \(x\) or \(y\) coordinate. </p>
+            
+        </div>
+    </main>
+</body>
+</html>

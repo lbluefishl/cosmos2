@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Circles Question 1</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='circles'>
+    <main id="1">
+        <div id='question-container'>
+           
+            <p>
+                An angle measure of 630 degrees was written in radians as \(x\pi\). What is the value of \(x\)?
+                </p>
+                
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(\dfrac{12 \pi}{31} \)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \( \dfrac{4\pi}{3}\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( \dfrac{3 \pi}{2}\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( \dfrac{7\pi}{2}\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <h2> Approach 1 </h2>
+
+            <p>
+            A circle is \(360\degree\) or \(2\pi\) radians. We use can a simple proportion to find the correct number of radians. 
+            </p>
+            $$ \frac{2\pi \text{ radians}}{360\degree} = \frac{R \text{ radians}}{630\degree} $$
+            $$ 2\pi \cdot 630 = 360 \cdot R $$
+            $$ 1260=360R $$
+            $$ \frac{1260\pi}{360}=R $$
+            $$ 3.5\pi=R $$
+            $$ R= \boxed{\frac{7}{2}}\pi $$
+            
+            
+            <h2>Approach 2</h2>
+            <p> We can do unit conversions as long as we know the conversion, \(\pi\text{ radians}=180\degree\).</p>
+            $$ 630 \degree \cdot \frac{\pi \text{ radians}}{180 \degree} $$
+            $$ 630\cdot \frac{\pi}{180} \text{ radians}$$ 
+            $$ =\frac{63}{18}\pi $$
+            $$ = \frac{21}{6}\pi $$
+            $$ = \boxed{\frac{7}{2}}\pi $$
+        </div>
+    </main>
+</body>
+</html>

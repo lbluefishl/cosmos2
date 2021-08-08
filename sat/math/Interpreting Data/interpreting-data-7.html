@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Interpreting Data Question 7</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='interpreting-data'>
+    <main id="7">
+        <div id='question-container'>
+           
+
+            <div style="text-align: center;">
+                <embed width="720" height="450" src="../../d.svg" 
+                script=
+                '
+                setBorder(20);
+                initPicture(-60,220,-460,2600);
+                fontsize="24"
+                fontstyle = "normal";
+                text([110,2550], "Battery Price ");
+            
+                text([100,-460], "Weight of order (pounds)");
+                rotate([-150,2450],"Price of order")
+                
+            
+                line([0,-20],[0,2400])
+                line([20,-20],[20,20])
+                line([40,-20],[40,20])
+                line([60,-20],[60,20])
+                line([80,-20],[80,20])
+                line([100,-20],[100,20])
+                line([120,-20],[120,20])
+                line([140,-20],[140,20])
+                line([160,-20],[160,20])
+                line([180,-20],[180,20])
+                line([200,-20],[200,20])
+            
+                line([-5,0],[220,0])
+                line([-5,200],[5,200])
+                line([-5,400],[5,400])
+                line([-5,600],[5,600])
+                line([-5,800],[5,800])
+                line([-5,1000],[5,1000])
+                line([-5,1200],[5,1200])
+                line([-5,1400],[5,1400])
+                line([-5,1600],[5,1600])
+                line([-5,1800],[5,1800])
+                line([-5,2000],[5,2000])
+                line([-5,2200],[5,2200])
+                line([-5,2400],[5,2400])
+            
+            
+                text([0,200],"$200",left);
+                text([0,600],"$600",left);
+            
+                text([0,1000],"$1,000",left);
+              
+                text([0,1400],"$1,400",left);
+               
+                text([0,1800],"$1,800",left);
+                
+                text([0,2200],"$2,200",left);
+                [-150,2550]
+            
+            
+            
+            
+             
+            
+                rotate45([-132,-155],"0",)
+                rotate45([-121,-415],"20",)
+                rotate45([-107,-655],"40",)
+                rotate45([-92,-915],"60",)
+                rotate45([-77,-1185],"80",)
+                rotate45([-65,-1440],"100",)
+                rotate45([-50,-1695],"120",)
+                rotate45([-36,-1950],"140",)
+                rotate45([-22,-2205],"160",)
+                rotate45([-9,-2445],"180",)
+                rotate45([5,-2700],"200",)
+            
+                strokewidth="2"
+            plot("10x",0,80)
+            plot("5x+400",80,200)
+             
+                
+            
+                '
+                > 
+                </div>
+             
+            <p>
+            The graph above shows the price that a company charges for an order of batteries, depending on the weight of the order. Based on the graph, which of the following statements must be true?
+            </p>
+            
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    The company charges more per pound for orders greater than 80 pounds than for orders less than 80 pounds. 
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      The company charges less per pound for orders greater than 80 pounds than for orders less than 80 pounds.
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    The company charges the same price per pound, regardless of order size.
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    The company charges a fixed fee in addition to a cost proportional to the weight of the order. 
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <h2> Approach </h2>
+
+            <p>
+            The rate is constant for two periods on the graph. The rate (slope) is larger when the weight of the order is less than 80 than when it is greater than 80.
+            </p>
+            
+            <div style="text-align: center;">
+              <embed width="720" height="450" src="../../d.svg" 
+              script=
+              '
+              setBorder(20);
+              initPicture(-60,220,-460,2600);
+              fontsize="24"
+              fontstyle = "normal";
+              text([110,2550], "Battery Price ");
+            
+              text([100,-460], "Weight of order (pounds)");
+              rotate([-150,2450],"Price of order")
+              
+            
+              line([0,-20],[0,2400])
+              line([20,-20],[20,20])
+              line([40,-20],[40,20])
+              line([60,-20],[60,20])
+              line([80,-20],[80,20])
+              line([100,-20],[100,20])
+              line([120,-20],[120,20])
+              line([140,-20],[140,20])
+              line([160,-20],[160,20])
+              line([180,-20],[180,20])
+              line([200,-20],[200,20])
+            
+              line([-5,0],[220,0])
+              line([-5,200],[5,200])
+              line([-5,400],[5,400])
+              line([-5,600],[5,600])
+              line([-5,800],[5,800])
+              line([-5,1000],[5,1000])
+              line([-5,1200],[5,1200])
+              line([-5,1400],[5,1400])
+              line([-5,1600],[5,1600])
+              line([-5,1800],[5,1800])
+              line([-5,2000],[5,2000])
+              line([-5,2200],[5,2200])
+              line([-5,2400],[5,2400])
+            
+            
+              text([0,200],"$200",left);
+              text([0,600],"$600",left);
+            
+              text([0,1000],"$1,000",left);
+            
+              text([0,1400],"$1,400",left);
+             
+              text([0,1800],"$1,800",left);
+              
+              text([0,2200],"$2,200",left);
+              [-150,2550]
+            
+            
+            
+            
+            
+            
+              rotate45([-132,-155],"0",)
+              rotate45([-121,-415],"20",)
+              rotate45([-107,-655],"40",)
+              rotate45([-92,-915],"60",)
+              rotate45([-77,-1185],"80",)
+              rotate45([-65,-1440],"100",)
+              rotate45([-50,-1695],"120",)
+              rotate45([-36,-1950],"140",)
+              rotate45([-22,-2205],"160",)
+              rotate45([-9,-2445],"180",)
+              rotate45([5,-2700],"200",)
+            
+              strokewidth="2"
+              stroke="red"
+            plot("10x",0,80)
+            text([30,700],"higher price ")
+            text([30,550],"per pound ")
+            stroke="blue"
+            plot("5x+400",80,200)
+            text([120,800],"lower price ")
+            text([120,650],"per pound ")
+              
+            
+              '
+              > 
+              </div>
+            
+              <p>There is no initial fee, since the cost is $0 when the weight of the order is 0.</p>
+        </div>
+    </main>
+</body>
+</html>

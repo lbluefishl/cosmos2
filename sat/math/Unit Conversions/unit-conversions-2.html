@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Conversions Question 2</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='unit-conversions'>
+    <main id="2">
+        <div id='question-container'>
+           
+            <p>
+                A doctor typically sees 10 patients in a 4-hour shift. If a doctor has two shifts per day, how many patients would the doctor expect to see over the course of a 5-day workweek?  
+                </p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(20\)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+     \(25\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(50\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(100\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+
+            <h2> Approach </h2>
+
+            <p>
+            The given conversion factors and quantity:
+            </p>
+            <div style='columns: 3;'>
+            <center><strong>Given rate</strong></center>
+            $$ \frac{10 \text{ patients }}{1 \text{ shift }} $$
+            <center><strong>Given rate</strong></center>
+            $$ \frac{2 \text{ shifts }}{1 \text{ day }} $$
+            <center><strong>Given quantity</strong></center>
+            $$ 5 \text{ days} $$
+            </div>
+            
+            <p>Through inspection, we can see that the units cancel out perfectly as written.</p>
+            $$ \frac{10 \text{ patients }}{1 \cancel{\text{ shift }}}  \cdot \frac{2 \cancel{\text{ shifts }}}{1 \cancel{\text{ day }}} \cdot  5 \cancel{\text{ days}} $$
+            $$ \frac{10}{1}\cdot \frac{2}{1} \cdot 5 \text{ patients} $$
+            $$ = \boxed{100 \text{ patients}} $$
+            
+            
+            <h2>Sidenote</h2>
+            <p>Be cautious when writing the given rates. We could have written 10 patients per 4 hours, but then our units wouldn't cancel out.
+               In this problem, it is irrelevant how long a shift is since the doctor will have two shifts no matter what. SAT problems will usually only give you values and units needed for the question, but there are rare exceptions. In real-world situations, you will almost always get more information than you need!</p>
+            
+        </div>
+    </main>
+</body>
+</html>

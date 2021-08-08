@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exponent Rules Question 7</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='exponent-rules'>
+    <main id="7">
+        <div id='question-container'>
+            <p>
+                Which of the following expressions is equivalent to \( (-8x^2)^{\frac{2}{3}} \)
+                
+                </p>  
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( = -4x \sqrt[3]{x} \)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \( = -2x^3 \sqrt[3]{x} \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( = 4x \sqrt[3]{x} \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( = 2x^3 \sqrt[3]{x} \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <h2> Approach  </h2>
+
+            <p>
+            If we seperate the items inside the parenthesis:
+            </p>
+            $$ ( -1 \cdot 8 \cdot x \cdot x)^{\frac{2}{3}}  $$
+            <p>We can take care of the 2 exponent first by doubling the terms inside the parenthesis.</p>
+            $$ ( -1 \cdot 8 \cdot x \cdot x)^{\colorbox{aqua}{$2$}\cdot \frac{1}{3}} $$
+            $$ ( -1 \cdot -1 \cdot 8 \cdot 8 \cdot x \cdot x \cdot x \cdot x)^{\frac{1}{3}}  $$
+            <p>The negative values cancel each other out. The current exponent is equivalent to a cube root.</p>
+            $$ \sqrt[3]{8\cdot 8\cdot x\cdot x \cdot x \cdot x} $$ 
+            <p>We can take out a \(x\) since there are three of them, but we should obtain the prime factors of \(8\) to see if anything else can be simplified. </p>
+            $$ \sqrt[3]{\colorbox{aqua}{$2 \cdot 2 \cdot 2$}  \cdot \colorbox{aqua}{$2 \cdot 2 \cdot 2$} \cdot \colorbox{aqua}{$x \cdot x \cdot x$} \cdot x} $$
+            $$ = 2\cdot 2\cdot x \cdot \sqrt[3]{x} $$
+            $$ = 4x \sqrt[3]{x} $$
+        </div>
+    </main>
+</body>
+</html>

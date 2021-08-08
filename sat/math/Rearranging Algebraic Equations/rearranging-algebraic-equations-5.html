@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rearranging Algebraic Equations Question 5</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='rearranging-algebraic-equations'>
+    <main id="5">
+        <div id='question-container'>
+           
+            $$ Q=\sqrt{\frac{3dK}{2h}} $$ 
+            <p>
+            
+              The formula above is used to estimate the ideal quantity, \(Q\), of items a store manager needs to order given the demand quantity, \(d\), 
+              the setup cost per order, \(K\); and the storage cost per item, \(h\). Which of the following correctly expresses the setup cost per order in terms of hte other variables?
+            </p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(   K=\sqrt{\dfrac{3d}{2hQ}}  \)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \(   K=\sqrt{\dfrac{2hQ}{3d}}  \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(   K=\dfrac{2hQ^2}{3d}  \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(   K=\dfrac{3d}{2hQ^2}  \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <h2> Approach </h2>
+
+            <p>
+            We are tasked with solving for \(K\), the setup cost per order.
+            </p>
+            
+            $$ Q=\sqrt{\frac{3dK}{2h}} $$ 
+            $$ Q^2=\frac{3dK}{2h} $$
+            $$ 2hQ^2=3dK $$
+            $$ \boxed{K=\frac{2hQ^2}{3d}} $$
+        </div>
+    </main>
+</body>
+</html>

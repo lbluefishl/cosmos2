@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 1</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+</head>
+<body id='linear-equations'>
+    <main id="7">
+        <div id='question-container'>
+            <p>>
+                The Newell Investments Group invested in the five properties listed in the table below. The table shows the amount, in dollars, the company paid for each property and the corresponding monthly rental price, in dollars, 
+                the company charges for the property at each of the five locations.
+              </p>
+                $$ \begin{array} {|l|r|r|}
+                \hline
+                \text{Property} & \text{Purchase price} & \text{Monthly rental} \newline &\text {(dollars)} & \text{ price (dollars)} \\ \hline \hline
+                \text{Boardwalk} & 450{,}000 & 3{,}365 \\ \hline
+                \text{Vermont Ave.} &  128{,}000 & 950 \\ \hline
+                \text{St. James Place} & 140{,}000 & 1{,}040 \\ \hline
+                \text{Vine Street} & 70{,}000 & 515 \\ \hline
+                \text{Park Lane} & 176{,}000 & 1{,}310 \\ \hline
+                \end{array} $$
+              <p>
+                Which equation below represents the relationship between the monthly rental price \(r,\) in dollars, and the property's purchase price \(p\), in <strong>thousands</strong> of dollars?
+              
+            </p>           
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(r(p)=2.5p-870\)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+        \(r(p)=5p+165\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(r(p)=6.5p+440\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(r(p)=7.5p-10\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <h2> Approach 1 </h2>
+
+            <p>
+            The answer choices hint to the fact that there exists a linear relationship between \(r\) and \(p\). We can treat the table like a table of values. Although we are not
+             using  \((x,y)\), we can apply similar methods. Taking the coordinates \((p,r)\) for Boardwalk \((450,3{,}365)\) and Vermont Ave. \((128, 950)\), we can find the slope. (Note that we 
+            could have used any two properties, and note that we  removed 3 zeroes at the end of the purchase price, since the question emphasizes that \(p\) has units of thousands of dollars.)
+            
+            $$m= \frac{y_2-y_1}{x_2-x_1} $$
+            In this situation, \(y\) corresponds to \(r\) and \(x\) corresponds to \(p\).
+            $$m=\frac{r_2-r_1}{p_2-p_1}$$
+            $$m=\frac{3{,}365-950}{450-128} $$
+            $$m=7.5$$
+            Only one answer choice has a slope of 7.5. 
+            </p>
+            
+            
+            <h2>Approach 2</h2>
+            
+            <p> We can simply plug the values from the table into the equations. Be careful here, because the equation has to be valid for every property in the table.
+              Starting with Boardwalk \((450, 3{,}365)\):
+            </p>
+            
+            
+            <div id='col'>
+              <br>
+                $$ r(p)=2.5p-870 $$ 
+                $$3{,}365=2.5(450)-870$$
+              $$ 3{,}365\neq255 \ \ \ &#10006 $$
+            <br>
+            $$ r(p)=6.5p+440 $$ 
+            $$3{,}365=6.5(450)+440$$
+            $$ 3{,}365= 2415 \ \ \ &#10003 $$
+              <br>
+            
+            
+            $$ r(p)=5p+165 $$
+            $$3{,}365=5(450)+165$$
+            $$ 3{,}365\neq 2415 \ \ \ &#10006 $$
+            <br>
+            $$ r(p)=7.5p-10 $$ 
+            $$3{,}365=7.5(450)-10$$
+            $$ 3{,}365= 2415 \ \ \ &#10003 $$
+            
+            </div>
+            <p>Unfortunately, two equations work for Boardwalk. We would therefore need to try another property. We can try Vermont Ave. \((128,950)\). Since the first two choices do not work for Boardwalk,
+              there is no need to test these two.
+            </p>
+            
+            
+            <div id='col'>
+            <br>
+            $$ r(p)=6.5p+440 $$ 
+            $$950=6.5(128)+440$$
+            $$ 950\neq 1{,}272 \ \ \ &#10006 $$
+            <br>
+            $$ r(p)=7.5p-10 $$ 
+            $$950=7.5(128)-10$$
+            $$ 950= 950 \ \ \ &#10003 $$
+        </div>
+        <p>The last option works!</p>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Conversions Question 4</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='unit-conversions'>
+    <main id="4">
+        <div id='question-container'>
+           
+            <p>
+                A desktop processor for a computer can calculate approximately 100 operations in \(2.5 \times 10^{-7}\) seconds. 
+                At this rate, approximately how many operations can be calculated by this computer in one half hour?
+                </p>
+                
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( 4.0 \times 10^8 \)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \( 2.5 \times 10^{10} \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( 7.2 \times 10^{11}\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( 1.4 \times 10^{12} \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <h2> Approach 1 </h2>
+
+            <p>
+            We can use a simple proportion, as long as we make sure the units correspond to each other. We can convert one half hour to 30 minutes, which is 1800 seconds. 
+            </p>
+            $$ \frac{100 \text{ operations}}{2.5 \times 10^{-7}\text{ seconds}} =\frac{O \text{ operations}}{1{,}800 \text{ seconds}} $$
+            $$ 100(1{,}800)= (2.5 \times 10^{-7})O $$
+            $$ O = \frac{180{,}000}{2.5 \times 10^{-7}} $$
+            $$ O = \boxed{7.2 \times 10^{11}} \text{ operations} $$
+            
+            <h2> Approach 2 </h2>
+            <p>Using the standard unit conversion method:</p>
+            
+            <div style='columns: 4;'>
+              <center><strong>Given rate</strong></center>
+              $$ \frac{100 \text{ operations }}{2.5 \times 10^{-7} \text{ seconds }} $$
+              <center><strong>Known rate</strong></center>
+              $$ \frac{60 \text{ seconds }}{1 \text{ minute }} $$
+              <center><strong>Known rate</strong></center>
+              $$ \frac{60 \text{ minutes }}{1 \text{ hour }} $$
+              <center><strong>Given quantity</strong></center>
+              $$ 0.5 \text{ hours} $$
+              </div>
+              
+              <p>Writing the rates and quantities so that they cancel out and leave us with operations:</p>
+            
+              $$ \frac{100 \text{ operations }}{2.5 \times 10^{-7} \cancel{\text{ seconds }}} \cdot   \frac{60 \cancel{\text{ seconds }}}{1 \cancel{\text{ minute }}} \cdot  
+               \frac{60 \cancel{\text{ minutes }}}{1 \cancel{\text{ hour }}} \cdot 0.5 \cancel{\text{ hours}} $$
+             $$ \frac{100}{2.5 \times 10^{-7}} \cdot \frac{60}{1} \cdot \frac{60}{1} \cdot 0.5 \text{ operations}$$
+             $$  = \boxed{7.2 \times 10^{11}} \text{ operations} $$
+            
+        </div>
+    </main>
+</body>
+</html>

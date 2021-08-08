@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 1</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+</head>
+<body id='linear-equations'>
+    <main id="10">
+        <div id='question-container'>
+            
+                $$ 2ax-3ay=1$$
+                <p>
+                    In the equation above, \(a\) is a nonzero constant. The graph of the equation in the \(xy\)-plane is a line. What is the slope of the line? 
+                    </p>
+                   
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( \dfrac{2}{3}\)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \( \dfrac{2a}{3}\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( \dfrac{3a}{2}\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( \dfrac{1}{3a}\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+          <!--  <button id='skip'>Skip Question</button> -->
+        </div>
+        <div id='explanation' style="display: none;">
+            <h2> Approach </h2>
+
+            <p>
+            We want to rearrange the terms so we obtain the form \(y=mx+b\), where \(m\) is the slope.
+            </p>
+            $$ 2ax-3ay=1 $$
+            $$ 2ax=1+3ay $$
+            $$ 2ax-1=3ay$$
+            $$ y= \frac{2ax-1}{3a} $$
+            $$ y=\frac{2ax}{3a}-\frac{1}{3a} $$
+            $$ y=\boxed{\frac{2}{3}}x-\frac{1}{3a}$$
+            
+            
+        </div>
+    </main>
+</body>
+</html>

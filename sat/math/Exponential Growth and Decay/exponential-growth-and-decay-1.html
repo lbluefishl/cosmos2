@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exponential Growth and Decay Question 1</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='exponential-growth-and-decay'>
+    <main id="1">
+        <div id='question-container'>
+           
+            <p>
+                The enrollment capacity of a certain college is 22,200 students. If the current enrollment is 20,000, but the enrollement increases by 5% per year, how many years
+                 will it take before the enrollment limit is reached?
+                </p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(1\)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \(2\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(3\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(4\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <h2> Approach 1 </h2>
+
+            <p>
+            We can approach this question with simple percents. Every year, the enrollment will increase by 5%.
+            $$20{,}000 \tag*{\tiny current enrollment}$$
+            $$20{,}000+20{,}000(0.05) \tag*{\tiny after 1 year}$$
+            We can quickly calculate 5% by first taking 10% of the number, and halving it. 
+            In this case, 10% of 20,000 is 2,000, so 5% would be 1,000.
+            </p>
+            <br>
+            Therefore, 
+            $$20{,}000(1.05)=20{,}000+1{,}000$$
+            $$=21{,}000$$
+            Repeat the process for the second year.
+            $$21{,}000(1.05)$$
+            $$=21{,}000+1{,}050$$
+            $$=22{,}050$$
+            We can estimate that another 5% increase the third year will certainly bring the number above the 22,200 threshold. 
+            </p>
+            
+            <h2> Approach 2 </h2>
+            
+            <p>Use the compound interest equation.
+            $$ A=P(1+\frac{r}{n})^{nt} $$
+            
+            \(A=\text{final amount}\)
+            <br> 
+            \(P=\text{initial amount}\)    
+            <br>
+            \(r=\text{interest rate}\)
+            <br>
+            \(n=\text{number of times interest applied for time period}\)
+            <br>
+            \(t=\text{number of time periods elapsed}\)
+            </p>
+            
+            <p>
+            In our situation, we start with 20,000 and have an increase of 5% (\(r\)=0.05) once every year (\(n=1\)). We're trying to figure out what year \(t\) results in an amount greater than 22,200.
+            $$ 22{,}200 \lt 20{,}000\left(1+\frac{0.05}{1}\right)^{(1)t} $$
+            $$ 22{,}200 \lt 20{,}000(1.05)^t $$
+            From here we have two options for how to proceed. 
+            </p>
+            
+            <div id="col" style="column-gap: 30px;">
+            <p>We can substitute values of \(t\) and check if the inequality holds true. 
+            </p>
+            <p>For \(t=2\)</p>
+            $$ 22{,}200 \lt 20{,}000(1.05)^2  $$
+            $$ 22{,}200 \lt 22{,}050 \ \ &#x2716; $$
+            For \(t=3\)
+            $$ 22{,}200 \lt 20{,}000(1.05)^3  $$
+            $$ 22{,}200 \lt 23{,}152.5 \ \ &#x2714; $$
+            <br>
+            <br>
+            If we know how to use logarithms, we can solve for \(t\) directly. 
+            $$ 22{,}200 \lt 20{,}000(1.05)^t $$
+            $$ \frac{22{,}200}{20{,}000} \lt 1.05^t $$
+            $$ 1.11 \lt 1.05^t $$
+            $$\log_{1.05}1.11 \lt \log_{1.05}1.05^t $$
+            $$\frac{\log1.11}{\log1.05} \lt t $$
+            $$ 2.139 \lt t $$
+        </div>
+    </main>
+</body>
+</html>

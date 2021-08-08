@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Notation Question 8</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='function-notation'>
+    <main id="8">
+        <div id='question-container'>
+            <p>
+                Let the function \(p\) be defined as \(p(x)=\dfrac{(x-c)^2+12}{2c} \), where \(c\) is a constant. If \(p(c)=2\), what is the value of \(p(4)\) ? 
+                </p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( \dfrac{11}{6} \)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+     \( 2\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( \dfrac{13}{6} \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( 4 \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+
+
+            <h2> Approach  </h2>
+
+            <p>We first solve for \(c\) by using the given information \(p(c)=2\).
+              </p>
+            $$ p(c)=2 $$
+            $$ \frac{(c-c)^2+12}{2c}=2 $$
+            $$ \frac{0^2+12}{2c}=2 $$
+            $$ \frac{12}{2c}=2 $$
+            $$ c=3 $$
+            <p>We can \(c=3\) into function \(p\) so that:
+            </p>
+            
+            $$p(x)=\frac{(x-c)^2+12}{2c} $$
+            $$ p(x)=\frac{(x-3)^2+12}{6} $$
+            <p>Finding \( p(4) \)</p>
+            $$ p(4)=\frac{(4-3)^2+12}{6} $$
+            $$ = \frac{1+12}{6} $$
+            $$ = \frac{13}{6} $$
+            
+        </div>
+    </main>
+</body>
+</html>
