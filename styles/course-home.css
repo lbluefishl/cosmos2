@@ -24,12 +24,13 @@ div.progress {
 a.topic {
     margin: 10px;
     border: solid rgb(216, 211, 211);
-    width: 200px;
+    width: 400px;
     text-align: center;
     border-radius: 15px;
     position: relative;
     text-decoration: none;
     background-color: rgb(224, 210, 192);
+    font-size: 24px;
 }
 
 a.topic:hover,
@@ -45,4 +46,6 @@ span {
 div.header {
     font-size: 50px;
     text-align: center;
+    margin: 20px;
 }
+
