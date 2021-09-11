@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Definite Integrals Question 3</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='definite-integrals'>
+    <main id="3">
+        <div id='question-container'>
+            <p>
+                \(  \displaystyle \int \limits_1^e \left( \frac{x^2-1}{x}      \right)    &nbsp dx   =       \)
+               </p> 
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( e-\dfrac{1}{e} \)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \(e^2-e \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(e^2-2 \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( \dfrac{e^2}{2} -  \dfrac{3}{2}  \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+
+            <div class="explanation-header1"> Approach </div>
+
+            <p>
+            Break apart the fraction in order to use the power rule and rule for natural logarithms.</p>
+            $$  \int \limits_1^e \left( \frac{x^2-1}{x}      \right)    &nbsp dx = \int \limits_1^e \left( \frac{x^2}{x}-\frac{1}{x}      \right)    &nbsp dx  $$
+            $$ = \int \limits_1^e \left( x-\frac{1}{x}      \right)    &nbsp dx $$
+            $$ = \left[ \frac{1}{2}x^2-\ln |x|  \right]_1^e$$
+            $$ = \frac{1}{2}(e)^2-\ln|e|-\left(\frac{1}{2}(1)^2-\ln|1|\right) $$
+            $$ = \frac{1}{2}e^2-1-\left(\frac{1}{2}-0\right)$$
+            $$ = \frac{1}{2}e^2-1-\frac{1}{2}$$
+            $$ =\boxed{\frac{e^2}{2}-\frac{3}{2}} $$
+            
+            
+           
+        </div>
+    </main>
+</body>
+</html>

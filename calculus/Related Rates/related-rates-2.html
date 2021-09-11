@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Related Rates Question 2</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='related-rates'>
+    <main id="2">
+        <div id='question-container'>
+           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1800 900"><defs><clipPath id="nKcFSlQvfoqa"><path fill="none" stroke="none" d=" M 0 0 L 1836 0 L 1836 896 L 0 896 L 0 0 Z"/></clipPath></defs><g transform="scale(1,1)" clip-path="url(#nKcFSlQvfoqa)"><g><rect fill="rgb(255,255,255)" stroke="none" x="0" y="0" width="1836" height="896" fill-opacity="1"/><path fill="none" stroke="rgb(0,0,0)" paint-order="fill stroke markers" d=" M 495.9530656773117 113.17808026575324 L 495.9530656773117 718.1455768199568" stroke-opacity="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6.5"/><path fill="none" stroke="rgb(0,0,0)" paint-order="fill stroke markers" d=" M 495.9530656773117 718.1455768199568 L 1302.5763944162502 718.1455768199568" stroke-opacity="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6.5"/><path fill="none" stroke="rgb(0,0,0)" paint-order="fill stroke markers" d=" M 1302.5763944162502 718.1455768199568 L 1302.5763944162502 113.17808026575324" stroke-opacity="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6.5"/><path fill="none" stroke="rgb(0,0,0)" paint-order="fill stroke markers" d=" M 1302.5763944162502 113.17808026575324 L 495.9530656773117 113.17808026575324" stroke-opacity="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6.5"/><path fill="none" stroke="rgb(0,0,0)" paint-order="fill stroke markers" d=" M 495.9530656773117 718.1455768199568 L 1302.5763944162502 113.17808026575324" stroke-opacity="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6.5"/><g transform="scale(67,67)"><g transform="translate(12.955223880597014,5.639955223880597)"><path fill="rgb(0,0,0)" stroke="none" paint-order="stroke fill markers" d=" M 0.133 -0.083 L 0.133 -0.083 Q 0.14200000000000002 -0.08600000000000001 0.16 -0.08600000000000001 Q 0.186 -0.08600000000000001 0.23 -0.069 Q 0.269 -0.056 0.289 -0.056 Q 0.342 -0.056 0.38 -0.094 Q 0.4 -0.113 0.40900000000000003 -0.14 Q 0.41500000000000004 -0.153 0.423 -0.153 Q 0.435 -0.153 0.435 -0.14300000000000002 Q 0.435 -0.117 0.403 -0.069 Q 0.34900000000000003 0.011 0.278 0.011 Q 0.244 0.011 0.214 -0.026000000000000002 Q 0.186 -0.059000000000000004 0.169 -0.063 Q 0.164 -0.064 0.156 -0.064 Q 0.112 -0.064 0.07100000000000001 -0.002 Q 0.064 0.011 0.055 0.011 Q 0.043000000000000003 0.011 0.043000000000000003 0.001 Q 0.043000000000000003 -0.011 0.089 -0.067 Q 0.115 -0.099 0.146 -0.13 L 0.23600000000000002 -0.214 Q 0.335 -0.298 0.375 -0.34500000000000003 Q 0.339 -0.34500000000000003 0.298 -0.36 Q 0.255 -0.375 0.23500000000000001 -0.375 Q 0.177 -0.375 0.155 -0.337 Q 0.152 -0.333 0.15 -0.328 Q 0.146 -0.317 0.137 -0.317 Q 0.125 -0.317 0.125 -0.328 Q 0.125 -0.35000000000000003 0.154 -0.388 Q 0.194 -0.442 0.246 -0.442 Q 0.279 -0.442 0.308 -0.40700000000000003 L 0.309 -0.406 Q 0.311 -0.403 0.315 -0.399 Q 0.339 -0.372 0.354 -0.368 Q 0.36 -0.367 0.366 -0.367 Q 0.4 -0.367 0.437 -0.425 L 0.441 -0.431 Q 0.447 -0.442 0.456 -0.442 Q 0.467 -0.442 0.467 -0.432 Q 0.467 -0.42 0.425 -0.368 Q 0.395 -0.331 0.35000000000000003 -0.28700000000000003 Q 0.34400000000000003 -0.281 0.255 -0.2 L 0.252 -0.197 Q 0.187 -0.14100000000000001 0.133 -0.083 Z"/></g></g><g transform="scale(67,67)"><g transform="translate(12.985074626865671,11.639955223880596)"><path fill="rgb(0,0,0)" stroke="none" paint-order="stroke fill markers" d=" M 0.334 -0.302 L 0.3 -0.165 Q 0.28300000000000003 -0.097 0.28300000000000003 -0.077 Q 0.28300000000000003 -0.025 0.32 -0.014 Q 0.328 -0.011 0.338 -0.011 Q 0.388 -0.011 0.429 -0.061 Q 0.456 -0.093 0.47100000000000003 -0.14200000000000002 Q 0.47400000000000003 -0.153 0.484 -0.153 Q 0.496 -0.153 0.496 -0.14300000000000002 Q 0.496 -0.11800000000000001 0.465 -0.07100000000000001 Q 0.41100000000000003 0.011 0.336 0.011 Q 0.268 0.011 0.23700000000000002 -0.046 Q 0.231 -0.055 0.228 -0.065 Q 0.20400000000000001 -0.017 0.162 0.002 Q 0.14300000000000002 0.011 0.123 0.011 Q 0.063 0.011 0.039 -0.024 Q 0.029 -0.037 0.029 -0.055 Q 0.029 -0.092 0.061 -0.107 Q 0.07200000000000001 -0.113 0.084 -0.113 Q 0.114 -0.113 0.12 -0.088 Q 0.121 -0.083 0.121 -0.078 Q 0.121 -0.044 0.08700000000000001 -0.028 Q 0.081 -0.025 0.074 -0.024 Q 0.095 -0.011 0.124 -0.011 Q 0.177 -0.011 0.20800000000000002 -0.082 Q 0.214 -0.097 0.219 -0.115 Q 0.273 -0.319 0.273 -0.353 Q 0.267 -0.41500000000000004 0.219 -0.42 Q 0.167 -0.42 0.124 -0.367 L 0.124 -0.366 Q 0.124 -0.365 0.123 -0.365 Q 0.108 -0.34500000000000003 0.096 -0.319 Q 0.091 -0.307 0.08700000000000001 -0.295 L 0.085 -0.289 Q 0.083 -0.278 0.07200000000000001 -0.278 Q 0.06 -0.278 0.06 -0.28800000000000003 Q 0.06 -0.313 0.092 -0.36 Q 0.146 -0.442 0.221 -0.442 Q 0.298 -0.442 0.329 -0.366 Q 0.361 -0.428 0.41400000000000003 -0.44 Q 0.424 -0.442 0.434 -0.442 Q 0.493 -0.442 0.517 -0.40900000000000003 Q 0.527 -0.395 0.527 -0.376 Q 0.527 -0.335 0.49 -0.321 Q 0.481 -0.318 0.47300000000000003 -0.318 Q 0.442 -0.318 0.436 -0.34500000000000003 Q 0.435 -0.34900000000000003 0.435 -0.353 Q 0.435 -0.383 0.464 -0.4 Q 0.47300000000000003 -0.405 0.483 -0.40700000000000003 Q 0.462 -0.42 0.433 -0.42 Q 0.365 -0.42 0.337 -0.314 Q 0.335 -0.308 0.334 -0.302 Z"/></g></g><g transform="scale(67,67)"><g transform="translate(19.791044776119403,6.3265223880597015)"><path fill="rgb(0,0,0)" stroke="none" paint-order="stroke fill markers" d=" M 0.486 -0.381 L 0.39 0.001 Q 0.366 0.099 0.28300000000000003 0.16 Q 0.222 0.20500000000000002 0.156 0.20500000000000002 Q 0.089 0.20500000000000002 0.061 0.159 Q 0.05 0.14 0.05 0.11800000000000001 Q 0.05 0.067 0.091 0.055 Q 0.099 0.053 0.106 0.053 Q 0.138 0.053 0.14200000000000002 0.081 Q 0.14300000000000002 0.084 0.14300000000000002 0.088 Q 0.14300000000000002 0.111 0.123 0.129 Q 0.109 0.14100000000000001 0.08 0.14100000000000001 Q 0.098 0.183 0.156 0.183 Q 0.218 0.183 0.266 0.12 Q 0.305 0.068 0.328 -0.021 Q 0.329 -0.025 0.331 -0.034 Q 0.28600000000000003 0.011 0.23 0.011 Q 0.15 0.011 0.121 -0.048 Q 0.108 -0.074 0.108 -0.108 Q 0.108 -0.163 0.161 -0.305 Q 0.163 -0.311 0.166 -0.318 Q 0.183 -0.364 0.183 -0.388 Q 0.183 -0.42 0.158 -0.42 Q 0.10300000000000001 -0.42 0.068 -0.329 L 0.068 -0.328 Q 0.062 -0.313 0.057 -0.296 Q 0.046 -0.279 0.041 -0.278 Q 0.029 -0.278 0.029 -0.28800000000000003 Q 0.029 -0.306 0.05 -0.35100000000000003 Q 0.094 -0.442 0.161 -0.442 Q 0.214 -0.442 0.23500000000000001 -0.397 Q 0.243 -0.38 0.243 -0.36 Q 0.243 -0.339 0.223 -0.28800000000000003 Q 0.17200000000000001 -0.156 0.17200000000000001 -0.092 Q 0.17200000000000001 -0.011 0.234 -0.011 Q 0.292 -0.011 0.335 -0.073 Q 0.34500000000000003 -0.088 0.34700000000000003 -0.096 L 0.392 -0.276 Q 0.399 -0.309 0.41200000000000003 -0.356 Q 0.422 -0.399 0.426 -0.41000000000000003 Q 0.439 -0.431 0.461 -0.431 Q 0.486 -0.426 0.49 -0.404 Q 0.49 -0.395 0.486 -0.381 Z"/></g></g></g></g></svg>
+            <p>The three sides and diagonal of the rectange above are strictly increasing with time. At the instant when \(x=4\) and \(y=3\), 
+                \(\dfrac{dx}{dt}=\dfrac{dz}{dt}\) and \(\dfrac{dy}{dt}=k\dfrac{dz}{dt}\). What is the value of \(k\) at that instant? 
+            </p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+
+                \(\dfrac{1}{4}\)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \( \dfrac{1}{3}\)
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(3\)
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(4\)
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <p>The relationship between the three variables can be described using the pythagorean theorem: </p>
+            $$ x^2+y^2=z^2 $$
+            <p>If we take the derivative of both sides with respect to time, we get:</p>
+            $$ 2x\frac{dx}{dt}+2y\frac{dy}{dz} = 2z\frac{dz}{dt} $$
+            <p>Simplify by dividing each term by 2.</p>
+            $$ x\frac{dx}{dt}+y\frac{dy}{dz} = z\frac{dz}{dt} $$
+            <p>We can substitute values for \(\dfrac{dx}{dt}\) and \(\dfrac{dy}{dt}\) so that we have an equation with only \(\dfrac{dz}{dt}\).</p>
+            $$ x\left(\frac{dz}{dt}\right)+y\left(k\frac{dz}{dt}\right)=z\frac{dz}{dt} $$
+            <p>Simplify by dividing each term by \(\dfrac{dz}{dt}\).</p>
+            $$ x+ky=z $$
+            <p>At the instant \(x=4\) and \(y=3\), the hypotenuse is \(z=5\). (3, 4, 5 is a common pythagorean triplet)</p>
+            $$ 4+k(3)=5 $$
+            $$ 3k = 1 $$
+            $$ k = \boxed{\frac{1}{3}} $$
+        </div>
+    </main>
+</body>
+</html>
