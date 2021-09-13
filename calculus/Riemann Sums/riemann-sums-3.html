@@ -12,7 +12,17 @@
 <body id='riemann-sums'>
     <main id="3">
         <div id='question-container'>
-           
+            $$
+            \begin{array} {|c||c|c|c|c|}  \hline 
+            t \text{ (hours)} & 4 & 7 & 12 & 15 \\ \hline
+            R(t) \text{ (liters/hour)} & 6.5 & 6.2 & 5.9 & 5.6 \\ \hline
+ 
+            \end{array}
+                $$         
+                <p>A tank contains 30 liters of oil at time \(t=4\) hours. Oil is being pumped into the tank at a rate \(R(t)\), where \(R(t)\)
+                    is measured in liters per hour, and \(t\) is measured in hours. Selected values of \(R(t)\) are given in the table above. Using a 
+                    right Riemann sum with three subintervals and data from the table, what is the approximation of the number of liters of oil that are in the tank at time \(t=15\) hours?
+                </p>
 
                      
         </div>
@@ -21,28 +31,28 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(44.9\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    \(48.2\)
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    \(94.9\)
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    \(98.2\)
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -53,7 +63,71 @@
             <button id='skip'>Skip Question</button>
         </div>
         <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
 
+            <p>The amount of oil at \(t=15\) is equal to the amount of oil at \(t=4\) plus \( \int \limits_4^{15} R(t) &nbsp dt \). We are not given the equation of \(R(t)\), but we can estimate the value of the definite integral using a right Riemann sum.</p>
+            <p>The right Riemann sum can be visualized below: </p>
+            <div style="text-align: center;">
+                <embed width="700" height="400" src="../../d.svg" 
+              script=
+              '
+              setBorder(1);
+              initPicture(-1,18,-1,8);
+              
+              
+            
+              strokewidth="2"
+              a=[4,6.5]
+              b=[7,6.2]
+              c=[12,5.9]
+              d=[15,5.6]
+                line([7,6.2],[7,0])
+                line([4,6.2],[4,0])
+                line([4,6.2],[7,6.2])
+
+                line(c,[12,0])
+                line(c,[7,5.9])
+                line(d,[15,0])
+                line(d,[12,5.6])
+
+            path([a,b,c,d])
+              dot([4,6.5],"closed")
+              dot([7,6.2],"closed")
+              dot([12,5.9],"closed")
+              dot([15,5.6],"closed")
+            
+              fontstyle="normal"
+              text([4,7],"(4, 6.5)")
+              text([7,6.8],"(7, 6.2)")
+              text([12,6.4],"(12, 5.9)")
+              text([15.3,6.2],"(15, 5.6)")
+
+            
+              marker="arrow"
+              line([-2,0],[16,0])
+              line([0,-2],[0,7])
+            
+              fontstyle="italic"
+              text([16.3,0,],"t")
+              text([0,7.5,"above"],"R(t)")
+            
+            
+
+            
+            
+              '
+              
+              > 
+              </div>
+              <p>The areas of the three regions:</p>
+              $$ \sum^3_{i=1} \Delta x \cdot f(x_i) $$ 
+              $$ = (7-4)\cdot6.2 + (12-7)\cdot5.9+ (15-12)\cdot 5.6 $$
+              $$ = 64.9 $$
+              <p>Putting it all together:</p>
+              $$ 30 \text{ liters} +  \int \limits_4^{15} R(t) &nbsp dt  $$ 
+              $$ \approx 30 \text{ liters} + \sum^3_{i=1} \Delta x \cdot f(x_i) $$ 
+              $$ = 30 + 64.9 $$
+              $$ = \boxed{94.9} $$
         </div>
     </main>
 </body>

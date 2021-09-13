@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Related Rates Question 3</title>
+    <title>Continuity and Differentiability Question 1</title>
     <script src="../../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
@@ -9,14 +9,11 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
     <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
 </head>
-<body id='related-rates'>
-    <main id="3">
+<body id='continuity-and-differentiability'>
+    <main id="1">
         <div id='question-container'>
-           <p>An ice sculpture in the form of a sphere melts in such a way that it maintains its spherical shape. The volume of the sphere is decreasing
-               at a constant rate of \(2\pi\) cubic meters per hour. At what rate, in square meters per hour, is the surface area of the sphere decreasing at the moment 
-               when the radius is 5 meters? 
-           </p>
-           <p>Note: For a sphere of radius \(r\), the surface area if \(4\pi r^2\) and the volume is \(\frac{4}{3}\pi r^3\).</p>
+           <p>Let \(f\) be the function defined by \(f(x)=\sqrt{|x+3|}\) for all \(x\). Which of the following statements is true?</p>
+
                      
         </div>
         <hr>
@@ -24,30 +21,28 @@
             <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-                    \(\dfrac{4\pi}{5}\)
+                    \(f\) is continuous but not differentiable at \(x=-3\).
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    \(40\pi\)
-                    
+                    \(f\) is differentiable at \(x=-3\).
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-                    \(80\pi^2\)
-
+                    \(f\) is not continuous at \(x=-3\).
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-\(100\pi\)
+                    \(\lim\limits_{x\to -3}f(x)\neq 0\)
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -59,31 +54,21 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-            <p>In the question, we need to find the change in the surface area. We are given the radius and the change in the volume.</p>
-            <p>We can start by deriving equations for the change in the surface area and the change in volume.</p>
+            <p>Absolute value functions are continuous. Square root functions are continous for positive inputs. </p>
+            <p>We can estimate the left and right hand limits by choosing points close to \(-3\)</p>
             <div style="columns: 2;">
-            <center>Surface Area</center>
-                $$ A = 4\pi r^2 $$
-                $$ \frac{dA}{dt}=8\pi r\frac{dr}{dt} $$
-            <center>Volume</center>
-            $$ V=\frac{4}{3}\pi r^3 $$
-            $$ \frac{dV}{dt}=4\pi r^2 \frac{dr}{dt} $$
+                <center>Left handed limit</center>
+            $$ \lim\limits_{x\to -3^-} \approx f(-3.01) $$
+            $$ f(-3.01) = \sqrt{|-3.01+3|} $$
+            $$ = \sqrt{.01} $$
+            <center>Right handed limit</center>
+            $$ \lim\limits_{x\to -3^+} \approx f(-2.99) $$
+            $$ f(-2.99) = \sqrt{|-2.99+3|} $$
+            $$ = \sqrt{.01} $$
             </div>
-            <p>To obtain \(\frac{dA}{dt}\), we will need to find \(\frac{dr}{dt}\). Although this value is not given, we can substitute the value from our other equation.</p>
-            <p>Solving for \(\frac{dr}{dt}\)</p>
-            $$ \frac{dV}{dt}=4\pi r^2 \frac{dr}{dt} $$
-            $$ \frac{dr}{dt}= \frac{\frac{dV}{dt}}{4\pi r^2} $$
-            <p>Substituting this value into our change in surface area equation:</p>
-            $$ \frac{dA}{dt}=8\pi r\frac{dr}{dt} $$
-            $$ \frac{dA}{dt}=8\pi r \left(\frac{\frac{dV}{dt}}{4\pi r^2} \right) $$
-            $$ \frac{dA}{dt}= \frac{2\frac{dV}{dt}}{r} $$
-            <p>We are told that at the moment, the radius is 5 and the volume is decreasing at a rate of \(2\pi\). </p>
-            $$ \frac{dA}{dt} = \frac{2(-2\pi)}{5} $$
-            $$ \frac{dA}{dt} = -\frac{4\pi}{5} $$
-            <p>The surface area is decreasing at a rate of \(\boxed{\frac{4\pi}{5}}\)</p>
-            <div class="explanation-header1">Sidenote</div>
-            <p>Units are quite important for related rates problems. Generally, but not always, they can be ignored because the units given correspond to each other. </p>
-            <p>For this specific problem, all given rates and values used meters and hours.</p>
+            <p>The limit exists because the left and right handed limits are equal. The limit appears to be approaching \(0\).</p>
+            <p>Similarly, \(f\) is continuous because \(f(-3)=0\) which equals the limit. </p>
+            <p>Absolute value functions are not differentiable at their vertex.  </p>
         </div>
     </main>
 </body>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Limit Properties Question 3</title>
+    <script src="../../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='basic-limit-properties'>
+    <main id="3">
+        <div id='question-container'>
+            <div style="text-align: center;">
+                <embed width="380" height="380" src="../../d.svg" 
+              script=
+              '
+              setBorder(1);
+              initPicture(-2,8,-2,8);
+              
+            
+             
+              
+        
+            
+              fontsize="20"
+              fontstyle="normal"
+              text([1,-.3],"1",below)
+              text([2,-.3],"2",below)
+              text([3,-.3],"3",below)
+              text([4,-.3],"4",below)
+              text([5,-.3],"5",below)
+              text([6,-.3],"6",below)
+ 
+              text([-.3,1],"1",left)
+              text([-.3,2],"2",left)
+              text([-.3,3],"3",left)
+              text([-.3,4],"4",left)
+              text([-.3,5],"5",left)
+              text([-.3,6],"6",left)
+strokewidth="2"
+
+                plot("-3x+8",1,1.95)
+               plot("x",2.06,3)
+               plot("x^2-6x+12",3,3.95)
+               plot("-.2x^2+x+4",4,6)
+               marker="arrow"
+               line([-.7,0],[7,0])
+               line([0,-.7],[0,7])
+            strokewidth="1"
+              
+              marker="arrow"
+              line([-.7,0],[7,0])
+              line([0,-.7],[0,7])
+              fontstyle="italic"
+              text([7,0],"x",right)
+              text([0,7],"y",above)
+            
+              marker="none"
+            strokedasharray = " 10 10"
+            line([1,-.2],[1,6.5])
+            line([2,-.2],[2,6.5])
+            line([3,-.2],[3,6.5])
+            line([4,-.2],[4,6.5])
+            line([5,-.2],[5,6.5])
+            line([6,-.2],[6,6.5])
+            
+            line([-.3,1],[6.5,1])
+            line([-.3,2],[6.5,2])
+            line([-.3,3],[6.5,3])
+            line([-.3,4],[6.5,4])
+            line([-.3,5],[6.5,5])
+            line([-.3,6],[6.5,6])
+            dot([2,1],"closed")
+            dot([2,2],"open")
+            dot([1,5],"closed")
+            dot([4,4],"open")
+            dot([4,4.8],"closed")
+            dot([6,2.8],"closed")
+              '
+              > 
+              </div>
+
+           <p>The graph of the function \(f\) is shown above. Which of the following statements is false?</p>          
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( \lim\limits_{x \to 2}f(x) \text{ exists.}\)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \( \lim\limits_{x \to 3}f(x) \text{ exists.}\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( \lim\limits_{x \to 4}f(x) \text{ exists.}\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    The function \(f\) is continuous at \(x=3\).
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>For \(\lim\limits_{x\to 4}f(x) \) to exist, the left and right side limits need to equal each other.</p>
+
+<div style="text-align: center;">
+    <embed width="380" height="380" src="../../d.svg" 
+  script=
+  '
+  setBorder(1);
+  initPicture(-2,8,-2,8);
+  
+
+ 
+  
+
+
+  fontsize="20"
+  fontstyle="normal"
+  text([1,-.3],"1",below)
+  text([2,-.3],"2",below)
+  text([3,-.3],"3",below)
+  text([4,-.3],"4",below)
+  text([5,-.3],"5",below)
+  text([6,-.3],"6",below)
+
+  text([-.3,1],"1",left)
+  text([-.3,2],"2",left)
+  text([-.3,3],"3",left)
+  text([-.3,4],"4",left)
+  text([-.3,5],"5",left)
+  text([-.3,6],"6",left)
+strokewidth="2"
+
+    plot("-3x+8",1,1.95)
+   plot("x",2.06,3)
+   plot("x^2-6x+12",3,3.95)
+   plot("-.2x^2+x+4",4,6)
+   marker="arrow"
+   line([-.7,0],[7,0])
+   line([0,-.7],[0,7])
+strokewidth="1"
+  
+  marker="arrow"
+  line([-.7,0],[7,0])
+  line([0,-.7],[0,7])
+  fontstyle="italic"
+  text([7,0],"x",right)
+  text([0,7],"y",above)
+
+  marker="none"
+strokedasharray = " 10 10"
+line([1,-.2],[1,6.5])
+line([2,-.2],[2,6.5])
+line([3,-.2],[3,6.5])
+line([4,-.2],[4,6.5])
+line([5,-.2],[5,6.5])
+line([6,-.2],[6,6.5])
+
+line([-.3,1],[6.5,1])
+line([-.3,2],[6.5,2])
+line([-.3,3],[6.5,3])
+line([-.3,4],[6.5,4])
+line([-.3,5],[6.5,5])
+line([-.3,6],[6.5,6])
+dot([2,1],"closed")
+dot([2,2],"open")
+dot([1,5],"closed")
+dot([6,2.8],"closed")
+stroke="red"
+dot([4,4],"open")
+dot([4,4.8],"closed")
+
+  '
+  > 
+  </div>
+  $$ \lim\limits_{x\to 4^-}f(x) = \lim\limits_{x\to 4^+}f(x) $$
+  $$ 4 \neq 4.8 $$
+        </div>
+    </main>
+</body>
+</html>

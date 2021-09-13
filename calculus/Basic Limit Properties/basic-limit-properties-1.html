@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Riemann Sums Question 4</title>
+    <title>Basic Limit Properties Question 1</title>
     <script src="../../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
@@ -9,21 +9,12 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
     <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
 </head>
-<body id='riemann-sums'>
-    <main id="4">
+<body id='basic-limit-properties'>
+    <main id="1">
         <div id='question-container'>
+            \( \lim \limits_{x \to 1} \dfrac{2\cdot \ln(x)}{e^x-1}\)
            
-            $$
-            \begin{array} {|c||c|c|c|c|}  \hline 
-            x & 0 & 2 & 4 & 6 \\ \hline
-            f(x) & 4 & k & 8 & 12 \\ \hline
 
-            \end{array}
-                $$   
-            
-                <p>The function \(f\) is continuous on the closed interval \([0,6]\) and has the values given in the table above. The trapezoidal approximation for \( \int \limits_0^6 f(x) &nbsp dx\) found with 3 subintervals of equal length is 52.
-                    What is the value of \(k\) ? 
-                 </p>
                      
         </div>
         <hr>
@@ -31,28 +22,28 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-                 \(2\)
+                    \(\dfrac{2}{e} \)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    \(6\)
+                \(1 \)      
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-                     \(10\)
+                    \(0\)
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-                  \(20\)
+Nonexistent
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -63,72 +54,13 @@
             <button id='skip'>Skip Question</button>
         </div>
         <div id='explanation' style="display: none;">
-            <div class="explanation-header1">Approach 
-            </div>
-            
-                <p>It may be helpful to draw a quick sketch of the given points. The trapezoidal approximation is the sum of the areas of the three trapezoids shown below. 
-                    The area of a trapezoid is the product of the average of the base lengths and the height.</p>
-                $$ A = \frac{1}{2}(b_1+b_2)h $$
-                <p>Since the height \(h\) of the trapezoids are 2 units each, the area of each trapezoid will just be the sum of the bases.</p>
-                $$ A = \frac{1}{2}(b_1+b_2)(2) $$
-                $$ A = b_1+b_2 $$
-                <p> The lengths of the bases correspond to the \(y\)-values of the coordinates.</p>
-            
-<div style="text-align: center;">
-    <embed width="700" height="500" src="../../d.svg" 
-  script=
-  '
-  setBorder(1);
-  initPicture(-4,11,-2,14);
-  
-  
+            <div class="explanation-header1">Approach</div>
+            $$ \lim \limits_{x \to 1} \frac{2\cdot \ln(x)}{e^x-1}$$
+            $$ = \frac{2\ln(1)}{e^1-1} $$
+            $$ = \frac{2(0)}{e-1} $$
+            $$ = \frac{0}{e-1} $$
+            $$ = \boxed{0} $$
 
-  strokewidth="2"
-  
-
-  dot([0,4],"closed")
-  dot([2,10],"closed")
-  dot([4,8],"closed")
-  dot([6,12],"closed")
-
-  fontstyle="normal"
-  text([-1,4],"(0,4)")
-  text([2,11],"(2,k)")
-  text([3.8,9.3],"(4,8)")
-  text([7,12],"(6,12)")
-  text([1,4],"4+k")
-  text([3,5],"k+8")
-  text([5,5],"8+12")
-
-  marker="arrow"
-  line([-2,0],[10,0])
-  line([0,-2],[0,14])
-
-  fontstyle="italic"
-  text([10,-1,],"x")
-  text([-1,13,],"y")
-
-
-  strokewidth="1"
- marker="none"
-  line([0,4],[2,10])
-  line([2,10],[4,8])
-  line([4,8],[6,12])
-  line([2,0],[2,10])
-  line([4,8],[4,0])
-  line([6,0],[6,12])
-
-
-  '
-  
-  > 
-  </div>
-
-  <p>The sum of the areas need to be equal to 52 as stated in the problem.</p>
-  $$ 4+k + k+8  +8+12 = 52 $$
-  $$ 2k+32=52 $$
-  $$ 2k = 20 $$
-  $$ k = \boxed{10} $$
         </div>
     </main>
 </body>
