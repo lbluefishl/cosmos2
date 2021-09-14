@@ -12,8 +12,12 @@
 <body id='continuity-and-differentiability'>
     <main id="1">
         <div id='question-container'>
-           
-
+           $$ f(x) = \begin{cases}
+            x+5 & x\lt -2 \\
+            x^2+2x+3 & x \geq -2 
+           \end{cases}
+           $$
+            <p>Let \(f\) be the function defined above. Which of the following statements about \(f\) is true? </p>
                      
         </div>
         <hr>
@@ -21,13 +25,14 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(f\) is continuous and differentiable at \(x=-2\).
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    \(f\) is continuous but not differentiable at \(x=-2\).
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -35,6 +40,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \(f\) is differentiable but not continuous at \(x=-2\).
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -42,7 +48,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    \(f\) is defined but is neither continuous nor differentiable at \(x=-2\).
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -54,6 +60,49 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
+            <p>We can check for continuity at \(x=-2\) if the three hold true:</p>
+            <ol>
+            <li>The limit at \(x=-2\) exists.</li>
+            <li>\(f(-2)\) exists.</li>
+            <li>The limit at \(x=-2\) is equal to \(f(-2)\).</li>
+            </ol>
+            <p>The piecewise function is defined by a line and parabola. We first check that the limit exists by comparing the left and right hand limits.</p>
+            <div style="columns: 2;">
+            <center>Left-hand Limit</center>
+                $$ \lim\limits_{x\to -2^-}f(x) = x+5\Big|_{x=-2}$$
+                $$ = -2+5 $$
+                $$ = 3 $$
+            <center>Right-hand Limit</center>
+            $$ \lim\limits_{x\to -2^+}f(x) = x^2+2x+3\Big|_{x=-2}$$
+            $$ = (-2)^2+2(-2)+3 $$
+            $$ = 3 $$
+            </div>
+            <p>Because \(\lim\limits_{x\to-2^-}f(x) = \lim\limits_{x\to-2^+}f(x)\), &nbsp\(\lim\limits_{x \to -2} = 3\).</p>
+            <p>\(f(-2)\) can be found and is defined on the parabola.</p>
+            $$ f(-2)=(-2)^2+2(-2)+3 $$
+            $$ f(-2)=3 $$
+            <p>The limit and \(f(-2)\) are equal, which means that \(f\) is continuous at \(x=-2\).</p>
+            <p>To check for differentiability, we use the same process but must find the derivative of \(f\) first.</p>
+            $$ f(x) = \begin{cases}
+            x+5 & x\lt -2 \\
+            x^2+2x+3 & x \geq -2 
+           \end{cases}
+           $$
+           $$ f'(x)=\begin{cases}
+           1 & x\lt -2 \\
+           2x+2 & x \geq -2 \end{cases}
+           $$
+           <div style="columns: 2;">
+            <center>Left-hand Limit</center>
+                $$ \lim\limits_{x\to -2^-}f'(x) = 1\Big|_{x=-2}$$
+                $$ = 1 $$
+              &nbsp
+            <center>Right-hand Limit</center>
+            $$ \lim\limits_{x\to -2^+}f'(x) = 2x+2\Big|_{x=-2}$$
+            $$ = 2(-2)+2 $$
+            $$ = -2 $$
+            </div>
+            <p>Because the left and right hand limits of the derivative do not equal each other, \(f\) is not differentiable at \(x=-2\).</p>
 
         </div>
     </main>
