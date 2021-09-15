@@ -13,7 +13,7 @@
     <main id="1">
         <div id='question-container'>
            
-
+            <p>Let \(f\) be the function with derivative given by \(f'(x)=x^2-\dfrac{2}{x}\). On which of the following intervals is \(f\) decreasing?</p>
                      
         </div>
         <hr>
@@ -21,21 +21,23 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \((-\infty,0]    \) only
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    \((-\infty,\sqrt[3]{2}]    \) only
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    \((0,\sqrt[3]{2}]    \) only
+                    
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
@@ -43,6 +45,7 @@
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
 
+                    \( [\sqrt[3]{2},\infty)   \)
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -54,7 +57,26 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <p>We need to find values of \(x\) that result in \(f'(x)\) being 0 or undefined. We can do this much easier if we rewrite the equation:</p>
+            $$ f'(x)=x^2-\frac{2}{x} $$
+            $$ f'(x)=\frac{x^3}{x}-\frac{2}{x} $$
+            $$ f'(x)=\frac{x^3-2}{x} $$
+            <p>When the numerator is equal to zero, \(f'(x)=0\). \(x=0\) will also be a critical point since it makes the denominator 0.
+            </p>
+            $$ x^3-2=0 $$
+            $$ x^3=2 $$
+            $$ x=\sqrt[3]{2} $$
+            <p>The table below summarizes testing of the three intervals determined by the critical numbers.</p>
+            $$ \begin{array}{|c|c|c|c|} \hline
+            \text{Interval} & -\infty \lt x \lt 0 & 0 \lt x \lt \sqrt[3]{2} & \sqrt[3]{2} \lt x \lt \infty \\ \hline
+            \text{ Test Value} & x=-1 & x=1 & x= 2 \\ \hline
+            \text{ Sign of }f'(x) & f'(-1) \gt 0 & f'(1) \lt 0 & f'(2) \gt 0 \\ \hline
+            \text{Conclusion} & \text{Increasing} & \text{Decreasing} & \text{Increasing} \\ \hline
+            \end{array} $$
+            <p>\(f\) is therefore decreasing on \(\boxed{(0,\sqrt[3]{2}]}\).</p>
+            <div class="explanation-header1">Sidenote</div>
+            <p>Should increasing or decreasing intervals use brackets or parenthesis? It depends, though usually you won't have to worry about it since only one answer choice will have the correct values. </p>
+            <p>Check out this <a href="https://www.themathdoctors.org/open-or-closed-intervals-it-depends/" target="blank">detailed post</a> if you want to dive down the rabbit hole.</p>
         </div>
     </main>
 </body>

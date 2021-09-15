@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Derivatives Question 4</title>
+    <title>Modeling with Differential Equations Question 1</title>
     <script src="../../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
@@ -9,20 +9,18 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
     <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
 </head>
-<body id='derivatives'>
-    <main id="4">
+<body id='modeling-with-differential-equations'>
+    <main id="1">
         <div id='question-container'>
-            <p>
-                If \(f(x)=\cos^2{3x} \) , then \(f'(x)=\)
-                </p>
+           
+
                      
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container c'>
+            <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-                    \( -6\sin{3x}\cos{3x}\)
 
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
@@ -30,7 +28,6 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-      \( -2\cos{x}\sin{x}\)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -38,7 +35,6 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-                    \( -2\cos{3x}\)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -46,7 +42,6 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-                    \( 6\cos{3x}\)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -58,40 +53,8 @@
             <button id='skip'>Skip Question</button>
         </div>
         <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
 
-
-            <div class="explanation-header1"> Approach 1 </div>
-
-            <p>
-            First, use the chain rule to deal with the exponent. One way to visualize this would be to set \(u=\cos{3x}\), allowing us to use the exponent rule.</p>
-            $$\frac{d}{dx}(\cos^2{3x}) = \frac{d}{dx}(u^2) = 2u^{2-1}\cdot \frac{du}{dx} = 2u\cdot\frac{du}{dx}$$
-            
-           <p> To obtain \(\frac{du}{dx}\), we must use chain rule again. We can set \(w=3x\) and use the derivative rule for \(\cos{w}\).</p>
-            $$\frac{du}{dx}=\frac{d}{dx}(\cos{3x})=\frac{d}{dx}(\cos{w})=-\sin{w}\cdot\frac{dw}{dx} $$
-           <p> The constant rule is shown below to find our last piece of information.</p>
-            $$ \frac{dw}{dx}=\frac{d}{dx}(3x)=3 $$
-            <p>Putting everything together,</p>
-            $$\frac{d}{dx}(\cos^2{3x})=2\cdot\cos{3x}\cdot-\sin{3x}\cdot3 $$
-            $$ = \boxed{-6\sin{3x}\cos{3x}} $$
-          
-            
-            
-            <div class="explanation-header1">Approach 2</div>
-            
-            <p>We can apply the chain rule multiple times through composition of functions.</p>
-            
-            
-            <p>For this question, </p>
-            $$f(x)=3x \text{  &nbsp;&nbsp; and &nbsp;&nbsp;  } f'(x)=3$$
-            $$g(x)=\cos{x} \text{ &nbsp;&nbsp;  and  &nbsp;&nbsp; } g'(x)=-\sin{x}$$
-            $$h(x)=x^2 \text{ &nbsp;&nbsp;  and &nbsp;&nbsp;  } h'(x)=2x$$
-            $$k(x)=h\Big(g\big(f(x)\big)\Big)$$
-            
-            <p>Applying the chain rule twice,</p>
-            $$ k'(x)=h'\Big(g\big(f(x)\big)\Big)\cdot g'\big(f(x)\big)\cdot f'(x)) $$
-            $$={h'(\cos{3x})}\cdot g'(3x) \cdot f'(x) $$
-            $$= 2\cos{3x}\cdot-3\sin{3x}\cdot3 $$
-            $$ = \boxed{-6\sin{3x}\cos{3x}} $$
         </div>
     </main>
 </body>

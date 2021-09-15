@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Derivatives Question 1</title>
+    <title>Derivative Rules Question 5</title>
     <script src="../../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
@@ -9,13 +9,10 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
     <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
 </head>
-<body id='derivatives'>
-    <main id="10">
+<body id='derivative-rules'>
+    <main id="5">
         <div id='question-container'>
-            <p>
-                If \(f(x)=\ln(\sqrt{x})\), then \(f''(x)=\)
-                </p>
-                
+           
 
                      
         </div>
@@ -24,15 +21,13 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-                    \( -\dfrac{2}{x^2} \) 
 
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container c'>
+            <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-      \( -\dfrac{1}{2x^2} \) 
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -40,7 +35,6 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-                    \( -\dfrac{1}{2x} \) 
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -48,7 +42,6 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-                    \( \dfrac{2}{x^2} \) 
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -57,26 +50,11 @@
         <div id='button-container'>
             <button id='summary'>Summary</button>
             <button id='submit'>Submit</button>
-            <!--<button id='skip'>Skip Question</button>-->
+            <button id='skip'>Skip Question</button>
         </div>
         <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
 
-
-            <div class="explanation-header1"> Approach </div>
-
-            <p>
-            Rewrite \(f(x)\) into fractional exponent form.</p>
-            $$ f(x)=\ln(\sqrt{x})=\ln{x^{\frac{1}{2}}} $$
-            $$ f(x)= \frac{1}{2}\ln{x}  \tag*{\tiny log of power rule}$$
-            <p>Calculating the first derivative,</p>
-            $$ f'(x)= \frac{1}{2}\cdot \frac{1}{x} $$
-            $$ f'(x)= \frac{1}{2x} $$
-            <p>Again, rewrite into fractional exponent form to calculate the second derivative,</p>
-            $$ f''(x)=\frac{1}{2}x^{-1} $$
-            $$ =-1 \cdot \frac{1}{2} \cdot x^{-2} $$
-            $$ = \boxed{-\frac{1}{2x^2}}$$
-            
-            </p>
         </div>
     </main>
 </body>

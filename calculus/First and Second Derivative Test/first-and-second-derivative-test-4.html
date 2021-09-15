@@ -12,37 +12,117 @@
 <body id='first-and-second-derivative-test'>
     <main id="1">
         <div id='question-container'>
-           
+           The function \(f\) has the property that \(f(x)\), \(f'(x)\), and \(f''(x)\) are negative for all real values \(x\). Which of the following could be the graph of \(f\) ? 
 
                      
         </div>
         <hr>
-        <div id='choices-container'>
+        <div id='choices-container' >
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    <div style="text-align: center;">
+                        <embed width="300" height="300" src="../../d.svg" 
+                      script=
+                      '
+                      setBorder(1);
+                      initPicture(-10,11,-10,11);
+                      
+                     
+                      strokewidth="2"
+          
+                      plot("1.2^x",-8,8)
+                      marker="arrow"
+                      line([-8,0],[8,0])
+                      line([0,-8],[0,8])
+                      
+                      text([8,0],"x",right)
+                      text([0,8],"y",above)
+                      text([-1,-1],"O")
+                      '
+                      > 
+                      </div>
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    <div style="text-align: center;">
+                        <embed width="300" height="300" src="../../d.svg" 
+                      script=
+                      '
+                      setBorder(1);
+                      initPicture(-10,11,-10,11);
+                      
+                      strokewidth="2"
+                      plot("-.25x^2-3",-4,4)
+                      
+                      marker="arrow"
+                      line([-8,0],[8,0])
+                      line([0,-8],[0,8])
+                      
+                      text([8,0],"x",right)
+                      text([0,8],"y",above)
+                      text([-1,-1],"O")
+                      '
+                      > 
+                      </div>  
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    <div style="text-align: center;">
+                        <embed width="300" height="300" src="../../d.svg" 
+                      script=
+                      '
+                      setBorder(1);
+                      initPicture(-10,11,-10,11);
 
+                      strokewidth="2"
+                      plot("-cbrt(x)",-7,7)
+                      
+                      
+                      
+                      marker="arrow"
+                      line([-8,0],[8,0])
+                      line([0,-8],[0,8])
+                      
+                      text([8,0],"x",right)
+                      text([0,8],"y",above)
+                      text([-1,-1],"O")
+                      '
+                      > 
+                      </div>
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    <div style="text-align: center;">
+                        <embed width="300" height="300" src="../../d.svg" 
+                      script=
+                      '
+                      setBorder(1);
+                      initPicture(-10,11,-10,11);
+                      
+                      
+                      strokewidth="2"
+                      plot("sqrt(-x+10)-5",-8,8)
+                      
+                      marker="arrow"
+                      line([-8,0],[8,0])
+                      line([0,-8],[0,8])
+                      
+                      text([8,0],"x",right)
+                      text([0,8],"y",above)
+                      text([-1,-1],"O")
+                      '
+                      > 
+                      </div>
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -54,7 +134,9 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <p>If \(f(x)\) is negative, all points on the graph should have negative \(y\)-values (Quadrant III and IV only).</p>
+            <p>If \(f'(x)\) is negative, the graph should be decreasing at all intervals.</p>
+            <p>If \(f''(x)\) is negative, the graph should be concave down. The slope should be becoming more negative as \(x\) increases.</p>
         </div>
     </main>
 </body>

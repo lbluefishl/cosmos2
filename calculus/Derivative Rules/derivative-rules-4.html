@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Limits at Infinity Question 1</title>
+    <title>Derivative Rules Question 4</title>
     <script src="../../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
@@ -9,11 +9,14 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
     <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
 </head>
-<body id='limits-at-infinity'>
-    <main id="1">
+<body id='derivative-rules'>
+    <main id="4">
         <div id='question-container'>
-           
-            <p>For \(x\geq 0 \), the horizontal line \(y=4\) is an asymptote for the graph of the function \(f\). Which of the following statements must be true?</p>
+           <p>Let \(f\) and \(g\) be differentiable functions with the following properties:</p>
+
+           $$ \begin{array}{c l} (\text{i}) & g(x) \gt 0 \text{ for all } x  \\
+             (\text{ii}) & f(0) = 1 \end{array} $$
+            <p>If \(h(x)=f(x)g(x) \text{ and }  h'(x)=f(x)g'(x)\), then \(f(x) =\)  </p>
                      
         </div>
         <hr>
@@ -21,29 +24,28 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-                    \(f(0)=4   \)
+                    \( f'(x)\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    \(f(x)\neq 4 \) for all \(x\geq 0\)
+                    \(g(x)\)
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-                    \(\lim\limits_{x\to 4}f(x) = \infty \)
+                    \(0\)
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container c'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-                    \(\lim\limits_{x\to \infty}f(x) = 4 \)
-
+                    \(1\)
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -55,7 +57,17 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-            <p>A horizontal asymptote at \(y=4\) corresponds to a graph which approaches a value of \(y=4\) but never touches it. As the values of \(x\) increase without bound, the values of \(y\) approach 4. </p>
+            <p>In general, for \(h(x)=f(x)g(x)\), we would use the product rule to obtain:</p>
+            $$ h'(x)=f(x)g'(x)+f'(x)g(x) $$
+            <p>Notice that the question specifies that \(h'(x)\) is only equal to the first part of our derivative. For this to be true, the second part has to be equal to zero:</p>
+       $$ \colorbox{yellow}{$h'(x)=f(x)g'(x)$}+\colorbox{chartreuse}{$f'(x)g(x)$} $$
+       $$ \colorbox{chartreuse}{$f'(x)g(x) = 0$} \text {  if  } h'(x)=f(x)g'(x) $$
+       <p>The question specifies that \(g(x)\) is always positive, so \(f'(x)\) must equal 0 so that the entire expression is 0.</p>
+       $$ \colorbox{chartreuse}{$f'(x)g(x) = 0$} $$
+       $$ f'(x)=0 \text{ if } g(x)>0 $$
+       <p>If \(f'(x)=0\), the graph of \(f\) must be a horizontal line.</p>
+       <p>Since \(f(0)=1\), \(f(x)=1\) for all values \(x\).</p>
+
         </div>
     </main>
 </body>

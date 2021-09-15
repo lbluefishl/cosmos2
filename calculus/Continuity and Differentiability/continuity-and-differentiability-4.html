@@ -13,7 +13,7 @@
     <main id="1">
         <div id='question-container'>
            
-
+            <p>If \(f\) is continuous for \(a\leq x \leq b\) and differentiable for \(a\lt x\lt b\), which of the following could be false?</p>
                      
         </div>
         <hr>
@@ -21,28 +21,28 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(  f'(c)=\dfrac{f(b)-f(a)}{b-a} \text{ for some } c \text{ such that } a \lt c \lt b     \)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    \(f'(c)=0 \text{ for some }c \text{ such that } a\lt c \lt b \)
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    \(f \text{ has a minimum value on } a\leq x \leq b \)
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    \(\displaystyle \int\limits_a^b f(x) &nbsp dx \text{ exists.} \)
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -54,7 +54,12 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <p>There is no requirement that the derivative be 0 for a continuous and differentiable function. For example, here is a simple function that is both continuous and differentiable but excludes any points where the derivative is 0:</p>
+            $$ f(x) = x $$
+            $$ f'(x) = 1 \tag*{\scriptsize at all points}$$
+            <p>The first choice is a restatement of the mean value theorem, which is true for all differentiable functions.</p>
+            <p>All functions have a minimum value provided at least one point exists.</p>
+            <p>If a function is continuous, the area under the curve exists and we should be able to integrate the function.</p>
         </div>
     </main>
 </body>

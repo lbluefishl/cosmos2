@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Limits at Infinity Question 1</title>
+    <title>Differentiation Question 7</title>
     <script src="../../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
@@ -9,40 +9,44 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
     <script type="text/javascript" src="../../../scripts/ASCIIsvg.js" defer></script>
 </head>
-<body id='limits-at-infinity'>
-    <main id="1">
+<body id='differentiation'>
+    <main id="7">
         <div id='question-container'>
            
-            <p>For \(x\geq 0 \), the horizontal line \(y=4\) is an asymptote for the graph of the function \(f\). Which of the following statements must be true?</p>
+            If \(f(x)=x\sqrt{2x-3}\), then \(f'(x)=\)
+
                      
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-                    \(f(0)=4   \)
+                    \( \dfrac{3x-3}{\sqrt{2x-3}}\)
+
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    \(f(x)\neq 4 \) for all \(x\geq 0\)
+      \( \dfrac{1}{\sqrt{2x-3}}\)
+                    
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-                    \(\lim\limits_{x\to 4}f(x) = \infty \)
+                    \( \dfrac{-x+3}{\sqrt{2x-3}}\)  
+
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container c'>
+            <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-                    \(\lim\limits_{x\to \infty}f(x) = 4 \)
+                    \( \dfrac{5x-6}{2\sqrt{2x-3}}\) 
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -54,8 +58,35 @@
             <button id='skip'>Skip Question</button>
         </div>
         <div id='explanation' style="display: none;">
-            <div class="explanation-header1">Approach</div>
-            <p>A horizontal asymptote at \(y=4\) corresponds to a graph which approaches a value of \(y=4\) but never touches it. As the values of \(x\) increase without bound, the values of \(y\) approach 4. </p>
+            <div class="explanation-header1"> Approach 1 </div>
+
+            <p>
+            Follow the product rule. </p>
+            $$ \frac{d(uv)}{dx}=u\frac{dv}{dx}+v\frac{du}{dx} $$
+           <p> In our case, \(u=x\) and \(v=\sqrt{2x-3}\).
+            </p>
+            <center>Calculating \(\frac{du}{dx}\) and \(\frac{dv}{dx}\)
+            </center>
+            
+            <div style="columns: 2; vertical-align: top;">
+            
+              &nbsp
+             $$u=x$$
+             $$\frac{du}{dx}=1$$
+            
+             &nbsp
+             $$v=\sqrt{2x-3}=(2x-3)^{\frac{1}{2}}$$
+             $$ \frac{dv}{dx} = \frac{1}{2}(2x-3)^{-\frac{1}{2}}\cdot2 = \frac{1}{\sqrt{2x-3}}$$
+            
+            </div>
+            <p>Substituting the values into the product rule: </p>
+            $$ f'(x)=\frac{d}{dx}(x\sqrt{2x-3})=x\cdot\frac{d}{dx}\sqrt{2x-3}+\sqrt{2x-3}\cdot\frac{d}{dx}x $$
+            $$ f'(x)= x\left(\frac{1}{\sqrt{2x-3}}\right) + \sqrt{2x-3}(1) $$
+            $$ f'(x)= \frac{x}{\sqrt{2x-3}}+\sqrt{2x-3} $$
+            $$ f'(x)= \frac{x}{\sqrt{2x-3}}+\frac{2x-3}{\sqrt{2x-3} }$$
+            $$ f'(x)=\frac{x+2x-3}{\sqrt{2x-3}} $$
+            $$ = \boxed{\frac{3x-3}{\sqrt{2x-3}}}$$
+            </div>
         </div>
     </main>
 </body>

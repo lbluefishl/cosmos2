@@ -13,7 +13,7 @@
     <main id="8">
         <div id='question-container'>
            
-
+            <p>Using the substitution \(u=2x+1\), \(\displaystyle\int\limits_0^2 \sqrt{2x+1} &nbsp dx   \) is equivalent to</p>
                      
         </div>
         <hr>
@@ -21,20 +21,21 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \( \displaystyle \frac{1}{2}\int\limits_{-1/2}^{1/2}\sqrt{u} &nbsp du  \)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    \( \displaystyle \frac{1}{2}\int\limits_0^2 \sqrt{u} &nbsp du   \)
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \( \displaystyle \frac{1}{2}\int\limits_1^5 \sqrt{u} &nbsp du   \)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -42,6 +43,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \( \displaystyle \int\limits_1^5 \sqrt{u} &nbsp du   \)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -55,6 +57,23 @@
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
 
+            $$ u = 2x+1 $$
+            $$ du = 2 &nbsp dx $$
+            $$ dx = \frac{1}{2}&nbsp du $$
+            <div style="columns: 2;">
+                <center>Upper Bound</center>
+                $$x=2$$
+                $$u = 2(2)+1$$
+                $$u = 5$$
+                <center>Lower Bound</center>
+                $$ x=0 $$
+                $$ u = 2(0)+1 $$
+                $$ u = 1 $$
+            </div>
+            <p>Substituting these values into the definite integral:</p>
+            $$ \int\limits_0^2 \sqrt{\colorbox{aqua}{$2x+1$}} &nbsp \colorbox{yellow}{$dx$} $$
+            $$ \int\limits_1^5 \sqrt{\colorbox{aqua}{$u$}} \cdot \colorbox{yellow}{$\frac{1}{2} &nbsp du$} $$
+            $$ = \boxed{\frac{1}{2}\int\limits_1^5 \sqrt{u} &nbsp du} $$
         </div>
     </main>
 </body>
