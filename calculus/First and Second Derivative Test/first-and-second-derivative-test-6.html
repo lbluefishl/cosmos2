@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First and Second Derivative Test Question 6</title>
+    <script src="/scripts/question.js" defer></script>
+    <link rel="stylesheet" href="/styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='first-and-second-derivative-test'>
+    <main id="6">
+        <div id='question-container'>
+           
+            <div style="text-align: center;">
+                <embed width="500" height="300" src="/d.svg" 
+              script=
+              '
+              setBorder(1);
+              initPicture(-10,11,-10,11);
+              
+             
+              strokewidth="2"
+  
+              plot("-2.2^(-x+2)+.8",-.7,8)
+              marker="arrow"
+              line([-8,0],[8,0])
+              line([0,-8],[0,8])
+              
+              text([8,0],"x",right)
+              text([0,8],"y",above)
+              text([-1,1],"O")
+              dot([2.5,0],"closed")
+              fontstyle="normal"
+              text([2.5,-1.6],"3")
+
+              '
+              > 
+              </div>
+                   <p>The graph of a twice-differentiable function \(f\) is shown in the figure above. Which of the following is true?</p>  
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( f(3)\lt f'(3) \lt f''(3)            \)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \( f'(3)\lt f''(3) \lt f(3)            \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( f''(3)\lt f(3) \lt f'(3)            \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( f''(3)\lt f'(3) \lt f(3)            \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>Though we can't obtain the exact values of the first or second derivative, we can obtain the sign.</p>
+            <p>Since the graph of the equation is concave down, \(f''(3)\lt 0\).
+            </p>
+            <p>Since the tangent line to the point has a positive slope, \(f'(3)\gt 0\).</p>
+            <p>The graph gives us the point \((3,0)\), which means \(f(3)=0\).</p>
+        </div>
+    </main>
+</body>
+</html>

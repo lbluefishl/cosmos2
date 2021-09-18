@@ -6,8 +6,10 @@ div.topics-container {
     margin: auto;
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 70%;
     flex-wrap: wrap;
+    justify-items: center;
+    
 }
 
 div.progress {
@@ -17,20 +19,23 @@ div.progress {
     background-color: rgb(174, 209, 211);
     top: 0;
     left: 0;
-    border-radius: 15px;
+    border-radius:40px;
+
     
 }
 
 a.topic {
     margin: 10px;
     border: solid rgb(216, 211, 211);
-    width: 400px;
+    width: 450px;
+    height: 28px;
     text-align: center;
-    border-radius: 15px;
+    padding: auto;
+    border-radius: 40px;
     position: relative;
     text-decoration: none;
     background-color: rgb(224, 210, 192);
-    font-size: 24px;
+
 }
 
 a.topic:hover,
@@ -41,6 +46,7 @@ a.topic:focus {
 
 span {
     position: relative;
+    font-size: 20px;
 }
 
 div.header {
