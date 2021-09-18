@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>One-Variable Statistics Question 1</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='one-variable-statistics'>
+    <main id="1">
+        <div id='question-container'>
+           
+            <div style="text-align: center;">
+                <embed width="880" height="780" src="/d.svg" 
+              script=
+              '
+              setBorder(1);
+              initPicture(-2,9,-3,13);
+              
+              fontstyle = "normal";
+              text([4,12], "Number of Different Video  ");
+              text([4,11], "Games Played in One Week ");
+              text([3.5,-2], "Number of video games played");
+              rotate([-7,12],"Number of students")
+              
+              
+              strokewidth="2"
+              rect([0,0],[1,5]);
+              rect([1,0],[2,9]);
+              rect([2,0],[3,2]);
+              rect([3,0],[4,2]);
+              rect([4,0],[5,0]);
+              rect([5,0],[6,1]);
+              rect([6,0],[7,1]);
+              
+              strokewidth="2"
+              plot("y=0",-.1,.1)
+              plot("y=2",-.1,.1)
+              plot("y=4",-.1,.1)
+              plot("y=6",-.1,.1)
+              plot("y=8",-.1,.1)
+              plot("y=10",-.1,.1)
+              
+              strokewidth="2"
+              text([0,0],"0",left);
+              text([0,2],"2",left);
+              text([0,4],"4",left);
+              text([0,6],"6",left);
+              text([0,8],"8",left);
+              text([0,10],"10",left);
+              
+              
+              text([0.5,0],"0",below)
+              text([1.5,0],"1",below)
+              text([2.5,0],"2",below)
+              text([3.5,0],"3",below)
+              text([4.5,0],"4",below)
+              text([5.5,0],"5",below)
+              text([6.5,0],"6",below)
+              
+              strokewidth="2"
+              marker="none"
+              line([0,0],[7,0])
+              line([0,0],[0,11])
+              '
+              > 
+              </div>
+              
+              
+              <p>
+              The histogram above shows the distribution of the number of video games played by 20 high school students during one week. Which of the following is true for this group of 20 students? 
+              </p>
+              
+              <ol type="I" style='padding-left: 3em;   '  >
+                <li> The mean number of video games played is equal to the median number of video games played.
+                </li>
+                <li>The mode number of video games played is equal to the median number of video games played.</li>
+                <li>The range of the number of video games played is 6. </li>
+              </ol>
+              
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    I and II only
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      I and III only
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    II and III only
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    I, II, and III
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+
+            <div class="explanation-header1"> Approach 1 </div>
+            <p>All of the stats can be gleamed from the histogram. To obtain the mean or arithmetic average,
+               we need to find the the total number of video games played and divide it by the total number of students. </p>
+            
+            <div style="text-align: center;">
+              <embed width="880" height="780" src="/d.svg" 
+            script=
+            '
+            setBorder(1);
+            initPicture(-2,9,-3,13);
+            
+            fontstyle = "normal";
+            text([4,12], "Number of Different Video  ");
+            text([4,11], "Games Played in One Week ");
+            text([3.5,-2], "Number of video games played");
+            rotate([-7,12],"Number of students")
+            
+            
+            strokewidth="2"
+            rect([0,0],[1,5]);
+            rect([1,0],[2,9]);
+            rect([2,0],[3,2]);
+            rect([3,0],[4,2]);
+            rect([4,0],[5,0]);
+            rect([5,0],[6,1]);
+            rect([6,0],[7,1]);
+            
+            stroke="black"
+            strokewidth="2"
+            plot("y=0",-.1,.1)
+            plot("y=2",-.1,.1)
+            plot("y=4",-.1,.1)
+            plot("y=6",-.1,.1)
+            plot("y=8",-.1,.1)
+            plot("y=10",-.1,.1)
+            
+            strokewidth="2"
+            text([0,0],"0",left);
+            text([0,2],"2",left);
+            text([0,4],"4",left);
+            text([0,6],"6",left);
+            text([0,8],"8",left);
+            text([0,10],"10",left);
+            
+            fontweight="bold"
+            text([0.5,2.5],"0");
+            text([1.5,4.5],"9");
+            text([2.5,1],"4");
+            text([3.5,1],"6");
+            text([5.5,.5],"5");
+            text([6.5,.5],"6");
+            
+            fontweight="normal"
+            text([0.5,0],"0",below)
+            text([1.5,0],"1",below)
+            text([2.5,0],"2",below)
+            text([3.5,0],"3",below)
+            text([4.5,0],"4",below)
+            text([5.5,0],"5",below)
+            text([6.5,0],"6",below)
+            
+            strokewidth="2"
+            marker="none"
+            line([0,0],[7,0])
+            line([0,0],[0,11])
+            '
+            > 
+            </div>
+            $$ \text{Mean}=\left(\frac{0+9+4+6+5+6}{20}\right) $$
+            $$ \text{Mean}=\frac{30}{20} $$
+            $$ \text{Mean}=1.5 $$
+            <br>
+            <p> To find the median, we can count towards the middle number. Since there are 20 terms, we want to find the average of the 10<sup>th</sup> and 11<sup>th</sup> term.</p>
+            <div style="text-align: center;">
+              <embed width="880" height="780" src="/d.svg" 
+            script=
+            '
+            setBorder(1);
+            initPicture(-2,9,-3,13);
+            
+            fontstyle = "normal";
+            text([4,12], "Number of Different Video  ");
+            text([4,11], "Games Played in One Week ");
+            text([3.5,-2], "Number of video games played");
+            rotate([-7,12],"Number of students")
+            
+            
+            strokewidth="2"
+            rect([0,0],[1,5]);
+            rect([1,0],[2,9]);
+            rect([2,0],[3,2]);
+            rect([3,0],[4,2]);
+            rect([4,0],[5,0]);
+            rect([5,0],[6,1]);
+            rect([6,0],[7,1]);
+            
+            strokewidth="2"
+            plot("y=0",-.1,.1)
+            plot("y=2",-.1,.1)
+            plot("y=4",-.1,.1)
+            plot("y=6",-.1,.1)
+            plot("y=8",-.1,.1)
+            plot("y=10",-.1,.1)
+            
+            strokewidth="2"
+            text([0,0],"0",left);
+            text([0,2],"2",left);
+            text([0,4],"4",left);
+            text([0,6],"6",left);
+            text([0,8],"8",left);
+            text([0,10],"10",left);
+            
+            
+            color="black"
+            text([0.5,0],"0",below)
+            text([1.5,0],"1",below)
+            text([2.5,0],"2",below)
+            text([3.5,0],"3",below)
+            text([4.5,0],"4",below)
+            text([5.5,0],"5",below)
+            text([6.5,0],"6",below)
+            
+            strokewidth="2"
+            marker="none"
+            line([0,0],[7,0])
+            line([0,0],[0,11])
+            
+            
+            stroke="red";
+            marker="arrow";
+            line([0,0],[1.5,7])
+            line([7,0],[2.5,3])
+            '
+            > 
+            </div>
+            <p>In this case, both the 10<sup>th</sup> and 11<sup>th</sup> term is 1. Therefore, 
+            </p>
+            $$ \text{Median}=1 $$
+            
+            <br>
+            <p>
+              To find the mode, find the number with the highest frequency.
+            </p>
+            <div style="text-align: center;">
+              <embed width="880" height="780" src="/d.svg" 
+            script=
+            '
+            setBorder(1);
+            initPicture(-2,9,-3,13);
+            
+            fontstyle = "normal";
+            text([4,12], "Number of Different Video  ");
+            text([4,11], "Games Played in One Week ");
+            text([3.5,-2], "Number of video games played");
+            rotate([-7,12],"Number of students")
+            
+            
+            strokewidth="2"
+            
+            rect([0,0],[1,5]);
+            
+            fill="red"
+            rect([1,0],[2,9]);
+            
+            fill="none"
+            rect([2,0],[3,2]);
+            rect([3,0],[4,2]);
+            rect([4,0],[5,0]);
+            rect([5,0],[6,1]);
+            rect([6,0],[7,1]);
+            
+            strokewidth="2"
+            plot("y=0",-.1,.1)
+            plot("y=2",-.1,.1)
+            plot("y=4",-.1,.1)
+            plot("y=6",-.1,.1)
+            plot("y=8",-.1,.1)
+            plot("y=10",-.1,.1)
+            
+            strokewidth="2"
+            text([0,0],"0",left);
+            text([0,2],"2",left);
+            text([0,4],"4",left);
+            text([0,6],"6",left);
+            text([0,8],"8",left);
+            text([0,10],"10",left);
+            
+            
+            color="black"
+            text([0.5,0],"0",below)
+            text([1.5,0],"1",below)
+            text([2.5,0],"2",below)
+            text([3.5,0],"3",below)
+            text([4.5,0],"4",below)
+            text([5.5,0],"5",below)
+            text([6.5,0],"6",below)
+            
+            strokewidth="2"
+            marker="none"
+            line([0,0],[7,0])
+            line([0,0],[0,11])
+            
+            
+            '
+            > 
+            </div>
+            
+            $$ \text{Mode}=1 $$
+            
+            <br>
+            <p>
+            To find the range, simply take the largest number and subtract the smallest number.
+            </p>
+            <div style="text-align: center;">
+              <embed width="880" height="780" src="/d.svg" 
+            script=
+            '
+            setBorder(1);
+            initPicture(-2,9,-3,13);
+            
+            fontstyle = "normal";
+            text([4,12], "Number of Different Video  ");
+            text([4,11], "Games Played in One Week ");
+            text([3.5,-2], "Number of video games played");
+            rotate([-7,12],"Number of students")
+            
+            
+            strokewidth="2"
+            
+            fill="aqua"
+            rect([0,0],[1,5]);
+            fill="none"
+            rect([1,0],[2,9]);
+            rect([2,0],[3,2]);
+            rect([3,0],[4,2]);
+            rect([4,0],[5,0]);
+            rect([5,0],[6,1]);
+            fill="aqua"
+            rect([6,0],[7,1]);
+            
+            strokewidth="2"
+            plot("y=0",-.1,.1)
+            plot("y=2",-.1,.1)
+            plot("y=4",-.1,.1)
+            plot("y=6",-.1,.1)
+            plot("y=8",-.1,.1)
+            plot("y=10",-.1,.1)
+            
+            strokewidth="2"
+            text([0,0],"0",left);
+            text([0,2],"2",left);
+            text([0,4],"4",left);
+            text([0,6],"6",left);
+            text([0,8],"8",left);
+            text([0,10],"10",left);
+            
+            
+            color="black"
+            text([0.5,0],"0",below)
+            text([1.5,0],"1",below)
+            text([2.5,0],"2",below)
+            text([3.5,0],"3",below)
+            text([4.5,0],"4",below)
+            text([5.5,0],"5",below)
+            text([6.5,0],"6",below)
+            
+            strokewidth="2"
+            marker="none"
+            line([0,0],[7,0])
+            line([0,0],[0,11])
+            
+            
+            '
+            > 
+            </div>
+            
+            
+            
+            $$ \text{Range} = 6-0 $$
+            $$ \text{Range} = 6 $$
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="explanation-header1"> Approach 2  </div>
+            
+            <p>
+            It may be beneficial to convert the histogram into a simple list. 
+            </p>
+            <div style="text-align: center;">
+              <embed width="880" height="780" src="/d.svg" 
+            script=
+            '
+            setBorder(1);
+            initPicture(-2,9,-3,13);
+            
+            fontstyle = "normal";
+            text([4,12], "Number of Different Video  ");
+            text([4,11], "Games Played in One Week ");
+            text([3.5,-2], "Number of video games played");
+            rotate([-7,12],"Number of students")
+            
+            
+            strokewidth="2"
+            fill="aqua"
+            rect([0,0],[1,5]);
+            rect([1,0],[2,9]);
+            rect([2,0],[3,2]);
+            rect([3,0],[4,2]);
+            rect([4,0],[5,0]);
+            rect([5,0],[6,1]);
+            rect([6,0],[7,1]);
+            
+            stroke="black"
+            strokewidth="2"
+            plot("y=0",-.1,.1)
+            plot("y=2",-.1,.1)
+            plot("y=4",-.1,.1)
+            plot("y=6",-.1,.1)
+            plot("y=8",-.1,.1)
+            plot("y=10",-.1,.1)
+            
+            strokewidth="2"
+            text([0,0],"0",left);
+            text([0,2],"2",left);
+            text([0,4],"4",left);
+            text([0,6],"6",left);
+            text([0,8],"8",left);
+            text([0,10],"10",left);
+            
+            
+            text([0.5,0],"0",below)
+            text([1.5,0],"1",below)
+            text([2.5,0],"2",below)
+            text([3.5,0],"3",below)
+            text([4.5,0],"4",below)
+            text([5.5,0],"5",below)
+            text([6.5,0],"6",below)
+            
+            strokewidth="2"
+            marker="none"
+            line([0,0],[7,0])
+            line([0,0],[0,11])
+            '
+            > 
+            </div>
+            <p>The list:</p>
+            $$ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 3, 3, 5, 6$$
+            
+            <p>Calculating mean, median, mode, and range:
+            </p>
+            $$ \underbrace{0, 0, 0, 0, 0}_\text{$0\cdot5$}, \underbrace{1, 1, 1, 1, 1, 1, 1, 1, 1}_\text{$1\cdot 9$}, \underbrace{2, 2}_\text{$2\cdot 2$}, \underbrace{3, 3}_\text{$3\cdot 2$}, 5, 6$$
+            
+            $$ \text{Mean}=\left(\frac{0+9+4+6+5+6}{20}\right) $$
+            $$ \text{Mean}=\frac{30}{20} $$
+            $$ \text{Mean}=1.5 $$
+            
+            <p>The median for 20 terms is the average of the 10<sup>th</sup> and 11<sup>th</sup> term. (Middle term for odd number of items) </p>
+            $$ 0, 0, 0, 0, 0, 1, 1, 1, 1, \Large 1 \normalsize, \Large 1 \normalsize, 1, 1, 1, 2, 2, 3, 3, 5, 6$$
+            $$ \text{Median}=1 $$
+            <p>The mode is the number that is present the most. </p>
+            $$ 0, 0, 0, 0, 0, \colorbox{aqua}{1, 1, 1, 1, 1, 1, 1, 1, 1}, 2, 2, 3, 3, 5, 6$$
+            $$ \text{Mode}=1$$
+            The range is the difference between the largest number and smallest number on the list.
+            $$ \Large 0 \normalsize, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 3, 3, 5, \Large 6$$
+            $$ \text{Range}= 6-0 $$
+            $$ \text{Range}=6 $$
+        </div>
+    </main>
+</body>
+</html>

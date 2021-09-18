@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Constructing Algebraic Models Question 9</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='constructing-algebraic-models'>
+    <main id="9">
+        <div id='question-container'>
+           
+ 
+            <p>
+                Mike is preparing for a cross country competition. His goal is to run an average of at least 20 miles per week for 4 weeks.
+                 He ran for 12 miles the first week and 22 miles the second week. Which inequality can be used to represent the number of miles, \(x\), Mike could run on the 3rd and 4th week combined to meet his goal?
+                </p>
+                
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( \dfrac{12+22}{2}+    x \geq 20                   \)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+    \(12+22+x\geq 20 \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( \dfrac{12}{4}+   \dfrac{22}{4}+   x \geq 20                   \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( 12+22+x \geq 20(4) \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+
+            <div class="explanation-header1"> Approach  </div>
+
+            <p>
+            To find the average, we would simply add up Mike's total miles and divide by the number of weeks. 
+            </p>
+            $$ \text{Average}=\frac{\text{Week 1 miles} + \text{Week 2 miles} + \text{Week 3 miles} + \text{Week 4 miles} }{4\text{ weeks}}   $$
+            
+            <p>We can plug in some of these values, and substitute \(x\) as the number of miles in week 3 and 4 combined.</p>
+            $$ \text{Average}=\frac{12+22+x}{4} $$
+            <p>Since this needs to be greator than or equal to 20:</p>
+            $$\frac{12+22+x}{4} \geq 20 $$
+            <p>Multiplying both sides by 4 gives us the correct answer choice.</p>
+            
+            $$ \boxed{12+22+x \geq 20(4) }$$
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Constructing Algebraic Models Question 3</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='constructing-algebraic-models'>
+    <main id="3">
+        <div id='question-container'>
+           
+            <p>
+                A student measured several samples of the element tellurium at STP (standard temperature and pressure).
+                 The equation below models the relationship between the mass \(m\), in grams, and the volume
+                \(v\), in cubic centimeters, of the samples.
+                </p>
+                $$ m=5.97v+0.24 $$
+                <p>
+                The student then measured several samples of the element polonium at STP. </p>
+                <p>
+                The data revealed that pollonium has a mass that is 1.5 times greater than a sample of tellurium of the same volume. Which of the following equations could model the relationship
+                between the mass \(m\), in grams, and the volume \(v\), in cubic centimeters, for the element selenium at this temperature?
+                     </p>
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( m=3.85v-2.15 \)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \( m=6.15v+0.15 \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(m=8.88v-2.32 \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(m=9.05v+0.02\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+
+            <div class="explanation-header1"> Approach 1</div>
+
+            <p>
+            We want to find an equation that would result in a mass that is \(1.5\) times greater when the volume is the same. We can test the models by using an arbitrary number, such as \(v=1\).
+            </p>
+            <div style="columns: 4;">
+            <center>&nbsp</center>
+            $$  m=3.85v-2.15 $$
+            $$ m=3.85(1)-2.15 $$
+            $$ m=3.85-2.15 $$
+            $$ m=1.70 $$
+            <center>&nbsp</center>
+            $$ m=6.15v+0.15 $$
+            $$ m=6.15(1)+0.15 $$
+            $$ m=6.15-0.15 $$
+            $$ m= 6.00 $$
+            <center>&nbsp</center>
+            $$ m=8.88v-2.32$$
+            $$ m=8.88(1)-2.32$$
+            $$m=8.88-2.32 $$
+            $$m=6.56$$
+            <center>&nbsp</center>
+            $$m=9.05v+0.02$$
+            $$m=9.05(1)+0.02$$
+            $$ m=9.05+0.02$$
+            $$m=9.07$$
+            </div>
+            
+            <p>Comparing this with the initial model,</p>
+            $$ m=5.97v+0.24 $$
+            $$ m=5.97(1)+0.24$$
+            $$m=5.97+0.24 $$
+            $$ m=6.21 $$
+            <p>Only the last option seems reasonable. We want a number that is \(1.5\) times greater.</p>
+            $$ 6.21 \approx 6 $$
+            $$ 1.5 \text{ times } 6 = 9 $$
+            $$ 9 \approx 9.07 $$
+            
+            
+            <div class="explanation-header1">Approach 2</div>
+            <p>According to the initial model, the mass of the element scales at approximately \(6\) times the volume.</p>
+            $$ m=\colorbox{aqua}{$5.97$}v+0.24 $$
+            <p>If we want a new model where the mass is \(1.5\) times greater, we would want a model that scales at \(6 \times 1.5 = 9 \) times the volume.</p>
+            $$ m=\colorbox{yellow}{$9.05$}v+0.02 &nbsp \checkmark$$
+            <p>Although another option fits this criteria, the constant is significantly different than the initial model and therefore significantly changes the resultant mass.</p>
+            $$ m=\colorbox{yellow}{$8.88$}v-\colorbox{red}{$2.32$} &nbsp &#10006;  $$
+        </div>
+    </main>
+</body>
+</html>

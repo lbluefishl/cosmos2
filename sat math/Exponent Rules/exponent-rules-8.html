@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exponent Rules Question 8</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='exponent-rules'>
+    <main id="8">
+        <div id='question-container'>
+            <p>
+                If \(a\) and \(b\) are positive numbers, which of the following is equivalent to \( \sqrt{(a+b)^3}\cdot\sqrt{a+b}  \) ?
+                </p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(a+b \)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \(a^2+b^2 \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(a^2+2ab+b^2 \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( a^2b^2\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1"> Approach 1</div>
+
+            <p>
+            We can rewrite the expression with fractional exponents.
+            </p>
+            $$ \sqrt{(a+b)^3}\cdot\sqrt{a+b} $$
+            $$ =(a+b)^{\frac{3}{2}}\cdot (a+b)^{\frac{1}{2}}$$
+            $$ = (a+b)^{\frac{3}{2}+\frac{1}{2}}$$
+            $$ = (a+b)^2 $$
+            $$ = \boxed{a^2+2ab+b^2} $$
+            
+            
+            
+            <div class="explanation-header1">Approach 2</div>
+            <p> We can combine the radicals into one.
+            </p>
+            
+            $$ \sqrt{(a+b)^3}\cdot\sqrt{a+b} $$
+            $$ = \sqrt{(a+b)^3 \cdot (a+b)} $$
+            $$ =\sqrt{(a+b)^4} $$
+            $$ =\sqrt{(a+b)^2 \cdot (a+b)^2} $$
+            $$ = (a+b)^2 $$
+            $$ = \boxed{a^2+2ab+b^2} $$
+        </div>
+    </main>
+</body>
+</html>

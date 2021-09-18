@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ratios and Proportions Question 4</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='ratios-and-proportions'>
+    <main id="4">
+        <div id='question-container'>
+           
+            <p>
+                The table below shows how long a printer took to print pages for each of the 5 recent print jobs.
+                </p>
+                $$ \begin{array} {|c|c|c|}
+                \hline
+                \text{Job} & \text{Number of } & \text{Total printing time} \\ 
+                \text{number} & \text{pages printed} & \text{(seconds)} \\ \hline
+                1 & 35 & 20 \\ \hline
+                2 & 482 & 325 \\ \hline
+                3 & 1{,}950 & 1{,}320 \\ \hline
+                4 & 10 & 5 \\ \hline
+                5 & 633 & 450 \\ \hline
+                
+                \end{array} 
+                $$
+                <p>At the rate that job number 3 was completed, how long would a print job of 500 pages take to complete?</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( 5 \text{ minutes } 38 \text{ seconds}\)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \( 12 \text{ minutes } 19 \text{ seconds}\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( 85 \text{ minutes } 48 \text{ seconds}\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( 338 \text{ minutes } 46 \text{ seconds}\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1"> Approach </div>
+
+            <p>
+            Use the appropriate information from the table to set up a proportion.
+            </p>
+            $$ \begin{array} {|c|c|c|}
+            \hline
+            \text{Job} & \text{Number of } & \text{Total printing time} \\ 
+            \text{number} & \text{pages printed} & \text{(seconds)} \\ \hline
+            1 & 35 & 20 \\ \hline
+            2 & 482 & 325 \\ \hline
+            3 & \colorbox{aqua}{$1{,}950$} & \colorbox{aqua}{$1{,}320$} \\ \hline
+            4 & 10 & 5 \\ \hline
+            5 & 633 & 450 \\ \hline
+            
+            \end{array} 
+            $$
+            
+            $$ \frac{1{,}950 \text{ pages}}{1{,}320 \text{ seconds}} = \frac{500 \text{ pages}}{x \text{ seconds}} $$
+            $$ 1{,}950\cdot x=500\cdot 1{,}320 $$
+            $$ x \approx 338.46 \text{ seconds}$$
+            
+            <p>We need to convert this into seconds. See <a href="../Unit Conversions/unit-conversions-summary.html" target="blank">Unit Conversions</a> if the steps below are unfamiliar to you.  </p>
+            
+            $$ 338.46 \text{ seconds} \cdot \frac{1 \text{ minute}}{60 \text{ seconds}} $$
+            $$ \approx 5.64 \text{ minutes} $$
+            $$ (0.64) \text{ of a minute} = 0.64 \cdot 60 \text{ seconds}$$
+            $$ \approx 38 \text{ seconds} $$
+            
+            <p>Alternatively, we know that there are 300 seconds in 5 minutes, which means 338.46 seconds is approximately 5 minutes and 38 seconds.</p>
+            
+        </div>
+    </main>
+</body>
+</html>

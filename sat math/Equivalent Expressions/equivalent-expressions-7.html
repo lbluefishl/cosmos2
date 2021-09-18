@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Equivalent Expressions Question 7</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='equivalent-expressions'>
+    <main id="7">
+        <div id='question-container'>
+           
+            <p>
+                For \(x>0\), which of the following is equivalent to \(   \dfrac{1}{\frac{1}{2x}+\frac{1}{x+5}}      \) ?
+                </p>
+                
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(   \dfrac{2x^2+10x}{3x+5} \)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \(   \dfrac{3x+5}{2x^2+10x} \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(  2x^2+10x   \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( 3x+5 \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1"> Approach 1 </div>
+
+            <p>
+            Let's break the problem into individual parts. We can first deal with the following:
+            </p>
+            $$  \frac{1}{\colorbox{aqua}{$\frac{1}{2x}+\frac{1}{x+5}$}}   $$
+            $$ \frac{1}{2x}+\frac{1}{x+5}$$ 
+            <p>We add these fractions by finding a common denominator. </p>
+            $$ \frac{x+5}{x+5}\left(\frac{1}{2x}\right)+ \frac{1}{x+5}\left(\frac{2x}{2x}\right) $$
+            $$ = \frac{x+5}{2x(x+5)}+ \frac{2x}{2x(x+5)} $$
+            $$ = \frac{x+5+2x}{2x(x+5)} $$
+            $$ = \frac{3x+5}{2x^2+10x} $$
+            <p>Replacing this back into the initial expression:</p>
+            $$  \frac{1}{\colorbox{aqua}{$\frac{1}{2x}+\frac{1}{x+5}$}} =\frac{1}{\colorbox{aqua}{$\frac{3x+5}{2x^2+10x}$}} $$
+            <p>We can think of this expression as 1 divided by the denominator,</p>
+            $$ 1 \div \frac{3x+5}{2x^2+10x} $$
+            <p>Which is the same as:</p>
+            $$ 1 \times \frac{2x^2+10x}{3x+5} $$
+            $$ = \boxed{\frac{2x^2+10x}{3x+5}} $$
+        
+            
+            
+            
+            <div class="explanation-header1">Approach 2</div>
+            <p>As always, we can always plug in values to obtain our answer or to check our solution. For example, using \(x=1\),</p>
+            $$ \frac{1}{\frac{1}{2x}+\frac{1}{x+5}}  $$
+            $$  \frac{1}{\frac{1}{2(1)}+\frac{1}{(1)+5}}  $$
+            $$ =\frac{1}{\frac{1}{2}+\frac{1}{6}}=\frac{1}{\frac{3}{6}+\frac{1}{6}}$$
+            
+            $$ =\frac{1}{\frac{4}{6} }= \frac{6}{4} $$
+            
+            $$ = \frac{3}{2} $$
+            <p>Try plugging in \(x=1\) into the answer chices to verify that the first option is equivalent whereas the others are not. </p>
+            <br>
+           
+            <p>Note that the method has caveats. There are some values we cannot use for this specific problem, such as \(x=0\), which results in an undefined expression. There is also a chance that multiple options work for certain values of \(x\).
+            </p>
+            <div class="explanation-header1">Sidenote</div>
+            <p>Although approach 1 shows mastery of the math, for testing purposes it is almost always better to use approach 2 to save time. There is also less chance
+             of messing up the algebraic steps to deal with the fractions.</p>
+            
+        </div>
+    </main>
+</body>
+</html>

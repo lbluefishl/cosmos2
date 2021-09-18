@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>One-Variable Statistics Question 10</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='one-variable-statistics'>
+    <main id="10">
+        <div id='question-container'>
+            
+<p>
+    A fish nursery has four tanks for holding fish before they are sold. Twelve fish weighing less than 1 pound are placed in tank A. Twenty-five fish weighing at least 1 pound but no more than 2 pounds are placed in tank B.
+    Nine fish weighting at least 2 pounds but no more than 3 pounds are placed in tank C. Seven fish weighing more than 3 pounds are placed in tank D. Which of the following could be the median of the weight, in pounds, of these 53 fish? 
+    </p>
+    
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(0.3\)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \(1.8\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(2.2\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(3.5\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <!--<button id='skip'>Skip Question</button>-->
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1"> Approach  </div>
+
+            <p>
+            We can organize the data into a simple table:
+            </p>
+            $$ \begin{array}{|c|c|} \hline
+            \text{Weight} & \text{\# of fish} \\ \hline
+            \lt 1 \text{ pound} & 12 \\ \hline 
+            \gt 1 \text{ and }\lt 2 \text{ pound} & 25 \\ \hline 
+            \gt 2 \text{ and }\lt 3 \text{ pound} & 9 \\ \hline 
+            \gt 3 \text{ pound} & 7 \\ \hline 
+            \end{array}
+            $$
+            <p>Since there are 53 fish in total, the median refers to the 27<sup>th</sup> fish. This fish must belong in the \( \gt 1 \text{ and } \lt 2 \text{ pound}\) category.</p>
+        </div>
+    </main>
+</body>
+</html>

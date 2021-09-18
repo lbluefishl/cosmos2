@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rearranging Algebraic Equations Question 10</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='rearranging-algebraic-equations'>
+    <main id="10">
+        <div id='question-container'>
+           
+
+            <p>
+                The value of phone depreciates over \(t\) years according to the formula below, where \(P\) is the original price and \(r\) is the annual rate of depreciation.
+              </p>
+              $$ V=P(1-r)^t $$
+              
+              <p>Which of the following expresses \(r\) in terms of \(V,P \text{ and } t\) ?</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( r=1-\sqrt[t]{\dfrac{V}{P}} \)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \( r=1-\dfrac{\sqrt[t]{V}}{P} \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( r=1+\sqrt[t]{\dfrac{V}{P}} \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( r= 1-\dfrac{V^t}{P} \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <!--<button id='skip'>Skip Question</button>-->
+        </div>
+        <div id='explanation' style="display: none;">
+
+            <div class="explanation-header1"> Approach  </div>
+
+
+            $$ V=P(1-r)^t $$
+          $$ \frac{V}{P}=(1-r)^t $$
+          <p>We can raise both sides to the \(\dfrac{1}{t}\) value, in order to cancel out the exponent on the right side. \(x^{\frac{1}{t}}=\sqrt[t]{x} \)</p>
+          $$ \sqrt[t]{\frac{V}{P}}=1-r $$
+          $$ \boxed{r=1-\sqrt[t]{\frac{V}{P}}} $$
+          
+        </div>
+    </main>
+</body>
+</html>

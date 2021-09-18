@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Constructing Algebraic Models Question 4</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+  
+    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='constructing-algebraic-models'>
+    <main id="4">
+        <div id='question-container'>
+           
+            <p>
+                A chemist is mixing a 20% \( \ce{NaCl} \) solution with a 35% \( \ce{NaCl} \) solution. The chemist wishes to make a mixture that is at least 30% \( \ce{NaCl} \) 
+                but no more than 4 liters from the two types of solutions. 
+                Let \(a\) be the volume of 20% \( \ce {NaCl}\), in liters, and \(b\) be the volume of 35% \( \ce{NaCl} \), in liters, in the mixture. Which of the following systems represents all of the constraints
+                that \(a\) and \(b\) must satisfy?
+                </p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(   
+                        \begin{cases}
+                        a>0 \\
+                        b>0   \\
+                        a+b =4 \\ 
+                        20a+35b \leq 30
+                 
+                        \end{cases}
+                        \)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \(   
+                        \begin{cases}
+                        a>0 \\
+                        b>0   \\
+                        a+b \geq 4 \\ 
+                        20a+35b \geq 30
+                 
+                        \end{cases}
+                        \)
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(   
+                        \begin{cases}
+                        a>0 \\
+                        b>0   \\
+                        a+b  \leq 4 \\ 
+                        20a+35b \geq 30(a+b)
+                 
+                        \end{cases}
+                        \)
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(   
+                        \begin{cases}
+                        0 \lt a \lt2 \\
+                        0 \lt b \lt 2   \\
+                        a+b \leq 4 \\ 
+                        20a+35b \geq 30(a+b)
+                 
+                        \end{cases}
+                        \)
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1"> Approach  </div>
+
+            <p>
+              Let's break apart the meaning of the correct option:
+              </p>
+              
+              $$ 
+                \begin{cases} 
+                a>0 & \text{we need some amount of the 20\% NaCl solution; it cannot be negative}  \\ 
+                b>0  &\text{we need some amount of the 35\% NaCl solution; it cannot be negative} \\
+                a+b\leq 4  &\text{the combined volume of solution is no more than 4 liters} \\ 
+                20a+35b \geq 30(a+b) & \text{the combined volume of NaCl needs to be greater than 30\%}
+              
+                \end{cases}
+               $$
+               <p>
+                Perhaps the most confusing relationship involves the volume of NaCl:
+              </p>
+                $$20a+35b \geq 30(a+b)$$
+              
+               <p> In cases like this, we need to make sure the corresponding parts make sense as a whole. </p>
+              
+                $$\colorbox{aqua}{$20$}\colorbox{yellow}{$a$}+\colorbox{aqua}{$35$}\colorbox{yellow}{$b$} \geq \colorbox{aqua}{$30$}\colorbox{yellow}{$(a+b)$}  \checkmark $$
+              
+             <p> Looking at structure is very important in mathematics. You've done it plenty of times, though it may be done without you expliciting thinking it. For example, would this be reasonable as written?
+              </p>
+              $$ 12 \text{ inches} + 5 \text{ inches} \ge 10 \text{ feet} $$ 
+              <p>
+              Similarly, the first two choices do not seem reasonable by the same logic. 
+              </p>
+              $$ \colorbox{aqua}{$20$}\colorbox{yellow}{$a$}+\colorbox{aqua}{$35$}\colorbox{yellow}{$b$} \leq \colorbox{aqua}{$30$} &nbsp &#10006;$$
+              
+              
+              <div class="explanation-header1"> Sidenote</div>
+              <p>
+              Mixture problems show up rarely on the SAT. It is not entirely necessary to memorize a seperate formula for it. Instead, treat it like a system of equations. 
+              Make one equation for the total volume of solution and one equation for the total volume of the solute or identifiable substance (NaCl in our case). 
+              </p>
+              $$ a + b \leq 4 \tag*{\tiny volume of solution}$$
+             <p> The volume of NaCl is taken by multiplying the percent concentration with the volume of the solution. For example, 20% of solution \(a\) is NaCl. Therefore,</p>
+              $$ 0.20\cdot a = \text{volume of NaCl in the 20\% solution} $$
+             <p> Accordingly, the volume of NaCl equation: </p>
+              $$ 0.20a+0.35b \geq .30(a+b) \tag*{\tiny volume of NaCl only} $$
+             <p> We can multiply each term by 100 to avoid working with decimals.</p>
+              $$ 20a+35b \geq 30(a+b) $$
+              
+        </div>
+    </main>
+</body>
+</html>

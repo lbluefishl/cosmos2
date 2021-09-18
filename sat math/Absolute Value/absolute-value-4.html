@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Absolute Value Question 4</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='absolute-value'>
+    <main id="4">
+        <div id='question-container'>
+           
+            <p>
+                Two different points on a number line are both 4 units from the coordinate \(-11\). The solution to which of the following equations gives the coordinates of both points?
+                </p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( |x+11|=4  \)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \( |x-11|=4  \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( |x+4|=11  \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( |x-4|=11  \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1"> Approach 1 </div>
+
+            <p>
+            If a number is 4 units away from another number, the difference between these two numbers must be 4. Therefore,
+            </p>
+            $$ x-(-11)=4 $$
+            $$ x+11=4 $$ 
+            $$ x=7 $$
+            <p>To- obtain the other solution, we need to understand that a distance of negative \(4\) is equivalent to a distance of positive \(4\) . Accordingly, </p>
+            $$ x-(-11)=-4 $$
+            $$ x+11=-4 $$
+            $$ x=-15 $$
+            <p>A way to combine these two statements is to say that the absolute difference between two numbers is \(4\).</p>
+            $$ |x-(-11)|=4 $$
+            $$ |x+11|=4 $$
+            $$ x=-7 \text{ or } -15 $$
+            </div>
+            
+            <div class="explanation-header1">Approach 2</div>
+            <p>We can find the solutions by inspection. If we drew a number line, \(-7\) and \(-15\) would be the points 4 units to the left and to the right of \(-11\). Only one asnwer choice satisfies both of these values:</p>
+            $$ \boxed{|x+11|=4} $$
+            <div style="columns: 2;">
+            <center>&nbsp</center>
+            $$|x+11|=4$$
+            $$|-7+11|=4$$
+            $$|4|=4$$
+            $$4=4 &nbsp \checkmark$$
+            <center>&nbsp</center>
+            $$|x+11|=4 $$
+            $$|-15+11|=4 $$ 
+            $$|-4|=4 $$
+            $$4=4 &nbsp \checkmark $$
+            
+        </div>
+    </main>
+</body>
+</html>

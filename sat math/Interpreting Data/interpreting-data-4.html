@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Interpreting Data Question 4</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='interpreting-data'>
+    <main id="4">
+        <div id='question-container'>
+           
+<p>
+    A student investigates the strength of a spring, one end of which is anchored at a fixed point. The student pulls the spring with a force scale
+    and records the force exerted by the spring, in newtons (N), and the position of the end of the spring, in centimeters. The student's results are shown in the graph below. 
+    </p>
+    
+      <div style="text-align: center;">
+        <embed width="780" height="580" src="/d.svg" 
+      script=
+      '
+      setBorder(1);
+      initPicture(-15,55,-11,69);
+      
+      
+      fontstyle = "normal";
+      text([27,65],"Spring Force Test")
+      text([25,-8], "Position of end of spring (cm)");
+      rotate([-37,57],"Force (N)")
+      
+      
+      
+      strokewidth="2"
+      
+      line([-1,0],[50,0])
+      line([-1,10],[50,10])
+      line([-1,20],[50,20])
+      line([-1,30],[50,30])
+      line([-1,40],[50,40])
+      line([-1,50],[50,50])
+      line([-1,60],[50,60])
+      
+    
+      line([10,-1],[10,60])
+      line([20,-1],[20,60])
+      line([30,-1],[30,60])
+      line([40,-1],[40,60])
+      line([50,-1],[50,60])
+    
+    
+    
+      
+      text([0,0],"0","below")
+      text([10,0],"10","below")
+      text([20,0],"20","below")
+      text([30,0],"30","below")
+      text([40,0],"40","below")
+      text([50,0],"50","below")
+      
+      text([0,0],"0","left")
+      text([0,10],"10","left")
+      text([0,20],"20","left")
+      text([0,30],"30","left")
+      text([0,40],"40","left")
+      text([0,50],"50","left")
+      text([0,60],"60","left")
+    
+      line([0,0],[25,0])
+      line([0,0],[0,4])
+    
+      dot([9,2],"closed")
+      dot([14,6],"closed")
+      dot([20,15],"closed")
+      dot([27,22],"closed")
+      dot([31,26],"closed")
+      dot([37,30],"closed")
+      dot([41,35],"closed")
+      dot([44,38],"closed")
+    
+    
+     marker="arrow"
+    line([0,0],[0,65])
+    line([0,0],[53,0])
+    fontstyle="italic"
+      text([54,0,],"x")
+      text([0,68,],"y")
+      '
+      > 
+      </div>
+    <p>Based on the data, which of the following equations could represent the line of best fit?</p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( y=x+10 \)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \( y=.5x+10 \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( y=.5x-10 \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( y=x-10 \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+
+
+            <div class="explanation-header1"> Approach 1 </div>
+
+            <p>
+            To find the \(y\)-intercept, we need to extend the line of best fit. We can find the slope by choosing two arbitrary points near the data points. 
+            </p>
+            
+            <div style="text-align: center;">
+              <embed width="780" height="580" src="/d.svg" 
+            script=
+            '
+            setBorder(1);
+            initPicture(-15,55,-11,69);
+            
+            
+            fontstyle = "normal";
+            text([27,65],"Spring Force Test")
+            text([25,-8], "Position of end of spring (cm)");
+            rotate([-37,57],"Force (N)")
+            
+            
+            
+            strokewidth="2"
+            
+            line([-1,0],[50,0])
+            line([-1,10],[50,10])
+            line([-1,20],[50,20])
+            line([-1,30],[50,30])
+            line([-1,40],[50,40])
+            line([-1,50],[50,50])
+            line([-1,60],[50,60])
+            
+            
+            line([10,-1],[10,60])
+            line([20,-1],[20,60])
+            line([30,-1],[30,60])
+            line([40,-1],[40,60])
+            line([50,-1],[50,60])
+            
+            
+            
+            
+            text([0,0],"0","below")
+            text([10,0],"10","below")
+            text([20,0],"20","below")
+            text([30,0],"30","below")
+            text([40,0],"40","below")
+            text([50,0],"50","below")
+            
+            text([0,0],"0","left")
+            text([0,10],"10","left")
+            text([0,20],"20","left")
+            text([0,30],"30","left")
+            text([0,40],"40","left")
+            text([0,50],"50","left")
+            text([0,60],"60","left")
+            
+            line([0,0],[25,0])
+            line([0,0],[0,4])
+            
+            dot([9,2],"closed")
+            dot([14,6],"closed")
+            dot([20,15],"closed")
+            dot([27,22],"closed")
+            dot([31,26],"closed")
+            dot([37,30],"closed")
+            dot([41,35],"closed")
+            dot([44,38],"closed")
+            
+            marker="arrow"
+            line([0,0],[0,65])
+            line([0,0],[53,0])
+            fontstyle="italic"
+            text([54,0,],"x")
+            text([0,68,],"y")
+            
+            
+            stroke="red"
+            plot("x-10",0,50)
+            dot([10,0],"closed")
+            dot([50,40],"closed")
+            '
+            
+            > 
+            </div>
+            <p>Using the line above, we approximate the \(y\)-intercept to be approximately \((0,-10)\) and the slope to be \(m \approx 1\)</p>
+            
+            <div class="explanation-header1">Sidenote</div>
+            The choices will typically be significantly different so that there are no "close" answers. In our situation, even if we drew the line of best fit differently, we would still get a negative \(y\)-intercept and a slope closer to \(1\) rather than \(0.5\).
+            
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exponential Growth and Decay Question 7</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='exponential-growth-and-decay'>
+    <main id="7">
+        <div id='question-container'>
+           
+            <p>
+                Radioactive substances decay over time. The mass \(M\), in grams, of a particular radioactive substance \(d\) days after the beginning of an experiment is shown in the table below.
+                </p>
+                $$\begin{array}{|c|c|} \hline
+                \text{Number of days, } d & \text{Mass}, M \text{ (grams)} \\ \hline
+                0 & 45.00 \\ \hline
+                30 & 40.57 \\ \hline
+                60 & 36.58 \\ \hline
+                90 & 32.98 \\ \hline
+                
+                \end{array}
+                $$
+                
+                <p>If this relationship is modeled by the function \(M(d)=a\cdot 10^{bd}  \), which of the following could be the values of \(a\) and \(b\)?</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( a=4.5 \text{ and } b=0.020 \)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \( a=4.5 \text{ and } b=-0.020 \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( a=45 \text{ and } b=0.0015 \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( a=45 \text{ and } b=-0.0015 \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1"> Approach </div>
+
+            <p>
+            We can first use the row \(d=0, M=45\) to find the value of \(a\):
+            </p>
+            $$ M(0)=45 $$
+            $$M(d)=a\cdot 10^{bd}$$
+            $$ 45 = a \cdot 10^{b(0)} $$
+            $$ 45 = a \cdot 10^0 $$
+            $$ 45 = a $$
+            <p>Substitute this value back into the initial equation:</p>
+            $$M(d)=45\cdot 10^{bd}$$
+            <p>We can use another point, such as \(d=30, M=40.57\) to find the value of \(b\):</p>
+            $$ M(30)=40.57 $$
+            $$40.57=45\cdot 10^{b(30)}$$
+            $$ 40.57 = 45 \cdot 10^{30b} $$
+            $$ \frac{40.57}{45}=10^{30b} $$
+            $$ 0.90=10^{30b} $$
+            <p>We can test options 3 and 4 to confirm which one is the correct choice, or we can use logarithms.</p>
+            <div style="columns: 2;">
+            <center>Option 3</center>
+            $$ 0.90=10^{30b} $$
+            $$ 0.90=10^{30(0.0015)} $$
+            $$ 0.90 \neq 1.11 &nbsp &#10006; $$
+            <center>Option 4</center>
+            $$ 0.90=10^{30b} $$
+            $$ 0.90=10^{30(-0.0015)} $$
+            $$ 0.90=0.90 &nbsp \checkmark $$
+            </div>
+            <p>Solving with logarithms:</p>
+            $$ 0.90=10^{30b} $$
+            $$ \log{0.90}=\log{10^{30b}} $$
+            $$ \log{0.90}=30b $$
+            $$ b = \frac{\log{0.90}}{30} $$
+            $$ b \approx -0.0015 $$
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rearranging Algebraic Equations Question 1</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='rearranging-algebraic-equations'>
+    <main id="1">
+        <div id='question-container'>
+            <p>
+                The equation below shows the relationship between positive numbers \(a\), \(b\), \(x\), \(y\), and \(c\). Which of the following correctly expresses \(a\) in terms of \(b\), \(x\), \(y\), and \(c\)?
+              $$ax+by=c$$
+              </p>
+              
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(a=c-\dfrac{x}{by}\)
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      \(a=c-\dfrac{by}{x}\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(a=\dfrac{c-by}{x}\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(a=\dfrac{c-x}{by}\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1"> Approach  </div>
+
+            <p>
+              If you have difficulties with these types of problem, try replacing variables with numbers and anticipating the steps you would normally use. </p>
+              <div style="columns: 2;">
+            <center>With variables</center>
+            $$ax+by=c$$
+            $$ax=c-by$$
+            $$\boxed{x=\frac{c-by}{x}}$$
+            <center>With numbers</center>
+            $$a(1)+(2)(3)=(4)$$
+            $$a(1)=(4)-(2)(3)$$
+            $$a=\frac{(4)-(2)(3)}{(1)}$$
+            
+              </div>
+            
+            
+         
+            
+            <div class="explanation-header1"> Sidenote  </div>
+            <p>
+            Did this question seem familiar? You've probably done a similar rearrangement many times before, when changing a line in standard form to slope-intercept form:</p>
+            $$ 5x+3y=6$$
+            $$ 3y=-5x+6$$
+            $$y=-\frac{5}{3}x+2$$
+            
+        
+        </div>
+    </main>
+</body>
+</html>

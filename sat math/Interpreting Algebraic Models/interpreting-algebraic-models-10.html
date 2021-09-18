@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interpreting Algebraic Models Question 10</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='interpreting-algebraic-models'>
+    <main id="10">
+        <div id='question-container'>
+           
+            <div style="text-align: center; margin: 0%";>
+      
+                <embed width="680" height="680" src="/d.svg" 
+               script=
+               '
+               setBorder(1);
+               initPicture(200,855,-0.25,1.25);
+               
+               fontstyle = "normal";
+               text([450,0.48], "(500, 0.38)", above);
+               text([365, 0.09], "(350, 0.19)", right );
+               text([500,0.78], "kyanite");
+               text([505, 0.19], "andalusite");
+               text([700, 0.45], "sillimanite");
+               text([745,.13], "(760, 0)", above);
+               text([795,.85], "(795, 1.0)", below);
+               text([572,1.2], "Phase Diagram for ");
+               text([572,1.1], "Alumninosilicate Polymorphs");
+               
+               text([572,-.2], "Temperature (&#176C)");
+               rotate([-155,1.15],"Pressure (GPA)")
+               
+               strokewidth="2"
+               marker="arrow"
+               line([380,.12],[350,.19]);
+               line([450,.49],[500,.39]);
+               line([785,.85],[793,.98]);
+               line([760,.14],[760,.01]);
+               
+               marker="none"
+               a=[350,0.19]
+               b=[500,0.38]
+               c=[795,1.0]
+               d=[760,0]
+               o=[350,0]
+               t=[0,1]
+               
+               strokewidth="2"
+               line(a,b)
+               line(b,c)
+               line(b,d);
+               
+               strokewidth="1"
+               plot("y=0.0",340,360)
+               plot("y=0.1",340,360)
+               plot("y=0.2",340,360)
+               plot("y=0.3",340,360)
+               plot("y=0.4",340,360)
+               plot("y=0.5",340,360)
+               plot("y=0.6",340,360)
+               plot("y=0.7",340,360)
+               plot("y=0.8",340,360)
+               plot("y=0.9",340,360)
+               plot("y=1.0",340,360)
+               
+               line([350,-0.02],[350,0.02])
+               line([400,-0.02],[400,0.02])
+               line([450,-0.02],[450,0.02])
+               line([500,-0.02],[500,0.02])
+               line([550,-0.02],[550,0.02])
+               line([600,-0.02],[600,0.02])
+               line([650,-0.02],[650,0.02])
+               line([700,-0.02],[700,0.02])
+               line([750,-0.02],[750,0.02])
+               line([800,-0.02],[800,0.02])
+               
+               text([345,0],"0",left);
+               text([345,0.2],"0.2",left);
+               text([345,0.4],"0.4",left);
+               text([345,0.6],"0.6",left);
+               text([345,0.8],"0.8",left);
+               text([345,1.0],"1.0",left);
+               
+               text([400,-0.02],"400",below)
+               text([500,-0.02],"500",below)
+               text([600,-0.02],"600",below)
+               text([700,-0.02],"700",below)
+               text([800,-0.02],"800",below)
+               
+               line([350,1],[800,1])
+               line([800,0],[800,.77])
+               line([800,.85],[800,1])
+               line([350,0],[800,0])
+               line([350,0],[350,1])
+               '
+               >
+               </div>
+            <p>The phase diagram above shows the conditions that are needed to form different aluminosilicate minerals. The temperature \(T\), in degrees Celcius (&#176C) is shown on the 
+              horizontal axis, and the pressure \(P\), in gigapascals (GPA), is shown on the vertical axis.
+               An equation of the boundary line between the andalusite and sillimanite
+              regions is approximated by the equation below. What is the meaning of the \(T\)-intercept of this line? 
+            </p>
+          
+            $$P=-0.00146T+1.11$$
+            
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    The maximum pressure at which both andalusite and sillimanite can form.
+
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+      The temperature at which both andalusite and sillimanite can form when there is no pressure applied. 
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    The number of degrees Celsius needed to remain on the boundary between andalusite and kyanite if the pressure is reduced by 1 GPa.
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    The decrease in the number of gigapascals of pressure needed to remain on the boundary between andalusite and sillimanite if the temperature is increased by 1 &#176C.
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+
+            <div class="explanation-header1"> Approach 1 </div>
+  
+            <p>
+            We can interpret the meaning of the \(T\)-intercept by comparing it to a more familiar scenario.
+            </p>
+            
+            <div style='columns: 2;'>
+              <center>Pressure vs. Temperature </center>
+              $$\bold{P}=m\bold{T}+b$$
+              The \(T\)-intercept would be the point where the \(P\) value is equal to zero.
+            
+              <center>\(y\) vs. \(x\) </center>
+              $$\bold{y}=m\bold{x}+b$$
+              The \(x\)-intercept would be the point where the \(y\) value is equal to zero.
+            </div>
+            
+            
+             
+            <p>We can calculate this algebraically, but instead we can utilize the graph. There is only one point where the Pressure \(P\) is 0.</p>
+              
+            <div style="text-align: center; scale: .8">
+            <embed width="180" height="180" src="../../d1.svg"  
+            script=
+            'setBorder(5);
+            initPicture(435,785,-0.04,.5);
+            
+            fontstyle = "normal";
+            text([450,0.48], "(500, 0.38)", above);
+            text([365, 0.09], "(350, 0.19)", right );
+            text([500,0.78], "kyanite");
+            text([505, 0.19], "andalusite");
+            text([700, 0.45], "sillimanite");
+            
+            text([795,.85], "(795,1.0)", below);
+            text([572,1.2], "Phase Diagram for ");
+            text([572,1.1], "Alumninosilicate Polymorphs");
+            
+            text([572,-.2], "Temperature (&#176C)");
+            rotate([-195,1.25],"Pressure (GPA)")
+            
+            strokewidth="1"
+            marker="arrow"
+            line([380,.12],[350,.19]);
+            line([450,.49],[500,.39]);
+            line([785,.85],[793,.98]);
+            stroke="red"
+            line([760,.13],[760,.01]);
+            redtext([755,.13], "(760, 0)", above);
+            
+            stroke="black"
+            marker="none"
+            a=[350,0.19]
+            b=[500,0.38]
+            c=[795,1.0]
+            d=[760,0]
+            o=[350,0]
+            t=[0,1]
+            
+            strokewidth="2"
+            line(a,b)
+            line(b,c)
+            line(b,d);
+            
+            strokewidth="1"
+            plot("y=0.0",340,360)
+            plot("y=0.1",340,360)
+            plot("y=0.2",340,360)
+            plot("y=0.3",340,360)
+            plot("y=0.4",340,360)
+            plot("y=0.5",340,360)
+            plot("y=0.6",340,360)
+            plot("y=0.7",340,360)
+            plot("y=0.8",340,360)
+            plot("y=0.9",340,360)
+            plot("y=1.0",340,360)
+            
+            line([350,-0.02],[350,0.02])
+            line([400,-0.02],[400,0.02])
+            line([450,-0.02],[450,0.02])
+            line([500,-0.02],[500,0.02])
+            line([550,-0.02],[550,0.02])
+            line([600,-0.02],[600,0.02])
+            line([650,-0.02],[650,0.02])
+            line([700,-0.02],[700,0.02])
+            line([750,-0.02],[750,0.02])
+            line([800,-0.02],[800,0.02])
+            
+            text([345,0],"0",left);
+            text([345,0.2],"0.2",left);
+            text([345,0.4],"0.4",left);
+            text([345,0.6],"0.6",left);
+            text([345,0.8],"0.8",left);
+            text([345,1.0],"1.0",left);
+            
+            text([400,-0.02],"400",below)
+            text([500,-0.02],"500",below)
+            text([600,-0.02],"600",below)
+            text([700,-0.02],"700",below)
+            text([800,-0.02],"800",below)
+            
+            line([350,1],[800,1])
+            line([800,0],[800,.75])
+            line([800,.85],[800,1])
+            line([350,0],[800,0])
+            line([350,0],[350,1])
+            '
+            >
+            
+            </div>
+            </h1>
+            <p>This point seems to correspond to a point on the line where both sillimanite and andalusite can form (boundary line). 
+              The answer choice also emphasizes that it is when the pressure is zero:
+             </p>
+             <div>
+            <span text style="border: 1px; border-style: solid;  border-color: black;"> &#9675   The temperature at which both andalusite and 
+               sillimanite can form when there is <strong>no pressure applied</strong>. </span>
+             </div>
+            <div class="explanation-header1">Approach 2</div>
+            <p>The first choice refers to pressure, so it cannot be associated with the \(T\)-intercept, which would give a value related to temperature. The last two answer choices are described
+              as rates rather than a constant. They may be suitable answer choices if the question were asking for the meaning of something related to slope. The correct answer choice 
+              refers to temperature, which is correctly associated with the \(T\)-intercept.
+            </p>
+        </div>
+    </main>
+</body>
+</html>
