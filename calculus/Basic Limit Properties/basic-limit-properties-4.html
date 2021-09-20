@@ -12,7 +12,7 @@
 <body id='basic-limit-properties'>
     <main id="4">
         <div id='question-container'>
-           
+           <p>If \(a\neq 0\), then \(\lim\limits_{x\to a} \dfrac{x^2-a^2}{x^4-a^4} \) is</p>
 
                      
         </div>
@@ -21,13 +21,14 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(\dfrac{1}{a^2}  \)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    \(\dfrac{1}{2a^2}  \)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -35,6 +36,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \(0 \)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -42,6 +44,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    nonexistent
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -53,8 +56,19 @@
             <button id='skip'>Skip Question</button>
         </div>
         <div id='explanation' style="display: none;">
-            <div class="explanation-header1">Approach</div>
-
+            <div class="explanation-header1">Approach 1</div>
+            <p>Substituting in the value \(x=a\) results in the indeterminate form \(\dfrac{0}{0}\).</p>
+            <p>We can factor using difference of squares and cancel terms:</p>
+            $$ \lim\limits_{x\to a} \frac{x^2-a^2}{x^4-a^4} $$
+            $$ = \lim\limits_{x\to a} \frac{x^2-a^2}{(x^2+a^2)(x^2-a^2)} $$
+            $$ =  \lim\limits_{x\to a}  \frac{1}{x^2+a^2} $$
+            $$ =\boxed{\frac{1}{2a^2}} $$
+            <div class="explanation-header1">Approach 2</div>
+            <p>Once you know L'Hospital's rule, you can use if for all indeterminate forms:</p>
+            $$ \lim\limits_{x\to a} \frac{x^2-a^2}{x^4-a^4} $$
+            $$ =   \lim\limits_{x\to a} \frac{2x}{4x^3} $$
+            $$ = \frac{2a}{4a^3} $$
+            $$ = \boxed{\frac{1}{2a^2}} $$
         </div>
     </main>
 </body>

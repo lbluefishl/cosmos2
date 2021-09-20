@@ -13,7 +13,9 @@
     <main id="3">
         <div id='question-container'>
            
-
+            <p style="line-height: 2;"><img src="../../calc.svg" alt="calculator allowed" width="20px"> Population \(y\) grows according to the equation \(\dfrac{dy}{dt}=ky\), where \(k\) is a constant and \(t\) is measured in years. If the population
+                doubles every 5 years, then the value of \(k\) is 
+            </p>
                      
         </div>
         <hr>
@@ -21,13 +23,14 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+\(0.069\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+\(0.139\)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -35,13 +38,14 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    \(0.200\)
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \(5.000\)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -54,8 +58,26 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
-        </div>
+            <p>Seperate variables and integrate:</p>
+            $$ \frac{dy}{dt}=ky $$
+            $$ \frac{1}{y}&nbsp dy=k &nbsp dt $$
+            $$ \ln|y|=kt+C $$
+            $$ y=Ae^{kt} $$
+            <p>At \(t=0\), the population is \(A\). </p>
+            $$ y|_{t=0} = Ae^{k(0)} $$
+            $$ y=Ae^0 $$
+            $$ y=A $$
+            <p>At \(t=5\), the population should double to \(2A\).</p>
+            $$ 2A=Ae^{k(5)} $$
+            $$ 2=e^{5k} $$
+            $$ \ln2=5k $$
+            $$ \frac{\ln2}{5}=k $$
+            $$ k \approx \boxed{0.139} $$
+            <div class="explanation-header1">Sidenote</div>
+            <p>The amount of time required for a quantity to double (assuming continous growth) is:</p>
+            $$ \text{doubling time} = \frac{\ln 2}{\text{growth rate}} $$
+            <p>If we are given the doubling time, we can use it to solve for the growth rate, which is what the constant \(k\) refers to in our population growth model.</p>
+         </div>
     </main>
 </body>
 </html>

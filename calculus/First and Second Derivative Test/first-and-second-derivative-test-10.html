@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>First and Second Derivative Test Question 9</title>
+    <title>First and Second Derivative Test Question 10</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
@@ -10,40 +10,41 @@
     <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
 </head>
 <body id='first-and-second-derivative-test'>
-    <main id="9">
+    <main id="10">
         <div id='question-container'>
-           
-            <p><img src="../../calc.svg" alt="calculator allowed" width="20px"> The first derivative of the function \(f\) is given by \(f'(x)=\dfrac{3\cos^2 x}{x}-\dfrac{1}{6}\). How many critical
-                values does \(f\) have on the open interval \((0,10) \) ? </p>
+           <p>If \(g\) is a differentiable function such that \(g(x)\gt 0\) for all real numbers \(x\) and if \(f'(x)=(x^2-9)g(x) \), which of the following is true?</p>
+
                      
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-                    Zero
+                    \(f\) has a relative maximum at \(x=-3\) and a relative minimum at \(x=3\).
                                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    Two
+                    \(f\) has a relative minimum at \(x=-3\) and a relative maximum at \(x=3\).
+
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-                    Four
+                   \(f\) has relative minima at \(x=-3\) and at \(x=3\).
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container c'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-Six
+                    \(f\) has relative maxima at \(x=-3\) and at \(x=3\).
+
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -55,13 +56,20 @@ Six
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-            <p>To find the critical values, set the derivative equal to 0. In the graphing calculator, we can enter the equation and find the \(x\)-intercepts.</p>
-            <p>As shown below, the graph of the derivative has 6 \(x\)-intercepts on the interval \((0,10)\).</p>
-            <div style="text-align: center;"><iframe src="https://www.desmos.com/calculator/4kvyelbwlu?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>>
-          </div>
-          <div class="explanation-header1">Sidenote</div>
-          <p>Critical values also occur where \(f'(x)\) is undefined. This occurs at \(x=0\), but our interval is \((0,10)\) exclusive of \(0\).</p>
-            </div>
+            $$ f'(x)=(x^2-9)g(x) $$
+            $$ f'(x)=(x+3)(x-3)g(x) $$
+            <p>Since \(g(x)\) is always greater than 0, we can simply treat it as a positive constant such as \(1\). The critical values are \(-3\) and \(3\).</p>
+            $$ f'(x)=(x+3)(x-3)(1) $$
+            <p>Testing the intervals:</p>
+            $$ \begin{array}{|c|c|c|c|} \hline
+            \text{Interval} & -\infty \lt x \lt -3 & -3 \lt x \lt 3 & 3 \lt x \lt \infty \\ \hline
+            \text{ Test Value} & x=-4 & x=0 & x= 4 \\ \hline
+            \text{ Sign of }f'(x) & f'(-4) \gt 0 & f'(0) \lt 0 & f'(4) \gt 0 \\ \hline
+            \text{Conclusion} & \text{Increasing} & \text{Decreasing} & \text{Increasing} \\ \hline
+            \end{array} $$
+      <p>At \(-3\), we have a relative maximum since the sign changes from positive to negative. At \(3\), we have a relative minimum since the sign changes from negative to positive.</p>
+      
+        </div>
 
     </main>
     

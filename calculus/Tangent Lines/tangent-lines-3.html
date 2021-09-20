@@ -12,7 +12,8 @@
 <body id='tangent-lines'>
     <main id="3">
         <div id='question-container'>
-           
+           <p> <img src="../../calc.svg" alt="calculator allowed" width="20px"> Which of the following is an equation of the line tangent to the graph of \(f(x)=x^4-3x^2 \) at the 
+               point where \(f'(x)=5\) ?</p>
 
                      
         </div>
@@ -21,28 +22,28 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(y=5x+0.512\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    \( y=5x-3.562\)
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    \( y=5x-9.193\)
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    \(y=5x-18.552\)
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -53,7 +54,17 @@
             <button id='skip'>Skip Question</button>
         </div>
         <div id='explanation' style="display: none;">
-
+            <div class="explanation-header1">Approach</div>
+            $$ f(x)=x^4-3x^2 $$
+            $$ f'(x)=4x^3-6x $$
+            $$ 5=4x^3-6x $$
+            <p>Find the intersection of the graphs \(y=5\) and \(y=4x^3-6x\) in your graphing calculator.</p>
+            $$ x \approx 1.523 $$
+            <p>Substitue this \(x\)-coordinate back into the initial equation to find the corresponding \(y\)-coordinate.</p>
+            $$ f(1.523)=-1.578 $$
+            <p>Use the point slope equation:</p>
+            $$ y-(-1.578)=5(x-1.523) $$
+            $$ \boxed{y=5x-9.193} $$
         </div>
     </main>
 </body>

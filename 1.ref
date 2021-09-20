@@ -1,4 +1,4 @@
-            <img src="/calc.svg" alt="calculator allowed" width="20px"> 
+            <img src="../../calc.svg" alt="calculator allowed" width="20px"> 
 
             <div style="text-align: center;">
                 <embed width="350" height="300" src="../../d.svg" 
