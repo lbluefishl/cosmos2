@@ -13,21 +13,24 @@
     <main id="2">
         <div id='question-container'>
            
-
+            <p> <img src="../../calc.svg" alt="calculator allowed" width="20px"> Let \(R\) be the region in the first quadrant bounded below by the graph of \(y=x^2\) and above by the graph of \(y=\sqrt{x}\). \(R\) is the 
+                base of a solid whose cross sections perpendicular to the \(x\)-axis are squares. What is the volume of the solid?
+            </p>
                      
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(0.129\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    \(0.300\)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -35,6 +38,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \(0.700\)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -42,6 +46,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \(1.271\)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -54,6 +59,19 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
+           
+            <p>To find the lower and upper bounds of integration, we need to find when the two graphs intersect:</p>
+            $$ x^2=\sqrt{x} $$
+            $$ x^4=x $$
+            $$ x^4-x=0 $$
+            $$ x(x^3-1)=0 $$
+            $$ x=0, 1 $$
+            <p>Each square has side lengths equal to the difference between the \(y\) values of each equation.</p>
+            <p>To find the volume:</p>
+            $$ \int\limits_0^1 A_{\text{square}} &nbsp dx = \int\limits_0^1 s^2 &nbsp dx $$
+         
+            $$ =\int\limits_0^1 (\sqrt{x}-x^2)^2 &nbsp dx $$
+            $$ \approx \boxed{0.129} $$
 
         </div>
     </main>

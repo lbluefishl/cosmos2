@@ -12,7 +12,46 @@
 <body id='position-velocity-and-acceleration'>
     <main id="10">
         <div id='question-container'>
-           
+
+            
+            <div style="text-align: center;">
+                <embed width="350" height="300" src="../../d.svg" 
+                  script=
+                  '
+                  setBorder(1);
+                  initPicture(-2,10,-7,5);
+                a=[0,0]
+                b=[1,2]
+                c=[3,0]
+                d=[4,-4]
+                e=[7,0]
+                line([1.6,-.3],[1.6,.3])
+                line([3,-.3],[3,.3])
+                line([4.8,-.3],[4.8,.3])
+                line([7,-.3],[7,.3])
+                
+                curve([a,b,c])
+                curve([c,d,e])
+
+                  marker="arrow"
+                  line([-1,0],[8,0])
+                  line([0,-6],[0,3])
+                  fontsize="20"
+                  text([8,0],"t",right)
+                  text([0,3],"v(t)",above)
+                  text([-.8,-1],"O")
+                  text([1.6,-.3],"j","below")
+                  text([2.8,-.3],"k","below")
+                  text([4.8,-.3],"l","below")
+                  text([7.3,-.3],"m","below")
+                    
+                  '> 
+                  </div>
+     <p>A particle moves along a straight line. The graph of the particle's velocity \(v(t)\) at time \(t\) is shown above for 
+         \(0\leq t \leq m\), where \(j\), \(k\), \(l\), and \(m\) are constants. The graph intersects the horizontal axis at \(t=0\), 
+         \(t=k\), and \(t=m\) and has horizontal tangents at \(t=j\) and \(t=l\). For what value of \(t\) is the speed of the particle 
+         decreasing?
+     </p>      
 
                      
         </div>
@@ -22,20 +61,23 @@
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
 
-                   
+                   \( j \leq t \leq l  \)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                   \( k \leq t \leq m  \)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                   \( j \leq t \leq k  \) and 
+                   \( l \leq t \leq m  \) 
                   
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -44,7 +86,8 @@
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
                     
-
+                    \( 0 \leq t \leq j  \) and 
+                    \( k \leq t \leq l  \)
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -56,8 +99,12 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
-         </div>
+            <p>Speed reflects the magnitude of the velocity. Speed decreases as long as \(|v(t)|\) decreases. </p>
+            <p>From the graph, we can see that speed decreases from \(j\) to \(k\).</p>
+            <p>It may be tempting to say that the speed continues to decrease from \(k\) to \(l\), but in fact, speed increases here. </p>
+            <p>To use a real-world example, if you start reversing your car faster, you are still technically going faster and your speed goes up. </p>
+            <p>From \(l\) to \(m\), you are "reversing" slower and your speed is decreasing until you hit a speed of \(0\).</p>
+        </div>
     </main>
 </body>
 </html>
