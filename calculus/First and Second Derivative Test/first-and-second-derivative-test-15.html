@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>IVT, MVT, and Rolle's Theorem Question 3</title>
+    <title>First and Second Derivative Test Question 15</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
@@ -9,13 +9,13 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
     <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
 </head>
-<body id='ivt-mvt-and-rolles-theorem'>
-    <main id="3">
+<body id='first-and-second-derivative-test'>
+    <main id="15">
         <div id='question-container'>
-           <p>Let \(f\) be a function that is continuous on the closed interval \([3,10]\) with \(f(3)=0\) and \(f(10)=10\). Which of the following 
-               is guaranteed by the Intermediate Value Theorem?
-           </p>
-
+           
+            <p>Let \(h\) be the function with the first derivative given by \(h'(x)=\int\limits_0^x e^{-t^2}&nbsp dt\). Which of the following 
+                must be true on the interval \(0 \lt x \lt 3 \) ?
+            </p>
                      
         </div>
         <hr>
@@ -23,28 +23,31 @@
             <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-                    \(f(x)=6  \) has at least one solution in the open interval \((3,10)\).
+                    \(h\) is increasing, and the graph of \(h\) is concave up.
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    \(f(7)=5\)
+                    \(h\) is increasing, and the graph of \(h\) is concave down.
+                    
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-                    \(f\) attains a maximum on the open interval \((3,10)\).
+                    \(h\) is decreasing, and the graph of \(h\) is concave up.
+
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-                    \(f'(x)=\dfrac{10}{7}\) has at least one solution in the open interval \((3,10)\).
+                    \(h\) is decreasing, and the graph of \(h\) is concave down.
+
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -56,8 +59,12 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-            The Intermediate Value Theorem gurantees that there will be a point with value \(f(c)\) where \( 0\lt f(c)\lt 10\). 
-            <p>The last answer choice is also guranteed, but through the Mean Value Theorem and only if the function is also differentiable on the closed interval.</p>
+            <p>The graph of \(e^{-t^2}\) is always positive. The area under the curve therefore will be positive for the interval \(0 \lt x\lt 3\).</p>
+            <p>\(h'(x)\) is therefore always positive, and the graph of \(h\) is increasing on the interval.</p>
+            <p>By the second fundamental theorem of calculus,</p>
+            $$ h'(x)=\int\limits_0^x e^{-t^2} &nbsp dt $$
+            $$ h''(x)=e^{-x^2} $$
+            <p>Similar to the previous case, the exponential function is positive for all values. Therefore, \(h\) is also concave up on the interval.</p>
         </div>
     </main>
 </body>

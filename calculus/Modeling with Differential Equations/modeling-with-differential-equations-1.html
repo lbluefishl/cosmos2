@@ -12,22 +12,23 @@
 <body id='modeling-with-differential-equations'>
     <main id="1">
         <div id='question-container'>
-           
+           <p>If \(P(t)\) is the size of a population at time \(t\), which of the following differential equations describes linear growth in the size of the population?</p>
 
                      
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(\dfrac{dP}{dt}=100\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    \(\dfrac{dP}{dt}=50t\)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -35,6 +36,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \(\dfrac{dP}{dt}=30t^2\)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -42,6 +44,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \(\dfrac{dP}{dt}=200P\)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -54,7 +57,14 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <p>Linear growth is given by the familiar equation:</p>
+            $$ y=mx+b $$
+            <p>Using the corresponding variables:</p>
+            $$ P(t)=mt+b $$
+            <p>Differentiation with respect to time:</p>
+            $$ \frac{d}{dt} (P(t)) = \frac{d}{dt}(mt+b) $$
+            $$ \frac{dP}{dt}=m $$
+            <p>Where \(m\) is the rate of change.</p>
         </div>
     </main>
 </body>

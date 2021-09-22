@@ -8,7 +8,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(245, 243, 243);
+    background-color: rgb(255, 255, 255);
     width: 50%;
     margin: auto;
     padding: 15px;
@@ -93,8 +93,9 @@ label {
     white-space: nowrap;
   } 
 
-  div.explanation {
+  div#explanation {
       flex: 1;
+      padding: 10px;
   }
 
   div.twobytwo-grid {

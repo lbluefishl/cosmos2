@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>IVT, MVT, and Rolle's Theorem Question 3</title>
+    <title>Position, Velocity, and Acceleration Question 9</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
@@ -9,42 +9,43 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
     <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
 </head>
-<body id='ivt-mvt-and-rolles-theorem'>
-    <main id="3">
+<body id='position-velocity-and-acceleration'>
+    <main id="9">
         <div id='question-container'>
-           <p>Let \(f\) be a function that is continuous on the closed interval \([3,10]\) with \(f(3)=0\) and \(f(10)=10\). Which of the following 
-               is guaranteed by the Intermediate Value Theorem?
-           </p>
-
+           
+<p style="line-height: 2;"><img src="../../calc.svg" alt="calculator allowed" width="20px"> A particle moves along a line so that its acceleration for \(t\geq 0\) is given 
+by \(a(t)=\dfrac{t+2}{\sqrt{t^3+3}} \). If the particle's velocity at \(t=0\) is \(10\), what is the velocity of the particle at \(t=5\)? </p>
                      
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container c'>
+            <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-                    \(f(x)=6  \) has at least one solution in the open interval \((3,10)\).
+
+                \( -0.296\)   
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    \(f(7)=5\)
+                    \(5.296\)
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-                    \(f\) attains a maximum on the open interval \((3,10)\).
+                  \(7.351 \)
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-                    \(f'(x)=\dfrac{10}{7}\) has at least one solution in the open interval \((3,10)\).
+                    \(10.296\)
+
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -56,9 +57,13 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-            The Intermediate Value Theorem gurantees that there will be a point with value \(f(c)\) where \( 0\lt f(c)\lt 10\). 
-            <p>The last answer choice is also guranteed, but through the Mean Value Theorem and only if the function is also differentiable on the closed interval.</p>
-        </div>
+            <p>The change in velocity can be found using:</p>
+            $$ \int\limits_0^5 a(t) &nbsp dt $$
+            <p>The final velocity is:</p>
+            $$ 10 + \int\limits_0^5 a(t)=\dfrac{t+2}{\sqrt{t^3+3}} &nbsp dt $$
+            $$ \approx 10 + 5.296 $$
+            $$ = \boxed{10.296} $$
+         </div>
     </main>
 </body>
 </html>

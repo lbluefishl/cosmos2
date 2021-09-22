@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Definite Integrals Question 10</title>
+    <title>Definite Integrals Question 15</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
@@ -10,17 +10,17 @@
     <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
 </head>
 <body id='definite-integrals'>
-    <main id="10">
+    <main id="15">
         <div id='question-container'>
-           
+           <p>Let \(f\) be the function such that \(\int\limits_3^{8} f(2x) &nbsp dx = 2\). Which of the following must be true?</p>
                      
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-                
+                \( \int\limits_6^{16} f(t) &nbsp dt = 4 \)
 
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
@@ -28,6 +28,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    \( \int\limits_6^{16} f(t) &nbsp dt = 1 \)
    
                     
                 </label>
@@ -36,6 +37,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                \( \int\limits_3^{8} f(t) &nbsp dt = 4 \)
                  
 
                 </label>
@@ -45,6 +47,7 @@
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
            
+                    \( \int\limits_3^{8} f(t) &nbsp dt = 1 \)
 
 
                 </label>
@@ -58,8 +61,11 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1"> Approach  </div>
-
-
+            $$ \int\limits_3^{8} f(2x) &nbsp dx = 2 $$
+            <p>Perform the following substitutions:</p>
+            $$ t=2x \hskip{2em} dt= 2&nbsp dx \hskip{2em} dx=\frac{dt}{2}$$ 
+            $$ \int\limits_6^{16} f(t) &nbsp \frac{dt}{2} =2 $$
+            $$ \boxed{\int\limits_6^{16} f(t) &nbsp dt = 4} $$
         </div>
     </main>
 </body>

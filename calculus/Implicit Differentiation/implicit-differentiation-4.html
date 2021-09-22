@@ -13,35 +13,36 @@
     <main id="4">
         <div id='question-container'>
            
-
+<p>If \((x+2y)\cdot \dfrac{dy}{dx}=2x-y\), what is the value of \(\dfrac{d^2y}{dx^2}\) at the point \((3,0)\) ?</p>
                      
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(-\dfrac{10}{3}\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    \(0\)
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    \(2\)
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \(\dfrac{10}{3}\)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -53,8 +54,21 @@
             <button id='skip'>Skip Question</button>
         </div>
         <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            $$ (x+2y)\cdot \dfrac{dy}{dx}=2x-y $$
+            <p>Solve for \(\frac{dy}{dx}\) and differentiate.</p>
+            $$ \frac{dy}{dx}=\frac{2x-y}{x+2y} $$
+            $$ \frac{d^2y}{dx^2}=\frac{(x+2y)(2-\frac{dy}{dx})-(2x-y)(1+2\frac{dy}{dx})}{(x+2y)^2}  $$
+            <p>Find the value of \(\frac{dy}{dx}\) at the point:</p>
+            $$ \frac{dy}{dx}\Big|_{(3,0)}=\frac{2(3)-0}{3+2(0)} $$
+            $$\frac{dy}{dx}\Big|_{(3,0)} = 2 $$
+            <p>Substitute known values into the second derivative:</p>
+            $$ \frac{d^2y}{dx^2}=\frac{((3)+2(0))(2-(2))-(2(3)-(0))(1+2(2))}{((3+2(0))^2}  $$
+            $$ = \frac{(3)(0)-(6)(5)}{3^2} $$
+            $$ = -\frac{30}{9} $$
+            $$ = \boxed{-\frac{10}{3}}  $$
 
-        </div>
+        </div> 
     </main>
 </body>
 </html>

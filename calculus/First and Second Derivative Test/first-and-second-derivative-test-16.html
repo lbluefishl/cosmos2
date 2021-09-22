@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>IVT, MVT, and Rolle's Theorem Question 3</title>
+    <title>First and Second Derivative Test Question 16</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
@@ -9,42 +9,41 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
     <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
 </head>
-<body id='ivt-mvt-and-rolles-theorem'>
-    <main id="3">
+<body id='first-and-second-derivative-test'>
+    <main id="16">
         <div id='question-container'>
-           <p>Let \(f\) be a function that is continuous on the closed interval \([3,10]\) with \(f(3)=0\) and \(f(10)=10\). Which of the following 
-               is guaranteed by the Intermediate Value Theorem?
-           </p>
+         <p>            <img src="../../calc.svg" alt="calculator allowed" width="20px"> For \(-2.5 \lt x \lt 2.5\), let \(f\) be a continous function with first derivative given by \(f'(x)=e^{(x^4-2x^2+2)}-4 \).
+             Which of the following are all intervals on which the graph of \(f\) is concave down?
+         </p>  
 
-                     
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container c'>
+            <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-                    \(f(x)=6  \) has at least one solution in the open interval \((3,10)\).
-                </label>
+                    \( (-1.273,-0.615)  \) and \( (0.615, 1.273,)   \)
+                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    \(f(7)=5\)
+                  \((-0.615,0.615)\)  
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-                    \(f\) attains a maximum on the open interval \((3,10)\).
+                    \((-2.5,-1)\) and \((0,1)\)
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-                    \(f'(x)=\dfrac{10}{7}\) has at least one solution in the open interval \((3,10)\).
+                    \((-1,1)\)
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -56,8 +55,9 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-            The Intermediate Value Theorem gurantees that there will be a point with value \(f(c)\) where \( 0\lt f(c)\lt 10\). 
-            <p>The last answer choice is also guranteed, but through the Mean Value Theorem and only if the function is also differentiable on the closed interval.</p>
+            <p>The graph of \(f\) will be concave down when \(f'(x)\) is decreasing.</p>
+            <p>The graph of \(f'\) is shown below. Note that per the question the interval begins at \(-2.5\).</p>
+            <div style="text-align: center;"><iframe src="https://www.desmos.com/calculator/71ckn4hobz?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe></div>
         </div>
     </main>
 </body>

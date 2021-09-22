@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Definite Integrals Question 10</title>
+    <title>Definite Integrals Question 13</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
@@ -10,9 +10,12 @@
     <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
 </head>
 <body id='definite-integrals'>
-    <main id="10">
+    <main id="13">
         <div id='question-container'>
-           
+           <p> <img src="../../calc.svg" alt="calculator allowed" width="20px"> Water is pumped into a tank at a rate of 
+        \(r(t)=10\left(1-e^{-0.33t}\right)\) gallons per minute, where \(t\) is the number of minutes since the pump was turned on. 
+    If the tank contained 100 gallons of water when the pump was turned on, how much water, to the nearest gallon, is in the tank 
+after 15 minutes?</p>
                      
         </div>
         <hr>
@@ -21,22 +24,24 @@
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
                 
-
+                    \( 42 \) gallons
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    \( 85 \) gallons
    
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
                  
+                    \( 142 \) gallons
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -45,6 +50,7 @@
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
            
+                    \( 177 \) gallons
 
 
                 </label>
@@ -58,7 +64,11 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1"> Approach  </div>
-
+            <p>The water in the tank is given by:</p>
+            $$ 100 + \int \limits_0^{15} r(t) &nbsp dt $$
+            <p>Using our calculator to evaluate the definite integral:</p>
+            $$ \approx 100 + 42 $$
+            $$ = \boxed{142} $$
 
         </div>
     </main>

@@ -16,3 +16,25 @@
                     
                   '> 
                   </div>
+
+
+
+
+
+<div style="text-align: center;">
+  <embed width="580" height="380" src="../../d.svg" 
+script='
+setBorder(1);
+initPicture(-10,10,-10,10);
+
+fontstyle = "normal";
+text([45,-1,000], "Item price (dollars)");
+rotate([-15,120],"Profit (dollars)")
+
+
+line([-10,0],10,0])
+line([0,-10],[0,10])
+
+
+'> 
+</div>
