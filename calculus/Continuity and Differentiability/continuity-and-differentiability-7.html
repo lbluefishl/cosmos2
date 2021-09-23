@@ -12,32 +12,41 @@
 <body id='continuity-and-differentiability'>
     <main id="7">
         <div id='question-container'>
-
+            $$ f(x)=\begin{cases} x+b & \text{if } x \leq 1 \\
+            ax^2 & \text{if } x\gt 1 
+            \end{cases} $$
+            <p>Let \(f\) be the function above. What are all values of \(a\) and \(b\) for which \(f\) is differentiable at \(x=1\) ?</p> 
                      
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
+                    \(a=\dfrac{1}{2}\) and \(b=-\dfrac{1}{2}\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    \(a=\dfrac{1}{2}\) and \(b=\dfrac{3}{2}\)
+
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \(a=\dfrac{1}{2}\) and \(b\) is any real number
+
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    There are no such values of \(a\) and \(b\).
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -49,8 +58,28 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-          
-
+          <p>We need to find values of \(a\) and \(b\) that make the following true:</p>
+          $$ \lim\limits_{x\to 1^+} f'(x)=\lim\limits_{x\to 1^-} f'(x) $$
+          <p>Differentiate each side of the piecewise function:</p>
+          $$ f(x)=\begin{cases} x+b & \text{if } x \leq 1 \\
+          ax^2 & \text{if } x\gt 1 
+          \end{cases} $$
+          $$ f'(x)=\begin{cases} 1 & \text{if } x \leq 1 \\
+         2ax & \text{if } x\gt 1 
+          \end{cases} $$
+   
+          $$ 2ax=1 $$
+          <p>When \(x=1\),
+              $$ 2a(1)=1 $$
+              $$ a=\frac{1}{2} $$
+              <p>Though we might be tempted to disregard the value of \(b\), we need to make sure the function is continuous at \(x=1\). For this we need:</p>
+              $$ \lim\limits_{x\to 1^+} f(x)=\lim\limits_{x\to 1^-} f(x) $$
+       
+              $$ ax^2=x+b $$
+              <p>Using our values for \(a\) and \(x\):</p>
+              $$ \left(\frac{1}{2}\right)(1)^2=1+b $$
+              $$ b=-\frac{1}{2} $$
+          </p>
         </div>
     </main>
 </body>
