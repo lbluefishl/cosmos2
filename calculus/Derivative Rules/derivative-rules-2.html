@@ -12,8 +12,15 @@
 <body id='derivative-rules'>
     <main id="2">
         <div id='question-container'>
-           
+           $$ \begin{array}{|c|c|c|c|} \hline 
+           f(5) & g(5) & f'(5) & g'(5) \\ \hline
+           -1 & 2 & 5 & -2 \\ \hline
 
+           \end{array} 
+           $$
+            <p style="line-height: 2;">The table above gives values for the functions \(f\) and \(g\) and their derivatives at \(x=5\). Let \(k\) be the function given by 
+                \(k(x)=\dfrac{f(x)}{g(x)}\), where \(g(x)\neq 0 \). What is the value of \(k'(5)\)&nbsp?
+            </p>
                      
         </div>
         <hr>
@@ -21,28 +28,28 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(-\dfrac{5}{2}\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    \(-2\)
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    \(2\)
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    \(3\)
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -54,7 +61,13 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            $$ k(x)=\frac{f(x)}{g(x)}$$
+            $$ k'(x)=\frac{g(x)f'(x)-f(x)g'(x)}{(g(x))^2} $$
+            $$ k'(5)=\frac{g(5)f'(5)-f(5)g'(5)}{(g(5))^2} $$
+            $$ k'(5)=\frac{(2)(5)-(-1)(-2)}{(2)^2} $$
+            $$ k'(5)=\frac{8}{4} $$
+            $$ k'(5)= \boxed{2} $$
+        
         </div>
     </main>
 </body>

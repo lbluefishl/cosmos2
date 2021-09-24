@@ -13,7 +13,7 @@
     <main id="4">
         <div id='question-container'>
            
-
+            \(\displaystyle \int \frac{dx}{4+x^2}&nbsp dx   \)
                      
         </div>
         <hr>
@@ -21,13 +21,14 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(2\tan^{-1}\left(\dfrac{x}{2}\right)+C \)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    \(\dfrac{1}{2}\tan^{-1}\left(\dfrac{x}{2}\right)+C \)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -35,6 +36,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \(\dfrac{1}{2}\tan^{-1}(x)+C \)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -42,6 +44,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \(\dfrac{1}{4}\tan^{-1}(x)+C \)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -53,7 +56,17 @@
             <button id='skip'>Skip Question</button>
         </div>
         <div id='explanation' style="display: none;">
-
+            <div class="explanation-header1">Approach</div>
+            <p>The derivative of arctan:</p>
+            $$ \frac{d}{dx}(\tan^{-1}x) = \frac{1}{1+x^2} $$
+            <p>Rewriting our integral:</p>
+            $$ \int \frac{dx}{4+x^2} = \int \frac{dx}{4(1+\frac{x^2}{4})} $$
+$$ = \frac{1}{4}\int \frac{dx}{1+\left(\frac{x}{2}\right)^2}&nbsp dx $$
+<p>Using substitution:</p>
+$$ u=\frac{x}{2} \hskip{2em} du =\frac{dx}{2} \hskip{2em} 2&nbsp du=dx$$
+            $$ \frac{1}{4}\int \frac{2 &nbsp du}{1+u^2}  =\frac{1}{2}\int \frac{du}{1+u^2}$$
+            $$ = \frac{1}{2}\tan^{-1}u + C$$
+            $$ = \boxed{\frac{1}{2}\tan^{-1}\left(\frac{x}{2}\right)+C} $$
         </div>
     </main>
 </body>

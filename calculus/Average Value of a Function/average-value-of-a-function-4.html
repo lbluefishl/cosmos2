@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Average Value of a Function Question 1</title>
+    <title>Average Value of a Function Question 4</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
@@ -10,10 +10,12 @@
     <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
 </head>
 <body id='average-value-of-a-function'>
-    <main id="1">
+    <main id="4">
         <div id='question-container'>
            
-
+<p style="line-height: 2;">For time \(t\geq 0\), the height \(h\) of an object suspended from a spring is given by \(h(t)=5+8\cos\left(\dfrac{\pi t}{4}\right)\). What is the 
+    average height of the object from \(t=0\) to \(t=2\)&nbsp?
+</p>
                      
         </div>
         <hr>
@@ -21,20 +23,21 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(10\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    \(5-\dfrac{16}{\pi}\)
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \(5+\dfrac{16}{\pi}\)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -42,6 +45,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \(10+\dfrac{32}{\pi}\)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -54,7 +58,13 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <p>The average value of a function is:</p>
+            $$ \frac{1}{b-a}\int\limits_a^b f(x) &nbsp dx $$
+            $$ \frac{1}{2-0}\int\limits_0^2 5+8\cos\left(\frac{\pi t}{4}\right) &nbsp dt $$
+            $$ = \frac{1}{2} \left[ 5t+\frac{32}{\pi}\sin\left(\frac{\pi t}{4}\right)   \right]_0^2 $$
+            $$ = \frac{1}{2} \left[ \left(5(2)+\frac{32}{\pi}\sin\Big(\frac{\pi(2)}{4}\Big)\right)-\left(5(0)-\frac{32}{\pi}\sin\Big(\frac{\pi(0)}{4}\Big)\right)       \right] $$
+     $$ = \frac{1}{2}\left[ \left(10+\frac{32}{\pi}\right) - \left( 0-0\right)      \right] $$
+     $$ = \boxed{5+\frac{16}{\pi}} $$
         </div>
     </main>
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Complex Numbers Question 3</title>
+    <title>Basic Limit Properties Question 6</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
@@ -9,14 +9,10 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
     <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
 </head>
-<body id='complex-numbers'>
-    <main id="3">
+<body id='basic-limit-properties'>
+    <main id="6">
         <div id='question-container'>
-           
-            <p>
-                In the complex number system, what is the value of the expression \( 10i^4-4i^2-2\)&nbsp? (Note: \(i=\sqrt{-1})\)
-                </p>
-                
+            \(\displaystyle\lim\limits_{x\to 0} \frac{\sin\left(\frac{\pi}{2}+x\right)-1}{x}= \)
                      
         </div>
         <hr>
@@ -24,32 +20,30 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-                    \(-16\)
-
+                  \(-1\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-      \(-8\)
-                    
+                    \(0\)
+                  
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-                    \(4\)
-
+                  \(1\)
+                    
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container c'>
+            <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-                    \(12\)
-
+                   The limit does not exist.
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -60,20 +54,18 @@
             <button id='skip'>Skip Question</button>
         </div>
         <div id='explanation' style="display: none;">
-            <div class="explanation-header1"> Approach </div>
-
-            <p>
-            The first few powers of \(i\):
-            </p>
-            $$ i=\sqrt{-1} $$
-            $$ i^2=(\sqrt{-1})^2=-1 $$
-            $$ i^4 = (i^2)^2 =(-1)^2 =1 $$
-            <p>Therefore,</p>
-            $$10i^4-4i^2-2 $$
-            $$ 10(1)-4(-1)-2 $$
-            $$ 10+4-2 $$
-            $$ = \boxed{12} $$
-        </div>
+            <div class="explanation-header1">Approach 1</div>
+            <p>Substituting the value \(x=0\) results in the indeterminate form. We can use L'Hospital's rule. </p>
+            $$ \lim\limits_{x\to 0} \frac{\sin\left(\frac{\pi}{2}+x\right)-1}{x}= \lim\limits_{x\to 0} \frac{\cos(\frac{\pi}{2}+x)}{1}$$
+            $$ = \cos\frac{\pi}{2} = \boxed{0} $$
+            <div class="explanation-header1">Approach 2</div>
+            <p>Comparing it with the limit definition of a derivative:</p>
+            $$ \lim \limits_{h\to 0} \frac{f(x+h)-f(x)}{h} $$
+            $$ \lim \limits_{h\to 0} \frac{\sin(\frac{\pi}{2}+h)-\sin\left(\frac{\pi}{2}\right)}{h} $$
+            $$ f(x)=\sin x \hskip{2em} x=\frac{\pi}{2}$$
+            $$ f'(x)=\cos x $$
+            $$ f'\left(\frac{\pi}{2}\right)=\cos \frac{\pi}{2} = \boxed{0} $$
+         </div>
     </main>
 </body>
 </html>

@@ -13,7 +13,7 @@
     <main id="4">
         <div id='question-container'>
            
-
+<p>For \(x\gt 0\), \(\dfrac{d}{dx}\left(\int\limits_0^{3x}\ln(t^3+1)&nbsp dt\right) =\)</p>
                      
         </div>
         <hr>
@@ -21,13 +21,14 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(\ln(x^3+1)  \)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    \(\ln(27x^3+1)  \)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -35,13 +36,15 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \(3\ln(x^3+1)  \)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \(3\ln(27x^3+1)  \)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -54,7 +57,9 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+$$ \frac{d}{dx}\left(\int\limits_0^{3x}\ln(t^3+1)&nbsp dt\right) $$
+$$ = \ln((3x)^3+1) \cdot \frac{d}{dx}(3x) $$
+$$ = \boxed{3\ln(27x^3+1)} $$
         </div>
     </main>
 </body>

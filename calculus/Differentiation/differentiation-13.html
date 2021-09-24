@@ -12,15 +12,15 @@
 <body id='differentiation'>
     <main id="13">
         <div id='question-container'>
-
+            <p>If \(f(x)=3^{2x}\), then \(f'(x) =\)</p>
                      
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-               
+               \(3^{2x}(\ln 9)  \)
 
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
@@ -28,7 +28,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-   
+   \(\dfrac{3^{2x}}{2\ln 3} \)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -36,7 +36,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-                
+                \(2(3^{x})\)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -44,7 +44,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-                   
+                   \(2(3^{2x})\)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -59,8 +59,13 @@
 
 
             <div class="explanation-header1"> Approach </div>
-
-         
+            <p>Given an exponential function,</p>
+            $$ f(x)=a^x $$
+            $$ f'(x)=(\ln a)a^x x' $$
+            <p>For our equation,</p>
+            $$ f'(x)= (\ln 3)3^{2x}\cdot 2  $$
+            <p>\(2\ln3 \) can be written as \(\ln 3^2\)</p>
+         $$ = \boxed{3^{2x}\ln 9} $$
     
         </div>
     </main>

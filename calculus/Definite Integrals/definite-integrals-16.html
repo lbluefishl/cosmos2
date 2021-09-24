@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Complex Numbers Question 3</title>
+    <title>Definite Integrals Question 16</title>
     <script src="../../scripts/question.js" defer></script>
-    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="../../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
     <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
 </head>
-<body id='complex-numbers'>
-    <main id="3">
+<body id='definite-integrals'>
+    <main id="16">
         <div id='question-container'>
-           
-            <p>
-                In the complex number system, what is the value of the expression \( 10i^4-4i^2-2\)&nbsp? (Note: \(i=\sqrt{-1})\)
-                </p>
-                
-                     
+              <p><img src="../../calc.svg" alt="calculator allowed" width="20px"> A cup of tea is cooling in a room that has a constant 
+            temperature of \(70\) degrees Fahrenheit (\(^\circ \text{F}\)). If the initial temperature of the tea, at time \(t=0\), is \(200^\circ \text{F}\) and 
+        the temperature of the tea changes at the rate \(R(t)=-6.55e^{-0.045t}\) degrees Fahrenheit per minute, what is 
+    the temperature, to the nearest degree, of the tea after \(5\) minutes?</p>       
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-                    \(-16\)
-
+                    \(171^\circ \text{F} \)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-      \(-8\)
+                    \(130^\circ \text{F} \)
+                 
+   
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -40,15 +39,19 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-                    \(4\)
+           
+                    \(41^\circ \text{F} \)
+                 
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container c'>
+            <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-                    \(12\)
+           
+                    \(29^\circ \text{F} \)
+                  
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -60,19 +63,13 @@
             <button id='skip'>Skip Question</button>
         </div>
         <div id='explanation' style="display: none;">
-            <div class="explanation-header1"> Approach </div>
-
-            <p>
-            The first few powers of \(i\):
-            </p>
-            $$ i=\sqrt{-1} $$
-            $$ i^2=(\sqrt{-1})^2=-1 $$
-            $$ i^4 = (i^2)^2 =(-1)^2 =1 $$
-            <p>Therefore,</p>
-            $$10i^4-4i^2-2 $$
-            $$ 10(1)-4(-1)-2 $$
-            $$ 10+4-2 $$
-            $$ = \boxed{12} $$
+            <div class="explanation-header1"> Approach  </div>
+            <p>The change in temperature is found with the definite integral:</p>
+            $$ \int\limits_0^5 -6.55e^{-0.045t} &nbsp dt $$
+            <p>Evaluating the integral using the calculator:</p>
+$$ \int\limits_0^5 -6.55e^{-0.045t} &nbsp dt \approx -29 $$
+<p>Subtracting from the initial temperature:</p>
+$$ 200-29=\boxed{171} $$
         </div>
     </main>
 </body>
