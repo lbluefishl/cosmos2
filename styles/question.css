@@ -14,9 +14,17 @@ main {
     padding: 15px;
 }
 
-@media (max-width:500px) {
+
+
+@media (max-width:1000px) {
     main {
-        width: 100%;
+        width: 95%;
+        margin: 5px;
+        padding: 5px
+    }
+
+    body {
+        margin: 5px;
     }
 }
  
