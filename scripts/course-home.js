@@ -13,7 +13,9 @@ function getProgress() {
                 }
 
         }
-
+        if (sum > max) {
+            sum = 100;
+        } 
         let progress = 1;
         let completion = setInterval(setProgress, 20)
         function setProgress() {
