@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Interpreting Data Question 10</title>
+    <title>Tangent Lines Question 6</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
@@ -9,24 +9,13 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
     <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
 </head>
-<body id='interpreting-data'>
-    <main id="10">
+<body id='tangent-lines'>
+    <main id="6">
         <div id='question-container'>
-            <p><img src="../../calc.svg" alt="calculator allowed" width="20px">
-                One method of calculating the approximate age, in years, of a tree of a particular species is to multiply the diameter of the tree, in inches, by a constant called the growth factor for the species. 
-                The table below gives the growth factors for three species of trees.
-                </p>
-                $$ \begin{array} {|l|c|} \hline
-                \hspace{0em}\text{ Species of Tree} & \text{Growth Factor} \\ \hline
-                 \text{American elm} & 4.0 \\ \hline
-                 \text{Black walnut} & 4.5 \\ \hline
-                 \text{Cottonwood} & 2.0 \\ \hline
-                 \end{array} $$
-                 <p>
-                If an american elm and a cottonwood each now have a diameter of 3 feet, which of the following will be closest to the difference, in inches, of their diameters 20 years from now?
-                <br>
-                (1 foot = 12 inches)</p>
-
+           
+           <p>For the function \(f\), \(f'(x)=2x+2\) and \(f(2)=3\). What is the approximation for \(f(2.1)\) found by using the line 
+               tangent to the graph of \(f\) at \(x=2\)&nbsp?
+           </p>
                      
         </div>
         <hr>
@@ -34,15 +23,15 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-                    \(2.0\)
-
+                    \(2.2\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-     \(5.0\)
+                    \(3.6\)
+
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -50,7 +39,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-                    \(10.0\)
+                    \(4.2\)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -58,7 +47,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-                    \(41.0\)
+                    \(6.2\)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -70,32 +59,17 @@
             <!--<button id='skip'>Skip Question</button>-->
         </div>
         <div id='explanation' style="display: none;">
-            <div class="explanation-header1"> Approach </div>
+            <div class="explanation-header1">Approach</div>
+            <p>First, write the equation of the tangent line at \(x=2\).</p>
+            $$ f'(x)=2x+2 $$
+            $$f'(2)=2(2)+2 = 6 $$
+            <p>Given a slope of \(6\) and point \((2,3)\),</p>
+$$ y-3=6(x-2) $$
+<p> At \(x=2.1\),</p>
+$$ y-3=6(2.1-2) $$
+$$ y-3=.6 $$
+$$ y=\boxed{3.6} $$
 
-            <p>
-            We should first construct a model given the description. Below is the simplist interpretation of the description:
-            </p>
-            $$ A = dk $$
-            
-            
-            $$
-              A = \text{ Age (years)} $$
-             $$ d = \text{ diameter (inches)} $$
-            $$k = \text{ growth factor} $$
-            <p>The question asks us to find the diameters of the trees after 20 years. We can rearrange the equation to find \(d\).</p>
-            $$ d=\frac{A}{k} $$
-            <div style="columns: 2;">
-            <div style="text-align: center;">American elm</div>
-            $$ A=20, k=4.0 $$
-            $$ d=\frac{20}{4} $$
-            $$ d=5 $$
-            <div style="text-align: center;">Cottonwood</div>
-            $$ A=20, k=2.0 $$
-            $$ d=\frac{20}{2} $$
-            $$ d=10 $$
-            </div>
-            <p>The difference in the diameters is \(10-5=\boxed{5}\). Note that we excluded the current diameter of the trees in our calculation. Because they are equivalent, it does not affect our final calculation. </p>
-            
         </div>
     </main>
 </body>

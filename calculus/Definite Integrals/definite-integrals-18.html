@@ -12,14 +12,44 @@
 <body id='definite-integrals'>
     <main id="18">
         <div id='question-container'>
-                     
+            <div style="text-align: center;">
+                <embed width="350" height="300" src="../../d.svg" 
+                  script=
+                  '
+                  setBorder(1);
+                  initPicture(-2,23,-1,6);
+    
+                  marker="arrow"
+                  line([-2,0],[21,0])
+                  line([0,-2],[0,5])
+                  plot("(3e^(-.2x)) cos(.5x)",0,15.5)
+                  fontsize="22"
+
+                  text([21,0],"x",right)
+                  text([0,5],"y",above)
+                  text([-1,-.5],"O")
+                text([14,3],"f &apos;")
+
+                  fontstyle="normal"
+                text([10,3],"Graph of ")
+                text([1.2,.5],"15")
+                text([5.8,-.4],"12")
+                text([10,1],"4")
+                marker="arrow"
+                line([10.3,.8],[12.5,.1])
+                  '> 
+                  </div>
+                  <p>The graph of \(f'\), the derivative of the function \(f\), is shown above for \(0\leq x\leq 20\). The area of 
+                      the regions between the graph of \(f'\) and the \(x\)-axis are \(15\), \(12\), and \(4\) respectively. If \(f(0)=5\), what is the maximum 
+                      value of \(f\) on the closed interval \(0\leq x\leq 20\)&nbsp?
+                  </p>
         </div>
         <hr>
         <div id='choices-container'>
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-           
+                    \(5\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
@@ -27,23 +57,23 @@
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
                  
-   
+                    \(15\)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-           
                  
-
+                    \(20\)
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \(36\)
            
                   
 
@@ -58,7 +88,12 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1"> Approach  </div>
-
+            <p>The value of \(f\) can be given by the following integral:</p>
+            $$ f(x) = f(0) + \int \limits_0^x f'(x)&nbsp dx $$
+            <p>Note that for areas under the curve, the values are negative.</p>
+            <p>The maximum value will be obtained by taking only the first region under the curve:</p>
+            $$ \text{Max} = f(0)+15 $$
+            $$ = 5+15 =\boxed{20} $$
 
         </div>
     </main>

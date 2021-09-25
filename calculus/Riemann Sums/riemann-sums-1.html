@@ -12,8 +12,40 @@
 <body id='riemann-sums'>
     <main id="1">
         <div id='question-container'>
-           
+            <div style="text-align: center;">
+                <embed width="400" height="400" src="../../d.svg" 
+                  script=
+                  '
+                  setBorder(1);
+                  initPicture(-.5,2,-.5,5);
+                  line([.8,-.1],[.8,0])
+                  fontsize="20"
+                  strokewidth="2"
+                  line([.8,0],[.8,3])
+                  marker="arrow"
+                  line([0,0],[1,0])
+                  line([0,0],[0,4])
+                  plot("-3(x-1)^2+3",0,.9)
+               
+                  text([1,0],"x",right)
+                  text([0,4],"y",above)
+                 text([.5,3.5],"y=f(x)")   
+                 fontstyle="normal"
+                
+                 text([0,-.3],"0")
+                 text([.8,-.3],"1")
 
+                  '> 
+                  </div>
+                  <p>A left Riemann sum, a right Riemann sum, and a trapezoidal sum are used to approximate the value of \(\int\limits_0^1 f(x) &nbsp dx \), each 
+                      using the same number of subintervals. The graph of the function \(f\) is shown in the figure above. Which of the sums 
+                      give an overestimate of the value of \(\int\limits_0^1 f(x) &nbsp dx \)&nbsp?
+                  </p>
+                  <ul type="I" style="line-height: 2; margin: 20px;">
+                      <li>Left sum</li>
+                      <li>Right sum</li>
+                      <li>Trapezoidal Sum</li>
+                  </ul>
                      
         </div>
         <hr>
@@ -21,13 +53,14 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    I only
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    II only
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -35,6 +68,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    III only
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -42,7 +76,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    I and III only
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -53,7 +87,130 @@
             <button id='skip'>Skip Question</button>
         </div>
         <div id='explanation' style="display: none;">
+            <p>The sketches below give us an idea of whether each sum is an overestimate or underestimate. For an increasing and concave down function, only the right Riemann sum is an overestimate.</p>
+            <hr>
+            <p>Left sum:</p>
+            <div style="text-align: center;">
+                <embed width="400" height="400" src="../../d.svg" 
+                  script=
+                  '
+                  setBorder(1);
+                  initPicture(-.5,2,-.5,5);
+                  line([.8,-.1],[.8,0])
+                  fontsize="20"
+                  strokewidth="2"
+                  line([.8,0],[.8,3])
+                  marker="arrow"
+                  line([0,0],[1,0])
+                  line([0,0],[0,4])
+                  plot("-3(x-1)^2+3",0,.9)
+                a=[0,0]
+                b=[.3,1.5]
+                c=[.6,2.5]
+                d=[.8,2.9]
 
+                dot(a,"closed")
+                dot(b,"closed")
+                dot(c,"closed")
+                dot(d,"closed")
+                fill="gray"
+                path([b,[.6,1.5],[.6,0],[.3,0],b])
+                path([c,[.8,2.5],[.8,0],[.6,0],c])
+
+                  text([1,0],"x",right)
+                  text([0,4],"y",above)
+                 text([.5,3.5],"y=f(x)")   
+                 fontstyle="normal"
+                
+                 text([0,-.3],"0")
+                 text([.8,-.3],"1")
+
+                  '> 
+                  </div>
+            <hr>
+            <p>Right sum:</p>
+            <div style="text-align: center;">
+                <embed width="400" height="400" src="../../d.svg" 
+                  script=
+                  '
+                  setBorder(1);
+                  initPicture(-.5,2,-.5,5);
+                  line([.8,-.1],[.8,0])
+                  fontsize="20"
+                  fill="gray"
+                  strokewidth="2"
+                  path([[0,1.5],b,[.3,0],a,[0,1.5]])
+                  path([[.3,2.5],c,[.6,0],[.3,0],[.3,2.5]])
+                  path([[.6,2.9],d,[.8,0],[.6,0],[.6,2.9]])
+                  fill="none"
+      
+                  line([.8,0],[.8,3])
+                  marker="arrow"
+                  line([0,0],[1,0])
+                  line([0,0],[0,4])
+                  plot("-3(x-1)^2+3",0,.9)
+                a=[0,0]
+                b=[.3,1.5]
+                c=[.6,2.5]
+                d=[.8,2.9]
+
+                dot(a,"closed")
+                dot(b,"closed")
+                dot(c,"closed")
+                dot(d,"closed")
+ 
+                  text([1,0],"x",right)
+                  text([0,4],"y",above)
+                 text([.5,3.5],"y=f(x)")   
+                 fontstyle="normal"
+                
+                 text([0,-.3],"0")
+                 text([.8,-.3],"1")
+
+                  '> 
+                  </div>
+            <hr>
+
+
+            <p>Trapezoidal sum:</p>
+            <div style="text-align: center;">
+                <embed width="400" height="400" src="../../d.svg" 
+                  script=
+                  '
+                  setBorder(1);
+                  initPicture(-.5,2,-.5,5);
+                  line([.8,-.1],[.8,0])
+                  fontsize="20"
+                  strokewidth="2"
+                  line([.8,0],[.8,3])
+                  marker="arrow"
+                  line([0,0],[1,0])
+                  line([0,0],[0,4])
+                  plot("-3(x-1)^2+3",0,.9)
+                a=[0,0]
+                b=[.3,1.5]
+                c=[.6,2.5]
+                d=[.8,2.9]
+
+                dot(a,"closed")
+                dot(b,"closed")
+                dot(c,"closed")
+                dot(d,"closed")
+                fill="gray"
+                path([a,b,[.3,0],[a]])
+                path([b,c,[.6,0],[.3,0],b])
+                path([c,d,[.8,0],[.6,0],c])
+
+                  text([1,0],"x",right)
+                  text([0,4],"y",above)
+                 text([.5,3.5],"y=f(x)")   
+                 fontstyle="normal"
+                
+                 text([0,-.3],"0")
+                 text([.8,-.3],"1")
+
+                  '> 
+                  </div>
         </div>
     </main>
 </body>

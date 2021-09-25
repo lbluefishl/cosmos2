@@ -12,7 +12,7 @@
 <body id='differentiation'>
     <main id="14">
         <div id='question-container'>
-
+            <p>If \(y=\sin^{-1}(3x)\), then \(\dfrac{dy}{dx} =\)</p>
                      
         </div>
         <hr>
@@ -21,7 +21,7 @@
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
                
-
+                    \(  \dfrac{3}{1+9x^2} \)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
@@ -29,21 +29,24 @@
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
    
-                    
+                    \( \dfrac{-3}{\sqrt{1-9x^2}} \)
+
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \( \dfrac{1}{\sqrt{1-9x^2}} \)
                 
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \( \dfrac{3}{\sqrt{1-9x^2}} \)
                    
 
                 </label>
@@ -60,7 +63,10 @@
 
             <div class="explanation-header1"> Approach </div>
 
-         
+            <p>The derivative of arcsin:</p>
+            $$ \frac{d}{dx}[\arcsin u]=\frac{u'}{\sqrt{1-u^2}} $$
+            $$ \frac{d}{dx}[\arcsin(3x)]=\frac{3}{\sqrt{1-(3x)^2}} $$
+            $$ = \boxed{\frac{3}{\sqrt{1-9x^2}}} $$
     
         </div>
     </main>
