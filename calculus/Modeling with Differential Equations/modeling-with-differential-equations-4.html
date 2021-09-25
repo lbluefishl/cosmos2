@@ -13,7 +13,11 @@
     <main id="4">
         <div id='question-container'>
            
-
+            <p>A rumor spreads among a population of \(N\) people at a rate proportional to the product of the number of people who have 
+                heard the rumor and the number of people who have not heard the rumor. If \(p\) denotes the number of people who have heard 
+                the rumor, which of the following differential equations could be used to model this situation with respect to time \(t\), 
+                where \(k\) is a positive constant? 
+            </p>
                      
         </div>
         <hr>
@@ -21,13 +25,14 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(\dfrac{dp}{dt}=kp\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    \(\dfrac{dp}{dt}=kp(N-p)\)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -35,6 +40,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \(\dfrac{dp}{dt}=kp(p-N)\)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -42,6 +48,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \(\dfrac{dp}{dt}=kt(N-t)\)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -54,7 +61,16 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
+            <p>The relationship between two variables \(x\) and \(y\) that are proportional is:</p>
+            $$y=kx $$
+            <p>In our question, the first variable is the rate of spread of a rumor. This is simply given by \(\dfrac{dp}{dt}\).
+                <p>The second variable is the product of the number of people who have heard the rumor and the number of people who have not heard the rumor:</p>
+                $$ \text{not heard rumor } \cdot \text{ heard rumor} $$
+                $$ = (N-p)\cdot p$$
 
+            <p>Therefore,</p>
+            $$y=kx $$ 
+            $$ \boxed{\frac{dp}{dt}=k(N-p)p} $$
         </div>
     </main>
 </body>

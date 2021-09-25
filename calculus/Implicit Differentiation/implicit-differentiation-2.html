@@ -13,7 +13,7 @@
     <main id="2">
         <div id='question-container'>
            
-
+            <p>If \(\sin(xy)=x\), then \(\dfrac{dy}{dx}=\)</p>
                      
         </div>
         <hr>
@@ -21,6 +21,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
+                    \(\dfrac{1}{\cos(xy)}\)
 
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
@@ -28,20 +29,23 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    \(\dfrac{1}{x\cos(xy)}\)
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \(\dfrac{1-\cos(xy)}{\cos(xy)}\)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \(\dfrac{1-y\cos(xy)}{x\cos(xy)}\)
+
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -53,7 +57,13 @@
             <button id='skip'>Skip Question</button>
         </div>
         <div id='explanation' style="display: none;">
-
+            <div class="explanation-header1">Approach</div>
+$$ \sin(xy)=x $$
+$$ \cos(xy)\cdot \left(x\frac{dy}{dx}+y\right)=1 $$
+$$ x\frac{dy}{dx}+y = \frac{1}{\cos(xy)} $$
+$$ x\frac{dy}{dx}= \frac{1}{\cos(xy)} -y $$
+$$  x\frac{dy}{dx}= \frac{1-y\cos(xy)}{\cos(xy)} $$
+$$ \frac{dy}{dx}=\boxed{\frac{1-y\cos(xy)}{x\cos(xy)} } $$
         </div>
     </main>
 </body>

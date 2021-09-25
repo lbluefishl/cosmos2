@@ -12,14 +12,17 @@
 <body id='definite-integrals'>
     <main id="19">
         <div id='question-container'>
-                     
+              <p><img src="../../calc.svg" alt="calculator allowed" width="20px">
+                Let \(f\) be the function with first derivative defined by \(f'(x)=\sin(x^3)\) for \( 0\leq x\leq 2\). At what value 
+                  of \(x\) does \(f\) attain its maximum value on the closed interval \( 0\leq x\leq 2\)&nbsp?
+              </p>       
         </div>
         <hr>
         <div id='choices-container'>
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-           
+                    \(0\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
@@ -27,16 +30,16 @@
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
                  
-   
+                    \(1.162\)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
            
-                 
+                 \(1.465\)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -45,7 +48,7 @@
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
            
-                  
+                \(2\)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -58,8 +61,17 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1"> Approach  </div>
-
-
+            <p>Plot the graph in the graphing calculator to find intervals where the function is increasing.</p>
+            <div style="text-align: center;"><iframe src="https://www.desmos.com/calculator/adql6kdcbh?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe></div>
+            <p>Use your graphing calculator to obtain the intercepts. From the graph, \(f'\) is positive from \(0\lt x \lt 1.465\) and 
+                \(1.845 \lt x \lt 2.112\).
+            </p>
+            <p>We will therefore evaluate these two integrals to find the absolute maximum:</p>
+            $$ \int\limits_0^{1.465} f'(x) &nbsp dx \hskip{2em} \int\limits_0^{2} f'(x) &nbsp dx$$
+            <p>Using the calculator:</p>
+            $$ \int\limits_0^{1.465} f'(x) &nbsp dx \approx 0.591 $$
+            $$ \int\limits_0^{2} f'(x) &nbsp dx \approx 0.452$$
+            <p>Therefore, at \(x=\boxed{1.465}\), \(f\) reaches a maximum value.</p>
         </div>
     </main>
 </body>

@@ -13,7 +13,11 @@
     <main id="3">
         <div id='question-container'>
            
-
+            <p> <img src="../../calc.svg" alt="calculator allowed" width="20px"> 
+                The rate at which water is sprayed on a field of vegetables is given by \(R(t)=3\sqrt{1+3t^3}\), where \(t\) is 
+                in minutes and \(R(t)\) is in gallons per minute. During the time interval \(0\leq t \leq 6\), what is the average 
+                rate of water flow, in gallons per minutes?
+            </p>
                      
         </div>
         <hr>
@@ -21,28 +25,28 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(12.738\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    \(31.012\)
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    \(76.426\)
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    \(186.075\)
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -54,7 +58,11 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <p>The average value of the rate is given by:</p>
+            $$ \frac{1}{b-a} \int\limits_a^b R(t) &nbsp dt $$
+            $$ = \frac{1}{6-0} \int\limits_0^6 3\sqrt{1+3t^3} &nbsp dt $$
+            <p>Evaluating this with a calculator:</p>
+            $$ = \frac{1}{6} \int\limits_0^6 3\sqrt{1+3t^3} &nbsp dt \approx \boxed{31.012} $$
         </div>
     </main>
 </body>

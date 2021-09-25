@@ -13,7 +13,7 @@
     <main id="3">
         <div id='question-container'>
            
-
+<p style="line-height: 2;">Given \(\dfrac{dy}{dx}=2xy-y\) and \(y(0)=3\), which of the following is equal to \(y\)&nbsp?</p>
                      
         </div>
         <hr>
@@ -21,13 +21,14 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(e^{x^2-x-3}\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    \(e^{x^2-x+3}\)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -35,14 +36,14 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    \(3+e^{x^2-x}\)
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    \(3e^{x^2-x}\)
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -54,7 +55,16 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+$$ \frac{dy}{dx}=2xy-y $$
+$$ \frac{dy}{dx}=y(2x-1) $$
+$$ \frac{1}{y} &nbsp dx =  2x-1 &nbsp dx $$
+$$ \ln|y|=x^2-x+C $$
+$$ y=e^{x^2-x+C} $$
+$$ y=Ae^{x^2-x} $$
+<p>Using the initial condition:</p>
+$$ 3=Ae^{(0)^2-(0)} $$
+$$ 3=A $$
+$$ \boxed{y=3e^{x^2-x}} $$
         </div>
     </main>
 </body>
