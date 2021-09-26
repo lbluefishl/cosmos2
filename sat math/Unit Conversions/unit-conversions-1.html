@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
+	<meta charset="utf-8">
     <title>Unit Conversions Question 1</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
 </head>
 <body id='unit-conversions'>
     <main id="1">
         <div id='question-container'>
            
-            <p>
+            <p><img src="../../calc.svg" alt="calculator allowed" width="20px">
                 You wish to download a file from the internet. Your internet download speed is 890 kilobytes per second. How many <strong>minutes</strong> 
                 would it take you to download a 350 megabyte file?
                 <p>
@@ -70,17 +71,17 @@
             If you have trouble figuring out where to start, try to list all the given quantities and conversion factors as fractions. Don't worry if you're missing some or if they are in the right order. 
             
             <div style="columns: 4;">
-            <center><strong>Download speed</strong></center>
-            $$ \frac{890 \text{ kilobytes}}{1 \text{ second}}$$
+            <div style="text-align: center; font-size: smaller;"><strong>Download speed</strong></div>
+            $$ \small \frac{890 \text{ kilobytes}}{1 \text{ second}}$$
             
-            <center><strong>Seconds to minutes</strong></center>
-            $$ \frac{60 \text{ seconds}}{1 \text{ minute}} $$
+            <div style="text-align: center; font-size: smaller;"><strong>Seconds to minutes</strong></div>
+            $$ \small \frac{60 \text{ seconds}}{1 \text{ minute}} $$
             
-            <center><strong>Given quantity</strong></center>
-            $$ \frac{350 \text{ megabytes}}{1} $$
+            <div style="text-align: center; font-size: smaller;"><strong>Given quantity</strong></div>
+            $$ \small \frac{350 \text{ megabytes}}{1} $$
             
-            <center><strong>Megabyte to kilobyte</strong></center>
-            $$ \frac{1 \text{ megabyte}}{1{,}000 \text{ kilobytes}} $$
+            <div style="text-align: center; font-size: smaller;"><strong>Megabyte to kilobyte</strong></div>
+            $$ \small \frac{1 \text{ megabyte}}{1{,}000 \text{ kilobytes}} $$
             
             </div>
             
@@ -89,11 +90,11 @@
             <br>
             Starting with our given, and arranging the conversion factors accordingly, 
             </p>
-            $$ \frac{350 \text{ megabytes}}{1} $$
-            $$ \frac{350 \cancel{\text{ megabytes}}}{1} \cdot \frac{1{,}000 \text{ kilobytes}}{1 \cancel{\text{ megabyte}}}$$
-            $$ \frac{350 \cancel{\text{ megabytes}}}{1} \cdot \frac{1{,}000 \cancel{\text{ kilobytes}}}{1 \cancel{\text{ megabyte}}} \cdot  \frac{1 \text{ second}}{890 \cancel{\text{ kilobytes}}}  $$
+            $$\small \frac{350 \text{ megabytes}}{1} $$
+            $$\small \frac{350 \cancel{\text{ megabytes}}}{1} \cdot \frac{1{,}000 \text{ kilobytes}}{1 \cancel{\text{ megabyte}}}$$
+            $$\small \frac{350 \cancel{\text{ megabytes}}}{1} \cdot \frac{1{,}000 \cancel{\text{ kilobytes}}}{1 \cancel{\text{ megabyte}}} \cdot  \frac{1 \text{ second}}{890 \cancel{\text{ kilobytes}}}  $$
             We know we can stop when we obtain our desired unit. If we have no more conversions to use, it may mean you are missing one or two. 
-            $$ \frac{350 \cancel{\text{ megabytes}}}{1} \cdot \frac{1{,}000 \cancel{\text{ kilobytes}}}{1 \cancel{\text{ megabyte}}} \cdot  \frac{1 \cancel{\text{ second}}}{890 \cancel{\text{ kilobytes}}}   \cdot
+            $$ \small \frac{350 \cancel{\text{ megabytes}}}{1} \cdot \frac{1{,}000 \cancel{\text{ kilobytes}}}{1 \cancel{\text{ megabyte}}} \cdot  \frac{1 \cancel{\text{ second}}}{890 \cancel{\text{ kilobytes}}}   \cdot
             \frac{1 \textbf{ minute}} {60 \cancel{\text{ seconds}}} $$
             A bit of work for the calculator:
             $$ \frac{350}{1} \cdot \frac{1{,}000}{1} \cdot \frac{1}{890} \cdot \frac{1}{60} \text{ minutes}$$ 
@@ -102,7 +103,7 @@
             <div class="explanation-header1">
               Approach 2
               </div>
-              <p>
+              <p style="line-height: 2;">
               Although a systematic approach is preferred, we can do these problems without a rigid structure. We can use the provided information to 
               obtain that a 350 megabyte file would be 350,000 kilobytes. Since every 890 kilobytes takes one second, 350,000 kilobytes would take \(\dfrac{350{,}000}{890}\) seconds \( \approx 393\) seconds.
               Finally, we divide 393 by 60 since there are that many seconds in a minute to obtain our final answer, \( \approx 6.55\) minutes.  

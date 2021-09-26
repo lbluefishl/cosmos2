@@ -1,48 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
-    <title>Area Between Curves Question 5</title>
+	<meta charset="utf-8">
+    <title>Definite Integrals Question 18</title>
     <script src="../../scripts/question.js" defer></script>
-    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="../../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
 </head>
-<body id='area-between-curves'>
-    <main id="5">
+<body id='definite-integrals'>
+    <main id="18">
         <div id='question-container'>
-           
-<p>What is the region in the first quadrant bounded by the graph of \(y=e^{x/2}\) and the line \(x=4\) ?</p>
-                     
+            <div style="text-align: center;">
+                <embed width="350" height="300" src="../../d.svg" 
+                  script=
+                  '
+                  setBorder(1);
+                  initPicture(-2,23,-1,6);
+    
+                  marker="arrow"
+                  line([-2,0],[21,0])
+                  line([0,-2],[0,5])
+                  plot("(3e^(-.2x)) cos(.5x)",0,15.5)
+                  fontsize="22"
+
+                  text([21,0],"x",right)
+                  text([0,5],"y",above)
+                  text([-1,-.5],"O")
+                text([14,3],"f &apos;")
+
+                  fontstyle="normal"
+                text([10,3],"Graph of ")
+                text([1.2,.5],"15")
+                text([5.8,-.4],"12")
+                text([10,1],"4")
+                marker="arrow"
+                line([10.3,.8],[12.5,.1])
+                  '> 
+                  </div>
+                  <p>The graph of \(f'\), the derivative of the function \(f\), is shown above for \(0\leq x\leq 20\). The area of 
+                      the regions between the graph of \(f'\) and the \(x\)-axis are \(15\), \(12\), and \(4\) respectively. If \(f(0)=5\), what is the maximum 
+                      value of \(f\) on the closed interval \(0\leq x\leq 20\)&nbsp?
+                  </p>
         </div>
         <hr>
         <div id='choices-container'>
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-                    \(2e-2\)
+                    \(5\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    \(2e\)
+                 
+                    \(15\)
+                    
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-                    \(2e^2-2\)
+                 
+                    \(20\)
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-                    \(\dfrac{e^2-1}{2}\)
+                    \(36\)
+           
+                  
+
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -53,13 +88,14 @@
             <button id='skip'>Skip Question</button>
         </div>
         <div id='explanation' style="display: none;">
-            <div class="explanation-header1">Approach</div>
-     
-            <p>The area of the region can be found using:</p>
-            $$ \int\limits_0^4 e^{\frac{x}{2}} &nbsp dx $$ 
-            $$ = 2\Big[ e^{\frac{x}{2}}  \Big]_0^4 $$
-            $$ = 2(e^{\frac{4}{2}}-e^{\frac{0}{2}}) $$
-            $$ = \boxed{2e^2-2} $$
+            <div class="explanation-header1"> Approach  </div>
+            <p>The value of \(f\) can be given by the following integral:</p>
+            $$ f(x) = f(0) + \int \limits_0^x f'(x)&nbsp dx $$
+            <p>Note that for areas under the curve, the values are negative.</p>
+            <p>The maximum value will be obtained by taking only the first region under the curve:</p>
+            $$ \text{Max} = f(0)+15 $$
+            $$ = 5+15 =\boxed{20} $$
+
         </div>
     </main>
 </body>

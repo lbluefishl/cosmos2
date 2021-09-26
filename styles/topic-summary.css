@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px auto;
+    margin: 100px auto;
     padding: 20px;
     width: 75%;
     background-color: cornsilk;
@@ -27,12 +27,14 @@ div.bottom-navigation {
     display: flex;
     justify-content: space-around;
     width: 95%;
+    
 }
 
 div.topics-container {
     display: flex;
     width: 80%;
     justify-content: space-evenly;
+
 }
 
 a.link-to-question {

@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
+	<meta charset="utf-8">
     <title>Rates Question 6</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
 </head>
 <body id='rates'>
     <main id="6">
         <div id='question-container'>
            
 
-            <p>
+            <p><img src="../../calc.svg" alt="calculator allowed" width="20px">
                 Mike took a nonstop flight from New York City to Las Vegas, a total flight distance of 2,250 miles. 
                 The plan flew at a speed of 450 miles per hour for the first 90 minutes of the flight and at a speed of 440 miles per hour for the remainder of the flight.
                 To the nearest minute, for how many <u>minutes</u> did the plane fly at a speed of 440 miles per hour? 
@@ -69,18 +70,20 @@
             <p>
             We can use the rate equation to solve this problem, but we must seperate the problem into two parts. Make sure to convert to minutes or hours accordingly.
             </p>
-            <div style="columns: 2;">
-            <center>When traveling 450 miles per hour </center>
+         
+            <p>When traveling 450 miles per hour </p>
             $$ d=rt $$
             $$ d=\left(450 \frac{\text{ miles}}{\text {hr}}\right) (90 \text{ minutes}) $$
             $$ d=\left(450 \frac{\text{ miles}}{\cancel{\text {hr}}}\right)(90 \cancel{\text{ minutes}})\left(\frac{1 \cancel{\text{ hr}}}{60 \cancel{\text{ minutes}}}\right) $$
             $$ d=675 \text{ miles} $$
-            <center>When traveling 440 miles per hour </center>
+            
+            <p>When traveling 440 miles per hour </p>
             $$ d=rt $$
             $$ d= 2{,}250-675 = 1{,}575 \text{ miles} $$
             $$ 1{,}575 \text{ miles}=\left(440 \frac{\text{ miles}}{\text{ hr}}\right) (t \text{ hrs})  $$
+        
             $$ t \approx 3.58 \text{ hrs or} \approx 215 \text{ minutes} $$ 
-            </div>
+           
             
         </div>
     </main>

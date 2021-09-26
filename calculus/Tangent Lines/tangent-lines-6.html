@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
-    <title>First and Second Derivative Test Question 19</title>
+	<meta charset="utf-8">
+    <title>Tangent Lines Question 6</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
 </head>
-<body id='first-and-second-derivative-test'>
-    <main id="19">
+<body id='tangent-lines'>
+    <main id="6">
         <div id='question-container'>
            
-
+           <p>For the function \(f\), \(f'(x)=2x+2\) and \(f(2)=3\). What is the approximation for \(f(2.1)\) found by using the line 
+               tangent to the graph of \(f\) at \(x=2\)&nbsp?
+           </p>
+                     
         </div>
         <hr>
         <div id='choices-container'>
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
+                    \(2.2\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    \(3.6\)
+
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -33,6 +40,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \(4.2\)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -40,6 +48,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \(6.2\)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -48,10 +57,19 @@
         <div id='button-container'>
             <button id='summary'>Summary</button>
             <button id='submit'>Submit</button>
-            <button id='skip'>Skip Question</button>
+            <!--<button id='skip'>Skip Question</button>-->
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
+            <p>First, write the equation of the tangent line at \(x=2\).</p>
+            $$ f'(x)=2x+2 $$
+            $$f'(2)=2(2)+2 = 6 $$
+            <p>Given a slope of \(6\) and point \((2,3)\),</p>
+$$ y-3=6(x-2) $$
+<p> At \(x=2.1\),</p>
+$$ y-3=6(2.1-2) $$
+$$ y-3=.6 $$
+$$ y=\boxed{3.6} $$
 
         </div>
     </main>

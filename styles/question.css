@@ -1,5 +1,5 @@
 html {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
     background-color:rgb(190, 184, 184)
 }
@@ -14,12 +14,19 @@ main {
     padding: 15px;
 }
 
-@media (max-width:500px) {
+
+
+@media (max-width:1000px) {
     main {
-        width: 100%;
+        width: 95%;
+        padding: 5px
     }
+
+    
 }
  
+
+
 #question-container {
     margin: 15px; 
 }
@@ -37,7 +44,7 @@ hr {
  
 .option-container {
     margin: 5px;
-    background-color: rgb(238, 238, 215);
+    background-color: rgb(243, 243, 243);
     padding: 5px;
     display: flex;
 }
@@ -93,6 +100,7 @@ label {
     white-space: nowrap;
   } 
 
+
   div#explanation {
       flex: 1;
       padding: 10px;
@@ -119,4 +127,6 @@ div.explanation-header1 {
     margin: 20px;
     font-weight: 500;
     text-align: center;
+    padding-bottom: 30px;
+    text-decoration: underline;
 }

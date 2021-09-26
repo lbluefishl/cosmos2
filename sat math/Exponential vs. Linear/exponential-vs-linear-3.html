@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
+	<meta charset="utf-8">
     <title>Exponential vs. Linear Question 3</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <script type="text/javascript" src="/scripts/ASCIIsvg.js" defer></script>
+    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
 </head>
 <body id='exponential-vs-linear'>
     <main id="3">
         <div id='question-container'>
            
-            <p>
+            <p><img src="../../calc.svg" alt="calculator allowed" width="20px">
                 Mike cooked some steak, and when he took it off the stove, the internal temperature of the steak was \(135 \degree \text{F}\).
                  The temperature of the room in which Mike put the steak to cool down was 
                 \(70\degree \text{F}\). He measured the internal temperature of the steak every 10 minutes and recorded his observations in the table below.
@@ -84,13 +85,13 @@
             <p>The only difference between the exponential models is the coefficient of the exponential portion. We may be tempted to pick \(135\), but be careful.
                We want to find a model that gets us \(T=135\) when \(t=0\).</p>
             <div style="columns: 2;">
-            <center>&nbsp </center>
-            $$ T=70+135(0.9)^t   $$
+            <div style="text-align: center;">\(T=70+135(0.9)^t\)</div>
+    
             $$ 135 = 70 +135(0.9)^0 $$
             $$ 135=70+135(1) $$
             $$ 135=205 &nbsp &#10006;  $$
-            <center>&nbsp </center>
-            $$ T=70+65(0.9)^t   $$
+            <div style="text-align: center;">\(T=70+65(0.9)^t\)</div>
+
             $$ 135 = 70 +65(0.9)^0 $$
             $$ 135 = 70+65(1) $$
             $$ 135=135 &nbsp \checkmark $$

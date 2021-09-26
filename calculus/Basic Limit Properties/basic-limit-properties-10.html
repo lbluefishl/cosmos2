@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Basic Limit Properties Question 10</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='basic-limit-properties'>
+    <main id="10">
+        <div id='question-container'>
+            <div style="text-align: center;">
+                <embed width="450" height="300" src="../../d.svg" 
+                  script=
+                  '
+                  setBorder(1);
+                  initPicture(-10,10.5,-5,5);
+                
+                line([1,-.2],[1,.2])
+                line([2,-.2],[2,.2])
+                line([3,-.2],[3,.2])
+                line([4,-.2],[4,.2])
+                line([5,-.2],[5,.2])
+                line([6,-.2],[6,.2])
+                line([7,-.2],[7,.2])
+                line([-1,-.2],[-1,.2])
+                line([-2,-.2],[-2,.2])
+                line([-3,-.2],[-3,.2])
+                line([-4,-.2],[-4,.2])
+                line([-5,-.2],[-5,.2])
+                line([-6,-.2],[-6,.2])
+                line([-7,-.2],[-7,.2])
+                line([-.3,1],[.3,1])
+                line([-.3,2],[.3,2])
+                line([-.3,3],[.3,3])
+                line([-.3,-1],[.3,-1])
+                line([-.3,-2],[.3,-2])
+                line([-.3,-3],[.3,-3])
+
+                plot("-abs(x+2)+2",-7,0)
+                plot("-abs(x-2)+2",0,7)
+                dot([-2,2],"closed")
+                dot([2,2],"closed")
+                  marker="arrow"
+                  line([-9,0],[9,0])
+                  line([0,-4],[0,4])
+                  fontsize="22"
+                  text([9,0],"x",right)
+                  text([0,4],"y",above)
+                  text([-.7,-.5],"O")
+                  fontstyle="normal"
+                  text([-2.3,2.7],"(-2, 2)")
+                  text([2.3,2.7],"(2, 2)")
+                    
+                  '> 
+                  </div>
+<p>The graph of the even function \(y=f(x)\) consists of \(4\) line segments, as shown above. Which of the following statements about 
+    \(f\) is false?
+</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                  \( \displaystyle \lim\limits_{x\to 0} \frac{f(x)-f(0)}{x} =0   \)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \( \displaystyle \lim\limits_{x\to 0} \frac{f(x)-f(-x)}{2x} =0   \)
+                  
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( \displaystyle \lim\limits_{x\to 4} \frac{f(x)-f(4)}{x-4} = -1   \)
+                    
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( \displaystyle \lim\limits_{x\to 2} \frac{f(x)-f(2)}{x-2}    \) does not exist.
+                   
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <!--<button id='skip'>Skip Question</button>-->
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>First, note that direct substitution for all of the choices result in the indeterminate form. Let's go through the choices one by one.</p>
+           <hr>
+            $$ \lim\limits_{x\to 0} \frac{f(x)-f(0)}{x} =0   $$
+            <p>This is simply the limit definition of the derivative at \(x=0\). Recall:</p>
+            $$ f'(a)=\lim\limits_{x\to a} \frac{f(x)-f(a)}{x-a} $$
+            <p>The derivative at \(x=0\) does not exist since according to the graph, the left and right hand limits are \(-1\) and \(1\). Therefore, the first option is false.</p>
+         <hr>
+            $$\lim\limits_{x\to 0} \frac{f(x)-f(-x)}{2x} =0  $$
+            <p>Since the graph is an even function, \(f(x)=f(-x)\). The limit can be simplified:</p>
+            $$\lim\limits_{x\to 0} \frac{f(x)-f(-x)}{2x} = \lim\limits_{x\to 0} \frac{f(x)-f(x)}{2x} $$
+            $$ = \lim\limits_{x\to 0} \frac{0}{2x} = \lim\limits_{x\to 0} 0 = 0 &nbsp \checkmark$$
+            <hr>
+            $$\lim\limits_{x\to 4} \frac{f(x)-f(4)}{x-4} = -1 $$
+            <p>This is the definition of the derivative at \(x=4\):</p>
+            $$ f'(a)=\lim\limits_{x\to a} \frac{f(x)-f(a)}{x-a} $$
+            $$ f'(4)=\lim\limits_{x\to a} \frac{f(x)-f(4)}{x-4} $$
+            <p>The slope is \(-1\) at this point. \(\checkmark\)</p>
+            <hr>
+            $$\lim\limits_{x\to 2} \frac{f(x)-f(2)}{x-2}   \text{does not exist.} $$
+            <p>This is the definition of the derivative at \(x=2\)</p>
+            $$ f'(a)=\lim\limits_{x\to a} \frac{f(x)-f(a)}{x-a} $$
+            $$ f'(2)=\lim\limits_{x\to 2} \frac{f(x)-f(2)}{x-2} $$
+            <p>The derivative does not exist at \(x=2\) since the left and right hand limits are \(1\) and \(-1\). \(\checkmark\)</p>
+        </div>
+    </main>
+</body>
+</html>
