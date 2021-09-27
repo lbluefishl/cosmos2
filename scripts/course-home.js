@@ -13,7 +13,7 @@ function getProgress() {
                 }
 
         }
-        if (sum > max) {
+        if (sum > 100) {
             sum = 100;
         } 
         let progress = 1;
