@@ -7,43 +7,128 @@
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
     <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
 </head>
 <body id='heat-capacity-and-calorimetry'>
     <main id="2">
         <div id='question-container'>
-           
+            <div style="text-align: center;">
+                <embed width="580" height="380" src="../../d.svg" 
+              script='
+              setBorder(1);
+              initPicture(-500,2300,-100,600);
+              
+              fontstyle = "normal";
+              text([1000,-50], "Heat Added");
+              rotate([-1300,580],"Temperature (K)")
+              fontsize="25"
+            text([-160,80],"100")
+            text([-160,160],"200")
+            text([-160,240],"300")
+            text([-160,320],"400")
+            text([-160,400],"500")
+            text([-160,480],"600")
+            text([-160,560],"700")
+              
+              strokewidth="2"
+              line([0,0],[2000,0])
+              line([0,0],[0,600])
+              line([0,0],[400,160])
+              line([400,160],[500,160])
+              line([500,160],[900,320])
+              line([900,320],[1600,320])
+              line([1600,320],[1900,560])
+              strokewidth=".5"
+              line([100,0],[100,600])
+              line([300,0],[300,600])
+              line([500,0],[500,600])
+              line([700,0],[700,600])
+              line([900,0],[900,600])
+              line([1100,0],[1100,600])
+              line([1300,0],[1300,600])
+              line([1500,0],[1500,600])
+              line([1700,0],[1700,600])
+              line([1800,0],[1800,600])
+              line([1900,0],[1900,600])
+              line([2000,0],[2000,600])
+              line([2100,0],[2100,600])
+
+              line([200,0],[200,600])
+              line([400,0],[400,600])
+              line([600,0],[600,600])
+              line([800,0],[800,600])
+              line([1000,0],[1000,600])
+              line([1200,0],[1200,600])
+              line([1400,0],[1400,600])
+              line([1600,0],[1600,600])
+
+              line([0,40],[2200,40])
+              line([-50,80],[2200,80])
+
+              line([0,120],[2200,120])
+              line([-50,160],[2200,160])
+              line([0,200],[2200,200])
+              line([-50,240],[2200,240])
+              line([0,280],[2200,280])
+              line([-50,320],[2200,320])
+              line([0,360],[2200,360])
+              line([-50,400],[2200,400])
+              line([0,440],[2200,440])
+              line([-50,480],[2200,480])
+              line([0,520],[2200,520])
+              line([-50,560],[2200,560])
+                
+                strokewidth="2"
+                line([0,0],[0,600])   
+                    marker="arrow"
+                line([0,0],[2300,0])
+                fontstyle="italic"
+                text([100,100,],"P")
+                text([450,200,],"Q")
+                text([690,280,],"R")
+                text([1250,350,],"S")
+                text([1650,450,],"T")
+      
+              
+              '> 
+              </div>
+              
+              <p>The heating curve for a sample of pure ethanol is provided above. The temperature was recorded as a \(\pu{50.0 g}\) 
+                  sample of solid ethanol was heated at a constant rate. Which of the following explains why the slope of segment 
+                  \(T\) is greater than the slope of segement \(R\)&nbsp?
+              </p>
 
                      
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+The specific heat capacity of the gaseous ethanol is less than the specific heat capacity of liquid ethanol.
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+               The specific heat capacity of the gaseous ethanol is greater than the specific heat capacity of liquid ethanol.     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    The heat of vaporization of ethanol is less than the heat of fusion of ethanol.
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+The heat of vaporization of ethanol is greater than the heat of fusion of ethanol.
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -55,7 +140,16 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
+<p>When heat is added but the temperature remains constant, the sample would be in the process of changing phases. </p>
+<p>\(T\) corresponds to the region when ethanol is a gas. \(R\) refers to the region when ethanol is a liquid.</p>
+<p>The heat corresponds to temperature with the following equation:</p>
+$$ q = mc\Delta T $$
+<p> If constant heat is being applied but the temperature is increasing at a greater rate, it must mean that the \(c\) value (specific heat) is different for the the liquid and gas phases.</p>
 
+$$ q=mc\Delta T $$
+$$ \frac{q}{m}=c\Delta T $$ 
+$$ k = c\Delta T \text{ where } \frac{q}{m} \text{ is a constant}$$
+<p>If mass and heat are constant, the specific heat and temperature change are inversely related. Therefore a greater temperature change corresponds to a lower specific heat value and vice-versa.</p>
         </div>
     </main>
 </body>
