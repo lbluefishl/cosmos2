@@ -14,7 +14,12 @@
 <body id='heat-capacity-and-calorimetry'>
     <main id="3">
         <div id='question-container'>
-           
+
+           <p>A \(\pu{1.0 g}\) sample of a cashew was burned in a calorimeter containing \(\pu{1000}\).&nbsp\(\pu{g}\) of water, and the temperature of the water changed from 
+            \(20.0^\circ \pu{C}\) to \(25.0^\circ \pu{C}\). In another experiment, a 3.0 g sample of a marshmellow was burned in a calorimeter containing \(2000\).&nbsp\(\pu{g}\) of water, and the temperature of the water changed 
+            from \(25.0^\circ \pu{C}\) to \(30.0^\circ \pu{C}\). Based on the data, which of the following can be concluded about the energy content for \(\pu{1.0 g}\) of each of the two substances? 
+            (The specific heat of water is \(\pu{4.2 J}/(\pu{g\cdot ^\circ}\pu{C})\).)
+        </p>
 
                      
         </div>
@@ -23,28 +28,28 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    The combustion of \(\pu{1.0 g}\) of cashew releases less energy than the combustion of \(\pu{1.0 g}\) of marshmellow.
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    The combustion of \(\pu{1.0 g}\) of cashew releases the same amount of energy as the combustion of \(\pu{1.0 g}\) of marshmellow.
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    The combustion of \(\pu{1.0 g}\) of cashew releases more energy than the combustion of \(\pu{1.0 g}\) of marshmellow.
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    No comparison can be made because the two systems started with different masses of food, different masses of water, and different initial temperatures. 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -56,7 +61,17 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
+            <p>We can calculate the amount of heat energy transferred by each food item: </p>
+            $$ q_{\text{cashew}}= q_{\text{water}} = mc\Delta T $$
+            $$ = (1000)(4.2)(25-20) $$
+            $$ \approx \pu{20,000 J} $$
 
+            $$ q_{\text{marshmellow}}= q_{\text{water}} = mc\Delta T $$
+            $$ = (2000)(4.2)(30-25) $$
+            $$ \approx \pu{40,000 J} $$
+            <p>Note that the \(\pu{20,000 J}\) was transferred from \(\pu{1.0}\) grams of cashew, whereas the \(\pu{40,000 J}\) was transferred from \(\pu{3.0}\) grams of marshmellow.</p>
+            <p>The marshmellow transfers \(\dfrac{40{,}000}{3} \pu{J}\) of energy per gram, which is significantly less than \(\pu{20,000 J}\).</p>
+       
         </div>
     </main>
 </body>
