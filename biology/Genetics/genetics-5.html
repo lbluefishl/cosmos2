@@ -13,7 +13,11 @@
 <body id='genetics'>
     <main id="5">
         <div id='question-container'>
-           
+
+            <div style="text-align: center;"><img src="5.jpg"></div>
+           <p>The data above represent the results of three different crosses involving the inheritance of a gene that determines
+            whether a certain organism is blue or white. Which of the following best explains the mechanism of inheritance
+            of the gene?</p>
 
                      
         </div>
@@ -22,28 +26,30 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    The allele for white is an autosomal dominant allele because a 1:1 phenotype ratio of blue to white among
+                    both sexes is observed in cross 3.
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    The allele for blue is an autosomal dominant allele because an approximate 3:1 phenotype ratio of blue to
+white is observed in cross 1.
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    The allele for white is an X-linked dominant allele because no white females are produced in cross 1.
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    The allele for blue is an X-linked dominant allele because there are no blue male offspring in cross 2.
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -55,7 +61,13 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
+            <p>To determine whether or not an allele is X-linked or autosomal, check for discrepancies between the male and female offspring. In cross 1 and 2, phenotypic ratios are different when comparing the male and female offspring. 
 
+            </p>
+            <p>If the allele for white is X-linked dominant, there must be some female offspring that are blue since both parents could have passed on an X chromosome with the allele for blue. This is not the case for cross 1.</p>
+            
+            <p>The allele for blue being X-linked dominant is reasonable and matches the information in cross 2.
+                The female parent can only pass the white allele. All male offsprings would therefore be white. The females will all be blue because they all inherit the father's allele for blue.</p>
         </div>
     </main>
 </body>

@@ -13,7 +13,7 @@
 <body id='population-genetics'>
     <main id="2">
         <div id='question-container'>
-           <p>Scientists are studying several populations of finches on neighboring islands in the South Pacific. Previous
+           <p><img src="../../calc.svg" alt="calculator allowed" width="20px"> Scientists are studying several populations of finches on neighboring islands in the South Pacific. Previous
             genetic analysis has shown that a single gene controls tail-feather length in the finch populations and that the
             allele for long tail feathers (\(L\)) is dominant to the allele for short tail feathers (\(l\)). On two separate islands, the
             scientists recorded the number of finches with long tail feathers and the number of finches with short tail
@@ -63,7 +63,25 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <p>The homozygous recessive (\(ll\)) frequency is \(q^2\), where</p>
+            $$ p^2+2pq+q^2=1 $$
+            <p>We can calculate the frequency for both islands:</p>
+            <div style="columns:2">
+                <div style="text-align: center;">Island 1</div>
+                $$ q^2 = \frac{598}{2{,}180} $$
+                $$ q^2 \approx 0.27 $$
+                <div style="text-align: center;">Island 2</div>
+                $$ q^2 = \frac{1{,}110}{3{,}542} $$
+            $$ q^2 \approx 0.31 $$
+            </div> 
+            <p>Only one graph reflects these values for \(ll\).</p>
+            <p>We could also obtain the corresponding \(p^2\) and \(2pq\) values for further verification. Here is the work for island 1:</p>
+       
+            $$ q^2=0.27 \hskip{2em} q=.52 $$
+            $$ p + q = 1 $$
+            $$ p + 0.52 = 1 $$
+            $$ p = 0.48 \hskip{2em} p^2=0.23 $$
+            $$ 2pq = 2(0.52)(0.48) = 0.50 $$
         </div>
     </main>
 </body>
