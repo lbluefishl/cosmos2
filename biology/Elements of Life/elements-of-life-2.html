@@ -7,43 +7,51 @@
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
     
 </head>
 <body id='elements-of-life'>
     <main id="2">
         <div id='question-container'>
            
-
-                     
+<p>Two groups of students attempted to re-create the primitive atmospheric conditions of early Earth using the
+    apparatus represented below. Each group ran the experiment with different gas mixtures in the apparatus.</p>
+                     <div style="text-align: center;"><img src="2.jpg"></div>
+                     <p>Which of the following statements best justifies the claim that the conditions in at least one of the experiments
+                        could generate the molecular building blocks essential for life?</p>
         </div>
         <hr>
         <div id='choices-container'>
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    The carbon dioxide (\(\ce{CO2}\)) gas and water (\(\ce{H2O}\)) vapor in experiment 1 could react spontaneously to produce
+                    the phospholipids required by the first life-forms.
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    The nitrogen (\(\ce{N2}\)) gas and ammonia (\(\ce{NH3}\)) gas in experiment 1 could provide the elemental nitrogen
+required for the formation of amino acids.
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    The sulfur dioxide (\(\ce{SO2}\)) gas in experiment 2 could donate the excited electrons required to drive the
+                    process of photosynthesis.
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    The methane (\(\ce{CH4}\)) gas in experiment 2 could act as the electron acceptor required to complete the process
+                    of cellular respiration.
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -55,7 +63,9 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <p>It is unlikely photosynthesis and cellular respiration, both complex processes, would be present in the first life forms on Earth. </p>
+            <p>Among the remaining choices, phospholipids and amino acids are simple molecules that could be present. 
+                However, the production of phospholipids would require phosphorous, which is not present in experiment 1.</p>
         </div>
     </main>
 </body>
