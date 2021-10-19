@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Gas Laws Question 6</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='gas-laws'>
+    <main id="6">
+        <div id='question-container'>
+$$ \ce{2H2O2(aq) -> 2H2O(l) + O2(g) } \hskip{3em} $$
+                     <p>The decomposition of \(\ce{H2O2(aq)}\) is represented by the equation above. A student monitored the decomposition 
+                         of a \(\pu{1.0 L}\) sample of \(\ce{H2O2(aq)}\) at a constant temperature of \(\pu{300}\). \(\pu{K}\) and recorded the concentration of \(\ce{H2O2}\) as a 
+                         function of time. The results are given in the table below.
+                     </p>
+                     $$ \begin{array}{|c|c|} \hline 
+                     \text{Time (s)} & \ce{[H2O2]} \\ \hline \hline
+                     0 & 2.7 \\ \hline
+                     200. & 2.1 \\ \hline
+                     400. & 1.7 \\ \hline
+                     600. & 1.4 \\ \hline
+                     \end{array} $$
+                     <p>The \(\ce{O2(g)}\) produced from the decomposition of the \(\pu{1.0 L}\) sample of \(\ce{H2O2(aq)}\) is collected in a previously 
+                         evacuated \(\pu{10.0 L}\) flask at \(\pu{300}\). \(\pu{K}\). What is the approximate pressure in the flask after \(\pu{400}\). \(\pu{s}\)&nbsp? 
+                         (For estimation purposes, assume that \(\pu{1.0 }\)mole of gas in \(\pu{1.0 L}\) exerts a pressure of \(\pu{24 atm}\) at \(300\). \(\pu{K}\).)
+                     </p>
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(\pu{1.2 atm} \)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \(\pu{2.4 atm} \)
+                 
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(\pu{12 atm} \)
+           
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(\pu{24 atm} \)
+                    
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach 1</div>
+<p>We can use the ideal gas law equation. Start by finding the number of moles of oxygen through the table and reaction.</p>
+$$ \ce{[H2O2]} = 2.7-1.7 $$ 
+$$ = \pu{1.0 M }   \ce{[H2O2]} $$
+$$ \frac{\pu{1 mol } \ce{H2O2}}{\pu{1 L} } \cdot \pu{1.0 L}  \cdot \frac{\pu{1 mol } \ce{O2}}{\pu{2 mol }\ce{H2O2}} $$
+$$ = \pu{0.5 mol }\ce{O2} $$
+<p>Plugging in the values:</p>
+$$ PV=nRT $$
+$$ P(10.0) = (0.5)(0.0821)(300) $$
+$$ P \approx \boxed{1.2} $$
+<div class="explanation-header1">Approach 2</div>
+        <p>We can use the note about estimation to set a proportion. Since temperature is held constant:</p>
+        $$ PV=nRT $$
+        $$ \frac{PV}{n}=RT \hskip{1em} \frac{PV}{n}=k$$
+        $$ \frac{P_1V_1}{n_1} = \frac{P_2V_2}{n_2} $$
+$$ \frac{(P_1)(10.0)}{0.5} =\frac{(24)(1.0)}{1.0} $$
+$$ P_1 = \boxed{1.2} $$
+</div>
+
+    </main>
+</body>
+</html>

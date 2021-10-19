@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Intermolecular Forces Question 1</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
+</head>
+<body id='intermolecular-forces'>
+    <main id="1">
+        <div id='question-container'>
+           $$ \begin{array}{|l|c|c|} \hline
+           \text{Name} & \text{Molecular} & \text{Molar Mass} \\ 
+           & \text{Formula} & \text{(g/mol)} \\ \hline
+           \text{Ethane} & \ce{C2H6} & 30 \\ \hline
+           \text{Butane} & \ce{C4H10} & 58 \\ \hline
+           \end{array} $$
+            <p>The molecular formula and molar mass of two straight-chain hydrocarbons are listed in the table above. Based on the information in the table, which 
+                compound has the higher boiling point, and why is that compound's boiling point higher? 
+            </p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(\ce{C4H10} \), because it has more hydrogen atoms, resulting in more hydrogen bonding
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \(\ce{C4H10} \), because it has more electrons, resulting in greater polarizability and stronger dispersion forces
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(\ce{C2H6} \), because its molecules are smaller and they can get closer to one another, resulting in stronger dispersion forces
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(\ce{C2H6} \), because its molecules are more polar, resulting in stronger dipole-dipole attractions
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>Both ethane and butane are nonpolar molecules due to their symmetrical geometry. Both do not form hydrogen bonds or dipole-dipole attractions. </p>
+            <p>All molecules have dispersion forces, which are caused by random movement of electrons. Dispersion forces are stronger in larger molecules due to larger electron clouds.</p>
+        </div>
+    </main>
+</body>
+</html>
