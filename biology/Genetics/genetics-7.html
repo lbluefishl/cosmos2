@@ -13,37 +13,40 @@
 <body id='genetics'>
     <main id="7">
         <div id='question-container'>
-           
-
-                     
+           <p>A student in a biology class crossed a male <I>Drosophila melanogaster</I> having a gray body and long wings with a
+            female <i>D. melanogaster</i> having a black body and apterous wings. The following distribution of traits was
+            observed in the offspring.</p>
+<div style="text-align: center;"><img src="7.jpg" width="400"></div>
+              <p>Which of the following is supported by the data?</p>       
         </div>
         <hr>
         <div id='choices-container'>
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    The alleles for gray body and long wings are dominant.
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    The alleles for gray body and long wings are recessive.
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    Genes for the two traits are located on two different chromosomes, and independent assortment occurred.
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    Genes for the two traits are located close together on the same chromosome, and crossing over occurred
+                    between the two gene loci.
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -55,7 +58,18 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <p>Assuming that the two traits follow Mendel's laws, we should expect typical ratios. If the alleles were dominant or recessive, we expect a cross such as this:</p>
+            $$ BbWw \times \underbrace{bbww}_{\text{recessive individual}} $$
+            <p>Note that the following cross would not work, since all of the offspring would reflect the dominant allele:</p>
+            $$ BBWW \times bbww \tag{Not possible}$$
+            <p>The phenotypic ratio for the cross \(BbWw \times bbww\) is 1:1:1:1.</p>
+            $$ \begin{array}{|c|c|c|c|c|} \hline
+            & BW & Bw & bW & bw \\ \hline
+            bw & BbWw & Bbww & bbWw & bbww \\ \hline
+            \end{array} $$
+            <p>Since the data does not correspond with this ratio, independent assortment did not occur. We would also not be sure which alleles would be dominant since they occur at similar frequencies.</p>
+            <p>When the observed ratios do not fit the expected ratios, it is likely genetic linkage occured.
+                 The two traits must have been located close to each other on the chromosome.</p>
         </div>
     </main>
 </body>

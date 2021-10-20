@@ -14,7 +14,20 @@
     <main id="5">
         <div id='question-container'>
            
+<p><img src="../../calc.svg" alt="calculator allowed" width="20px"> The data below demonstrate the frequency of tasters and
+    nontasters of a certain compound in four isolated populations
+    that are in Hardy-Weinberg equilibrium. The allele for
+    nontasters is recessive. In which population is the frequency
+    of the recessive allele highest?</p>
 
+
+    $$ \begin{array}{|c|c|c|c|} \hline
+     \text{Population} & \text{Tasters} & \text{Nontasters} & \text{Size of Population} \\ \hline
+     \text{A} & 110 & 32 & 142 \\ \hline
+     \text{B} & 8{,}235 & 4{,}328 & 12{,}563 \\ \hline
+     \text{C} & 215 & 500 & 715 \\ \hline
+     \text{D} & 11{,}489 & 2{,}596 & 14{,}085 \\ \hline
+     \end{array} $$
                      
         </div>
         <hr>
@@ -22,28 +35,28 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+Population A
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    Population B
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    Population C
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    Population D
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -55,7 +68,18 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
+            <p>The frequency of the recessive allele is given by \(q\), where,</p>
+            $$ p^2+2pq+\underbrace{q^2}_{\text{homozygous recessive}}=1 $$
+            <p>We can calculate this for each population. Since the allele for nontasters is recessive, 
+                the frequency of nontasters corresponds to \(q^2\). Take the square root of this value to obtain \(q\).</p>
 
+            $$ \begin{array}{|c|c|c|c|c|c|} \hline
+            \text{Pop.} & \text{Tasters} & \text{Nontasters} & \text{Size of Population} & q^2 & q \\ \hline
+            \text{A} & 110 & 32 & 142 & 32/142 & 0.47\\ \hline
+            \text{B} & 8{,}235 & 4{,}328 & 12{,}563 &  4{,}328/12{,}563 & 0.59 \\ \hline
+            \text{C} & 215 & 500 & 715 & 500/715 & 0.84 \\ \hline
+            \text{D} & 11{,}489 & 2{,}596 & 14{,}085 & 2{,}596/14{,}085 & 0.43 \\ \hline
+            \end{array} $$
         </div>
     </main>
 </body>
