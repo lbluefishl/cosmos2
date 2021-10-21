@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Genetics Question 6</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+ 
+</head>
+<body id='genetics'>
+    <main id="6">
+        <div id='question-container'>
+           
+<p>A genetic counselor is consulted by a young man
+    who is worried about developing Huntington’s
+    disease, an inherited disorder caused by a
+    dominant allele of a single gene. The young man
+    explains that his cousin was recently diagnosed
+    with Huntington’s disease, and the news has
+    caused him to consider his own risk of developing
+    the disorder. Which of the following questions
+    will best help the genetic counselor to evaluate the
+    risk of the young man developing Huntington’s
+    disease and transmitting it to his children?</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    Were you and your cousin born in the same
+                    geographical area?
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    Were your parents or grandparents ever
+diagnosed with Huntington’s disease?
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    Were you in physical contact with a person
+                    diagnosed with Huntington’s disease?
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    Were you ever exposed to substances that are
+                    suspected of being mutagens?
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>Since the disease is inherited as a dominant allele of a single gene, one could construct a pedigree if information regarding relatives is available.</p>
+            <p>Being born in the same geographical area does not always mean two individuals are related.</p>
+            <p>Physical contact does not spread the disease.</p>
+            <p>Substances could cause changes to an individual's genome, but happens at random and is not a reliable indicator for a specific disease. If there were more definite links then this would be reasonable, such as the link between smoking and lung cancer.</p>
+        </div>
+    </main>
+</body>
+</html>

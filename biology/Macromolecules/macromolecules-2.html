@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Macromolecules Question 2</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    
+</head>
+<body id='macromolecules'>
+    <main id="2">
+        <div id='question-container'>
+           <p>Sickle-cell anemia results from a point mutation
+            in the <i>HBB</i> gene. The mutation results in
+            the replacement of an amino acid that has a
+            hydrophilic R-group with an amino acid that has
+            a hydrophobic R-group on the exterior of the
+            hemoglobin protein. Such a mutation would most
+            likely result in altered</p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    properties of the molecule as a result of
+                    abnormal interactions between adjacent
+                    hemoglobin molecules
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    DNA structure as a result of abnormal
+hydrogen bonding between nitrogenous
+bases
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    fatty acid structure as a result of changes in
+                    ionic interactions between adjacent fatty
+                    acid chains
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    protein secondary structure as a result of
+                    abnormal hydrophobic interactions between
+                    R-groups in the backbone of the protein
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>Since the mutation affects an amino acid, we know that the protein structure would be modified. The question is not related to DNA structures or fatty acid structures.</p>
+            <p>Protein secondary structure occurs mainly through hydrogen bonding between the carboxyl and amine groups in the chain, rather than the R group.  </p>
+            <p>The question implies that the mutation affects an amino acid on the exterior of the hemoglobin molecule, hinting that the molecule would likely have altered interactions between nearby molecules.</p>
+        </div>
+    </main>
+</body>
+</html>
