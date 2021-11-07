@@ -14,37 +14,37 @@
 <body id='composition-of-substances'>
     <main id="2">
         <div id='question-container'>
-           
+           <p>If equal masses of the following compounds undergo complete combustion, which will yield the greatest mass of \(\ce{CO2}\)&nbsp?</p>
 
                      
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+Benzene, \(\ce{C6H6}\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+              Cyclohexane, \(\ce{C6H12}\)      
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    Glucose, \(\ce{C6H12O6}\)
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    Methane, \(\ce{CH4}\)
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -56,7 +56,24 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+<p>Combustion reactions have the following form:</p>
+            $$ \ce{hydrocarbon + O2(g) -> CO2 + H2O} $$
+            <p>To obtain the greatest mass of carbon dioxide, 
+                we want to maximize the moles of carbon dioxide produced. 
+                We therefore want to maximize the moles of carbon in the reactants.</p>
+            <p>Assuming an equal mass of the compounds,
+                 we can calculate the number of moles of carbon reacted. 
+                 For example, lets say we reacted \(\pu{1 g}\) of each.</p>
+            $$ \pu{1 g }\ce{C6H6} \cdot \frac{\pu{1 mol }\ce{C6H6}}{\pu{78 g }\ce{C6H6}} \cdot \frac{\pu{6 mol }\ce{C}}{\pu{1 mol }\ce{C6H6}} = \frac{1}{13}$$ 
+            $$ \pu{1 g }\ce{C6H12} \cdot \frac{\pu{1 mol }\ce{C6H12}}{\pu{84 g }\ce{C6H12}} \cdot \frac{\pu{6 mol }\ce{C}}{\pu{1 mol }\ce{C6H12}} =\frac{1}{14}$$ 
+            $$ \pu{1 g }\ce{C6H12O6} \cdot \frac{\pu{1 mol }\ce{C6H12O6}}{\pu{180 g }\ce{C6H12O6}} \cdot \frac{\pu{6 mol }\ce{C}}{\pu{1 mol }\ce{C6H12O6}} = \frac{1}{30} $$ 
+            $$ \pu{1 g }\ce{CH4} \cdot \frac{\pu{1 mol }\ce{CH4}}{\pu{16 g }\ce{CH4}} \cdot \frac{\pu{1 mol }\ce{C}}{\pu{1 mol }\ce{CH4}} =\frac{1}{16} $$ 
+            
+            <p>Benzene would result in the greatest number of moles of carbon.
+                 In some cases we can simply pick the molecule with the lowest mass. 
+                 However, note that the molecules differ in the number of carbon atoms present.
+                  In this question, we could compare the first three options (6 carbon molecules) relatively easily. 
+                  We will have to take care when considering methane (1 carbon).</p>
         </div>
     </main>
 </body>

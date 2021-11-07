@@ -12,11 +12,23 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
     <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
 </head>
-<body id='Enthalpy of Reaction'>
+<body id='enthalpy-of-reaction'>
     <main id="5">
         <div id='question-container'>
-           
-
+           $$ \ce{2H2O2(aq) -> 2H2O(l) + O2(g)} \hskip{5em} \Delta H^\circ = \pu{-196 kJ/mol_{rxn}} $$
+<p>The decomposition of \(\ce{H2O2(aq)}\) is represented by the equation above. Assume that the bond enthalpies of the oxygen-hydrogen 
+    bonds in \(\ce{H2O}\) are not significantly different from those in \(\ce{H2O2}\). 
+    Based on the value of \(\Delta H^\circ\) of the reaction, which of the following 
+    could be the bond enthalpies (in&nbspkJ/mol) for the bonds broken and formed in the reaction?
+</p>
+$$ \begin{array}{l c c c} 
+ & \ce{O-O}  & \ce{O=O} & \ce{O-H}  \\ 
+ & \text{in } \ce{H2O2} & \text{in } \ce{O2} &  \\ \hline
+ A & 300 & 500 & 500 \\ \hline
+ B & 150 & 500 & 500 \\ \hline
+ C & 500 & 300 & 150 \\ \hline
+ D & 250 & 300 & 150 \\ \hline
+ \end{array} $$
                      
         </div>
         <hr>
@@ -24,28 +36,28 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+A
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                 B   
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+C
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+D
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -57,7 +69,26 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
+            <p>The enthalpy change can be estimated by taking the sum of the energy required to break bonds 
+                and the sum of the energy required to form bonds:</p>
+            $$ \Delta H = \sum (\text{bonds broken}) - \sum (\text{bonds formed}) $$
+            <p>Energy is released when bonds are formed, hence the negative sign.</p>
+            <p>Write the lewis structures for the reactants and products. We can also infer the types of bonds from the table.</p>
+<p>Our equation should look something like this:</p>
 
+$$ \Delta H = \sum (\text{bonds broken}) - \sum (\text{bonds formed}) $$
+$$ \Delta H = \underbrace{2[(\ce{O-O})+2(\ce{O-H})]}_{\text{hydrogen peroxide}} -  \underbrace{2[2(\ce{O-H})]}_{\text{water}} - \underbrace{(\ce{O=O})}_{\text{oxygen}}$$
+$$ = 2(\ce{O-O})+4(\ce{O-H}) -4(\ce{O-H}) - (\ce{O=O}) $$
+ $$ = 2(\ce{O-O}) - (\ce{O=O}) $$
+ <p>Using the values from the table:</p>
+ $$ \begin{array}{l c c c | c} 
+ & \ce{O-O}  & \ce{O=O} & \ce{O-H} & 2(\ce{O-O}) - (\ce{O=O})  \\ 
+ & \text{in } \ce{H2O2} & \text{in } \ce{O2} &  \\ \hline
+ A & 300 & 500 & 500 & 2(300)-500 =100 \\ \hline
+ B & 150 & 500 & 500 & 2(150)-500=\boxed{-200} \\ \hline
+ C & 500 & 300 & 150 & 2(500)-150=850\\ \hline
+ D & 250 & 300 & 150 & 2(250)-150=350 \\ \hline
+ \end{array} $$
         </div>
     </main>
 </body>
