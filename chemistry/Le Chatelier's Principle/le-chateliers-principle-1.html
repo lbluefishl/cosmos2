@@ -7,43 +7,45 @@
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 </head>
 <body id='le-chateliers-principle'>
     <main id="1">
         <div id='question-container'>
            
-
+$$ \ce{Mg(OH)2(s) <--> Mg^{2+}(aq) + 2 OH-(aq)}$$
+<p>The exothermic dissolution of \(\ce{Mg(OH)2}\) in water is represented by the equation above. The \(K_{sp}\) of \(\ce{Mg(OH)2}\) 
+    is \(1.8 \times 10^{-11}\). Which of the following changes will increase the solubility of \(\ce{Mg(OH)2}\) in an aqueous solution?</p>
                      
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+Decreasing the pH
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    Increasing the pH
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+Adding \(\ce{NH3}\) to the solution
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+Adding \(\ce{Mg(NO3)2}\) to the solution
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -55,8 +57,14 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
+            <p>The \(K_{sp}\) of magnesium hydroxide is low. The reactants are favored in the reaction. To increase the solubility,
+                 we need \(\ce{Mg(OH)2}\) to dissociate. In other words, we want the equilibrium position to shift to the right.</p>
+                 <p>Decreasing the pH involves adding acid. The hydroxide would be consumed through neutralization with the acid. Since products are being removed, the equilibrium position will shift to the right.</p>
+       <p>Increasing the pH would likely have an opposite effect and would shift the equilibrium position to the left, decreasing solubility.</p>
+<p>\(\ce{NH3}\), a weak base, would react with water and produce some hydroxide ions, resulting in a shift in equilibrium position to the left. </p>
 
-        </div>
+<p>Adding \(\ce{Mg(NO3)2}\) would result in increased \(\ce{Mg^{2+}}\), shifting the equilibrium position to the left.</p>
+                </div>
     </main>
 </body>
 </html>

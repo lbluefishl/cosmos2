@@ -7,43 +7,55 @@
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 </head>
 <body id='equilibrium'>
     <main id="2">
         <div id='question-container'>
-           
+           $$ \ce{2XY <--> X2(g) + Y2(g)} \hskip{2em} K_p=230 $$
+<p>A certain gas, \(ce{XY(g)}, decomposes as represented by the equation above. A sample of each of the three gases is put in a previously evacuated container. 
+    The initial partial pressures of the gases are shown in the table below.
+</p>
+$$ \begin{array}{|c|c|} \hline
+\text{Gas} & \text{Initial Partial } \\
+& \text{Pressure (atm)} \\ \hline \hline
 
-                     
+
+\ce{XY} & 0.010  \\ \hline
+\ce{X_2} & 0.20 \\ \hline
+\ce{Y_2} & 2.0  \\ \hline
+
+\end{array} $$
+                <p>The temperature of the reaction mixture is held constant. In which direction will the reaction proceed?</p>         
         </div>
         <hr>
         <div id='choices-container'>
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    The reaction will form more products.
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                        The reaction will form more reactants.
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    The mixture is at equilibrium, so there will be no change.
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    It cannot be determined unless the volume of the container is known.
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -55,8 +67,13 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
-        </div>
+            <p>Find the reaction quotient and compare it to \(K_p\).</p>
+            $$ Q = \frac{[\ce{X_2}][\ce{Y_2}]}{[\ce{XY}]^2} $$
+            $$ Q = \frac{(0.20)(2.0)}{0.010} $$
+            $$ Q = \frac{.40}{0.0001} $$
+            $$ Q = 4000 $$ 
+            <p> Since \(Q \gt K_p\), the system must shift to the reactant side.</p>
+         </div>
     </main>
 </body>
 </html>

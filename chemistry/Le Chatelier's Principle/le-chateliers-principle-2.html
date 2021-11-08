@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 </head>
 <body id='le-chateliers-principle'>
     <main id="2">
         <div id='question-container'>
-           
+           $$ \ce{CaCO3(s) <--> CaO(s) + CO2(g)} $$
+           $$ \Delta H^\circ = \pu{178 kJ/mol_{rxn}} $$
+           <p>The reaction system represented above is at equilibrium. 
+               Which of the following will decrease the amount of \(\ce{CaO(s)}\) in the system?</p>
 
                      
         </div>
@@ -22,28 +25,28 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    Increasing the volume of the reaction vessel at constant temperature
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    Lowering the temperature of the system
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    Removing some \(\ce{CO2(g)}\) at constant temperature
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    Removing some \(\ce{CaCO3(s)}\) at constant temperature
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -55,7 +58,11 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <p>Lets examine all the choices and their effects on equilibrium position:</p>
+            <p>Increasing the volume of the reaction corresponds to a decrease in pressure. The equilibrium position would shift to produce more gas molecules. In this case, it will shift to the right.</p>
+            <p>Lowering the temperature effectively decreases reactants since the reaction is endothermic. The equilibrium position would shift to the left.</p>
+            <p>Removing \(\ce{CO2(g)}\), a product, would shift the equilibrium position to the right. </p>
+            <p>Removing \(\ce{CaCO3(s)}\) has no effect on equilibrium position since it is a solid.</p>
         </div>
     </main>
 </body>

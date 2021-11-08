@@ -2,18 +2,32 @@
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
-    <title>Acid-Base Reactions Question 2</title>
+    <title>Acids and Bases Question 1</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 </head>
-<body id='acid-base-reactions'>
-    <main id="2">
+<body id='acids-and-bases'>
+    <main id="1">
         <div id='question-container'>
-           
+           <p>An acetate buffer solution is prepared by combining 50. mL of 0.20 \(M\) acetic acid, \(\ce{HC2H3O2(aq)}\), and 50. mL of 
+               0.20 \(M\) sodium acetate, \(\ce{NaC2H3O2(aq)}\). A 5.0 mL sample of 0.10 \(M\) \(\ce{NaOH(aq)}\) is added to the buffer solution.
+             Which of the following is a correct pairing of the acetate species present in greater concentration and of the pH of the solution 
+             after the \(\ce{NaOH(aq)}\) is added? (The p\(K_a\) of acetic acid is 4.7.)
+            </p>
+
+            $$ \begin{array}{c|c|c}  
+            \hspace{3em}& \text{Acetate Species} & \text{pH} \\ \hline
+            \text{(A)} & \ce{HC2H3O2} & \lt 4.7 \\ 
+            \text{(B)} & \ce{HC2H3O2} & \gt 4.7 \\ 
+            \text{(C)} & \ce{C2H3O2-} & \lt 4.7 \\ 
+            \text{(D)} & \ce{C2H3O2-} & \gt 4.7 \\ 
+
+
+            \end{array} $$
 
                      
         </div>
@@ -22,28 +36,28 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+A
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    B
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+C
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+D
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -55,6 +69,12 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
+            <p>The strong acid and sodium acetate will dissociate completely in water. Acetic acid is a weak acid (hence its p\(Ka\)), and will dissociate slightly. 
+                The following reaction will proceed to completion since hydroxide ions will react with any free hydronium ions that dissociate from acetic acid.
+            </p>
+            $$ \ce{OH- + HC2H3O2 -> H2O + C2H3O2-} $$
+            <p>There will therefore be more \(\ce{C2H3O2-}\) ions in solution. The pH will be slightly above 4.7 due to the addition of the base.
+            </p>
 
         </div>
     </main>
