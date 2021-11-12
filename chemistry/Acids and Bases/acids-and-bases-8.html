@@ -2,20 +2,21 @@
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
-    <title>Periodic Trends Question 3</title>
+    <title>Acids and Bases Question 8</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
+ 
 </head>
-<body id='periodic-trends'>
-    <main id="3">
+<body id='acids-and-bases'>
+    <main id="8">
         <div id='question-container'>
-           Which of the following correctly identifies which has the higher first-ionization energy, \(\ce{Cl}\) or \(\ce{Ar}\), and supplies 
-           the best justification?
+           <p>A solution containing \(\ce{HCl}\) and the weak acid \(\ce{HClO2}\) has a pH of 2.4. Enough \(\ce{KOH(aq)}\) is added to the solution to increase the 
+               pH to 10.5. The amount of which of the following species increases as the \(\ce{KOH(aq)}\) is added?
+           </p>
 
                      
         </div>
@@ -24,28 +25,30 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-                    \(\ce{Cl}\), because of its higher electronegativity
+                    \(\ce{Cl-(aq)}\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    \(\ce{Cl}\), because of its higher electron affinity
+                    \(\ce{H+(aq)}\)
+                    
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-                    \(\ce{Ar}\), because of its completely filled valence shell
+                    \(\ce{ClO2-(aq)}\)
+
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container c'>
+            <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-                    \(\ce{Ar}\), because of its higher effective nuclear charge
+                    \(\ce{HClO2(aq)}\)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -58,13 +61,16 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-            <p>Although chlorine does have a higher electronegativity and electron affinity, these are simply properties and do not correspond to other properties like ionization energy. </p>
-            <p>Although argon does have a filled valence shell, this property does not justify another property.</p>
-            <p>The ionization energy is the energy required to remove an electron. The energy keeping an electron attached to the nucleus can be approximated by Coulomb's law. 
-                Every electron in chlorine is effectively attracted to the nucleus, which has a charge of +17 from its protons. In argon, there are 18 protons, so the force of attraction is slightly greater. 
-                It would therefore take more energy to remove any given electron.
+            <p>The strong base and acid will react and neutralize first:</p>
+            $$ \ce{KOH(aq) + HCl(aq) -> H2O(l) + K+(aq) + Cl-(aq)} $$
+            
+            <p>Since the solution becomes alkaline, we can infer that more strong base is added. The base would react with \(\ce{HClO2}\):</p>
+            $$ \ce{KOH(aq) + HClO2(aq) -> H2O(l) + K+(aq) + ClO2-(aq) } $$
+            <p>Note that there are two reasonable options that increase in solution: \(\ce{Cl-(aq)}\) and \(\ce{ClO2-(aq)}\). 
+                However, since we know that \(\ce{HCl}\) is a stronger acid than \(\ce{HClO2}\), the \(\ce{Cl-}\) ions were already 
+                present in solution throughout the process. On the other hand, most of the \(\ce{ClO2-(aq)}\) ions did not dissociate from the weak acid at the start of the reactions. It is only after the strong base liberates the proton do \(\ce{ClO2-(aq)}\) ions noticeably increase.
             </p>
-        </div>
+        </div> 
     </main>
 </body>
 </html>

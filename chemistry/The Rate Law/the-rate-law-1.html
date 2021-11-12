@@ -7,28 +7,34 @@
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 </head>
 <body id='the-rate-law'>
     <main id="1">
         <div id='question-container'>
-           
+           <p>When free \(\ce{Cl(g)}\) atoms encounter \(\ce{O3(g)}\) molecules in the upper atmosphere, the following reaction mechanism is proposed to occur.</p>
+$$ \begin{array}{c c c} 
+\ce{Cl(g) + O3(g) -> ClO(g) + O2(g)} & \textit{slow step} &  \\
+\ce{ClO(g) + O3(g) -> Cl(g) + 2O2(g)} & \textit{fast step} & \\ \hline
+\ce{2O3(g) -> 3O2(g)} & \textit{overall reaction} & \Delta H=\pu{-285 kJ/mol_{rxn}}
 
-                     
+\end{array} $$
+                     <p>Which of the following rate laws for the overall reaction corresponds to the proposed mechanism?</p>
         </div>
         <hr>
         <div id='choices-container'>
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                   \( \text{Rate}=k[\ce{O3}]^2\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                   \( \text{Rate}=k[\ce{Cl}][\ce{O3}]\)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -36,6 +42,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \( \text{Rate}=k[\ce{ClO}][\ce{O3}]^2\)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -43,7 +50,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    \(  \text{Rate} = k\dfrac{[\ce{O2}]^3}{[\ce{O3}]^2}  \)
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -55,7 +62,10 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <p>The rate law can be determined from the slowest step, which is known as the rate-determining step.  </p>
+            $$ \ce{1Cl(g) + 1O3(g) -> ClO(g) + O2(g)} $$
+            <p>In this step, 1 molecule of chlorine and 1 molecule of ozone react. We can use the coefficients of the reactants to write the rate law.</p>
+            \( \text{Rate}=k[\ce{Cl}]^1[\ce{O3}]^1\)
         </div>
     </main>
 </body>

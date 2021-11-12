@@ -14,37 +14,40 @@
 <body id='heat-capacity-and-calorimetry'>
     <main id="4">
         <div id='question-container'>
-           
+        <p>A 10. g cube of copper at a temperature \(T_1\) is placed in an insulated cup containing 10. g of water at 
+            a temperature \(T_2\). If \(T_1 \gt T_2\), which of the following is true of the system when it has attained thermal 
+            equilibrium? (The specific heat of copper is \(\pu{0.385 J/(g}\cdot^\circ \)C) and the specific heat of water is 
+            \(\pu{4.18 J/(g}\cdot^\circ \)C).)
+        </p>
 
-                     
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+The temperature of the copper changed more than the temperature of the water.
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    The temperature of the water changed more than the temperature of the copper.
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+The temperature of the water and the copper changed by the same amount.
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+The relative temperature changes of the copper and the water cannot be determined without knowing \(T_1\) and \(T_2\).
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -56,7 +59,16 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
+<p>The question mentions that the initial temperature of copper is greater (\(T_1 \gt T_2\)). This implies that the copper will transfer heat to the water. 
+    Since copper has a lower specific heat, less energy is required to change the temperature of copper. 
+    Because both the copper and water have equal masses, the temperature of copper must have decreased much more than the increase in temperature of the water.
+</p>
 
+$$ q_{\text{lost by copper}} = -q_{\text{gained by water}} $$
+$$ mc\Delta T = mc\Delta T $$ 
+$$ (10)(0.385)(T_1-T_f) = -(10)(4.18)(T_f-T_2) $$
+$$ (0.385)(\Delta T_{\text{copper}}) = (4.18)(\Delta T_{\text{water}}) $$
+$$ \Delta T_{\text{copper}} \gg \Delta T_{\text{water}} $$
         </div>
     </main>
 </body>

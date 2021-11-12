@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 </head>
 <body id='the-rate-law'>
     <main id="2">
         <div id='question-container'>
-           
-
+          $$ \ce{X(g) + 2Y(g) -> XY2(g)} $$
+          <p>In order to determine the order of the reaction represented above, the initial rate of formation of \(\ce{XY2}\) is measured 
+              using different initial values of \([\ce{X}]\) and \([\ce{Y}]\). The results of the experiment are shown in the table below.
+          </p> 
+          $$ \begin{array}{|c|c|c|c|} \hline
+          \text{Trial} & [\ce{X}] & [\ce{Y}] & \text{Initial Rate of Formation of }\ce{XY2} \\ 
+          & & & (M&nbsp\pu{ s^-1}) \\ \hline
+          1 & 0.50 & 0.50 & 8.0\times 10^{-3} \\ \hline
+          2 & 1.00 & 0.50 & 3.2 \times 10^{-2} \\ \hline
+          3 & 1.00 & 1.00 & 6.4\times 10^{-2} \\ \hline
+          \end{array} $$
+          <p>In trial 2 which of the reactants would be consumed more rapidly, and why?</p>
                      
         </div>
         <hr>
@@ -22,28 +32,28 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    X, because it has a higher molar concentration.
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    X, because the reaction is second order with respect to X.
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    Y, because the reaction is second order with respect to Y.
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    Y, because the rate of disappearance will be double that of X.
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -55,7 +65,11 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <p>Using the method of initial rates, we could confirm that the reaction is second order with respect to X and first order with respect to Y.
+           </p>
+           <p>Using that method is timely and unncessary. We can simply look at the stoichiometric ratios of the balanced reaction. 
+               2 molecules of Y are consumed for every molecule of X. Therefore, Y will be consumed more rapidly. </p>
+          
         </div>
     </main>
 </body>

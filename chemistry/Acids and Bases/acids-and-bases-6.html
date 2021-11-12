@@ -2,21 +2,22 @@
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
-    <title>Periodic Trends Question 3</title>
+    <title>Acids and Bases Question 6</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
+ 
 </head>
-<body id='periodic-trends'>
-    <main id="3">
+<body id='acids-and-bases'>
+    <main id="6">
         <div id='question-container'>
-           Which of the following correctly identifies which has the higher first-ionization energy, \(\ce{Cl}\) or \(\ce{Ar}\), and supplies 
-           the best justification?
-
+            $$ \ce{HX(aq) + Y-(aq) <--> HY(aq) + X-(aq)}  \hskip{2em} K_{eq} \gt 1 $$
+<p>A solution of a salt of a weak acid \(\ce{HY}\) is added to a solution of another weak acid \(\ce{HX}\). Based on the information given above, which of the following 
+    species is the strongest base? 
+</p>
                      
         </div>
         <hr>
@@ -24,28 +25,30 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-                    \(\ce{Cl}\), because of its higher electronegativity
+                    \(\ce{HX(aq)}\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    \(\ce{Cl}\), because of its higher electron affinity
+                    \(\ce{Y-(aq)}\)
+                    
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-                    \(\ce{Ar}\), because of its completely filled valence shell
+                    \(\ce{HY(aq)}\)
+
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container c'>
+            <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-                    \(\ce{Ar}\), because of its higher effective nuclear charge
+                    \(\ce{X-(aq)}\)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -58,11 +61,9 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-            <p>Although chlorine does have a higher electronegativity and electron affinity, these are simply properties and do not correspond to other properties like ionization energy. </p>
-            <p>Although argon does have a filled valence shell, this property does not justify another property.</p>
-            <p>The ionization energy is the energy required to remove an electron. The energy keeping an electron attached to the nucleus can be approximated by Coulomb's law. 
-                Every electron in chlorine is effectively attracted to the nucleus, which has a charge of +17 from its protons. In argon, there are 18 protons, so the force of attraction is slightly greater. 
-                It would therefore take more energy to remove any given electron.
+            <p>Since \(K_{eq}\gt 1\), the products are favored. This must mean that the reaction between the reactants goes closer to completion than the reverse reaction. 
+                This implies that \(\ce{Y-}\) does a good job of drawing \(\ce{H+}\) from the acid. 
+                The ability to draw protons corresponds to the Brønsted-Lowry definition of a base.
             </p>
         </div>
     </main>
