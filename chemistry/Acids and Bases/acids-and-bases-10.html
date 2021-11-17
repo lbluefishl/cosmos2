@@ -14,7 +14,10 @@
 <body id='acids-and-bases'>
     <main id="10">
         <div id='question-container'>
-           
+           <p>A solution is prepared by adding 100 mL of 1.0 \(M&nbsp\ce{HC2H3O2(aq)}\) to 100 mL of 1.0 \(M&nbsp\ce{NaC2H3O2}\). The solution 
+               is stirred and its pH is measured to be 4.73. After 3 drops of 1.0 \(M&nbsp\ce{HCl}\) are added to the solution, the pH of the solution is measured
+               and is still 4.73. Which of the following equations represents the chemical reaction that accounts for the fact that acid was added but there was no detectable change in pH? 
+           </p>
 
                      
         </div>
@@ -23,20 +26,22 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+\(\ce{H3O+(aq) + OH-(aq) -> 2H2O}\)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+\(\ce{H3O+(aq) + Cl-(aq) -> HCl(g) + H2O(l)}\)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \(\ce{H3O+(aq) + C2H3O2-(aq) -> HC2H3O2(aq) + H2O(l)}\)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -44,6 +49,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \(\ce{H3O+(aq) + HC2H3O2(aq) -> H2C2H3O2+(aq) + H2O(l)}\)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -56,7 +62,13 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
+            <p>\(\ce{NaC2H3O2}\) acts as a buffer. It will first dissociate in solution:</p>
+$$ \ce{NaC2H3O2(aq) -> Na+(aq) + C2H3O2-(aq)} $$
 
+            <p>    Excess hydronium ions from \(\ce{HCl}\) react in the following way with acetate (\(\ce{ C2H3O2-}\)) ions:</p>
+            $$    \ce{H3O+(aq) + C2H3O2-(aq) -> HC2H3O2(aq) + H2O(l)}$$
+            <p>The pH of 1 \(M\) acetic acid \((\ce{HC2H3O2}\)) is approximately 4.73. Only a few drops of strong acid were added. The reaction above effectively adds a small amount of acetic acid and is unlikely to significantly change the pH.</p>
+ 
         </div>
     </main>
 </body>

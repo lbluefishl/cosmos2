@@ -9,12 +9,16 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
 </head>
 <body id='periodic-trends'>
     <main id="5">
         <div id='question-container'>
-           
+
+           <div style="text-align: center;"> <img src="5.jpg"></div>
+           <p>A sample containing atoms of \(\ce{C}\) and \(\ce{F}\) was analyzed using x-ray photoelectron spectroscopy. The portion 
+               of the spectrum showing the \(1s\) peaks for atoms of the two elements is shown above. Which of the following correctly 
+               identifies the \(1s\) peak for the \(\ce{F}\) atoms and provides an appropriate explanation?
+           </p>
 
                      
         </div>
@@ -23,28 +27,28 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+Peak X, because \(\ce{F}\) has a smaller first ionization energy than \(\ce{C}\) has.
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    Peak X, because \(\ce{F}\) has a greater nuclear charge than \(\ce{C}\) has.
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+Peak Y, because \(\ce{F}\) is more electronegative than \(\ce{C}\) is.
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+Peak Y, because \(\ce{F}\) has a smaller atomic radius than \(\ce{C}\) has.
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -56,7 +60,12 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <p>Binding energy provides information indicating the strength of an electron's attraction to the nucleus. The higher the intensity, the more energy would be required to remove an electron.
+            </p>
+            <p>The reason why \(\ce{F}\) electrons are hard to remove is because the nuclear charge is very high relative to \(\ce{C}\).
+                Coulomb's law approximates the electric force of attraction, where larger charges result in larger forces. </p>
+            <p>Carbon has a nuclear charge of +6, whereas fluorine has a nuclear charge of +9. 
+                Each electron in fluroine therefore experiences a much larger force compared to individual electrons in carbon.</p>
         </div>
     </main>
 </body>

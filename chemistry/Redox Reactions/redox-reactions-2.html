@@ -7,43 +7,43 @@
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 </head>
 <body id='redox-reactions'>
     <main id="2">
         <div id='question-container'>
            
-
-                     
+            $$ \ce{MnO4- + 5Fe^{2+} + 8H+ -> Mn^{2+} + 5Fe^{3+} + 4H2O} $$
+                    <p>In the reaction represented above, the number of \(\ce{MnO4-}\) ions that react must be equal to which of the following? </p> 
         </div>
         <hr>
         <div id='choices-container'>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    One-fifth the number of \(\ce{Fe^{2+}}\) ions that are consumed
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                    Eight times the number of \(\ce{H+}\) ions that are consumed
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    Five times the number of \(\ce{Fe^{3+}}\) ions that are produced
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    One-half the number of \(\ce{H2O}\) molecules that are produced
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -55,7 +55,9 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
+            <p>First, check that the reaction is balanced. There should be the same number of atoms for each element and the net charge of each side should be equal. </p>
 
+            <p>In this case, the reaction is balanced. Therefore, the ratio of \(\ce{MnO4-}\) to \(\ce{Fe^{2+}}\) is simply the ratio of the coefficients.</p>
         </div>
     </main>
 </body>
