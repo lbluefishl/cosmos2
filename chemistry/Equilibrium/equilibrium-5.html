@@ -13,8 +13,11 @@
 <body id='equilibrium'>
     <main id="5">
         <div id='question-container'>
-           
-
+           $$\ce{PCl3(g) + Cl2(g) <--> PCl5(g) } \hskip{2em} K_c=6.5 $$
+            <p>At a certain point in time, a 1.00 L rigid reaction vessel contains 1.5 mol of \(\ce{PCl3(g)}\), 1.0 mol of 
+                \(\ce{Cl2(g)}\), and 2.5 mol of \(\ce{PCl5(g)}\). Which of the following describes how the measured pressure in the reaction 
+                vessel in the reaction vessel will change and why it will change that way as the reaction system approaches equilibrium at constant temperature?
+            </p>
                      
         </div>
         <hr>
@@ -22,20 +25,22 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    The pressure will increase because \(Q \lt K_c\).
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    The pressure will increase because \(Q \gt K_c\).
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    The pressure will decrease because \(Q \lt K_c\).
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -43,6 +48,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    The pressure will decrease because \(Q \gt K_c\).
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -55,7 +61,16 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <p>We can calculate the reaction quotient \(Q\):</p>
+            $$ Q = \frac{[\ce{PCl5}]}{[\ce{PCl3}][\ce{Cl2}]} $$
+            $$ Q = \frac{(2.5)}{(1.5)(1)} $$
+            $$ Q = \frac{\frac{5}{2}}{\frac{3}{2}} $$
+            $$ Q = \frac{5}{2}\cdot \frac{2}{3} $$
+            $$ Q = \frac{5}{3} $$
+            $$ \frac{5}{3} \lt 6.5 $$
+            $$ Q \lt K_c $$
+         
+            <p>Since \(Q\) is less than \(K_c\), the equilibrium position will shift to the products. The pressure will decrease since two molecules of gas will turn into only 1 molecule of gas, resulting in a net decrease in gas pressure.</p>
         </div>
     </main>
 </body>

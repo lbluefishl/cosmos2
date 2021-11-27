@@ -13,8 +13,12 @@
 <body id='the-rate-law'>
     <main id="4">
         <div id='question-container'>
-           
-
+           <div style="text-align: center;"><img src="4.jpg"></div>
+            <p>Consider the reaction represented by the equation \(\ce{2X + 2Z -> X2Z2}\). During a reaction in which a large 
+                excess of reactant \(\ce{X}\) was present, the concentration of reaction \(\ce{Z}\) was monitored over time. 
+                A plot of the natural logarithm of the concentration of \(\ce{Z}\) versus time is shown in the figure above. The order 
+                of the reaction with respect to reactant \(\ce{Z}\) is
+            </p>
                      
         </div>
         <hr>
@@ -22,28 +26,28 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    zero order
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                first order     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    second order
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    third order
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -55,7 +59,17 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <p>If the plot of the natural logarithm of a reactant concentration versus time is linear, the reaction is first order. </p>
+            <div class="explanation-header1">Sidenote</div>
+            <p>If you can do a bit of calculus, you can integrate the rate equation for first order to check:</p>
+            $$ \text{rate} = k[\ce{Z}]^1 \tag*{first-order rate equation}$$
+            $$ \frac{dZ}{dt} = -k[\ce{Z}] $$
+             $$ \frac{1}{\ce{Z}} dZ = -k dt $$
+             $$ \int\frac{1}{\ce{Z}} dZ = \int-k dt $$
+             $$ \ln[\ce{Z}]=-kt+C $$
+             <p>At time 0, \(C=\ln[\ce{Z}]_0\)</p>
+             $$ \ln[\ce{Z}]=-kt+\ln[\ce{Z}]_0 $$
+             <p>This is the line of \(\ln[\ce{Z}]\) versus \(t\) with slope \(-k\). </p>
         </div>
     </main>
 </body>

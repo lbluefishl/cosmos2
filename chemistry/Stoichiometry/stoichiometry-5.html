@@ -14,7 +14,10 @@
 <body id='stoichiometry'>
     <main id="5">
         <div id='question-container'>
-           
+            $$ \ce{H2 + F2 -> 2HF} $$
+            <p>In the reaction represented above, what mass of \(\ce{HF}\) is produced by the reaction of \(3.0 \times 10^{23}\) molecules of \(\ce{H2}\) 
+                with excess \(\ce{F2}\)&nbsp? (Assume the reaction goes to completion.)
+            </p>
 
                      
         </div>
@@ -23,28 +26,28 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    4.0 g
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+                   10. g 
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+                    20. g
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+                    40. g
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -56,8 +59,15 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1"> Approach </div>
-
-        </div>
+            <p>Since one reactant is given in excess, we can simply convert the given quantity using stoichiometry. We use Avogadro's number
+                to convert molecules into moles.
+            </p>
+            $$ 3.0 \times 10^{23} \text{ molecules }\ce{H2}
+             \cdot \frac{\pu{1 mol }\ce{H2}}{6.02 \times 10^{23}
+              \text{ molecules }\ce{H2}} \cdot \frac{\pu{2 mol }\ce{HF}}{\pu{1 mol }\ce{H2}} 
+              \cdot \frac{\pu{20 g }\ce{HF}}{\pu{1 mol }\ce{HF}}$$
+            $$ \approx \boxed{\pu{20 g}} $$
+            </div>
     </main>
 </body>
 </html>
