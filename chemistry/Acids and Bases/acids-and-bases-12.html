@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
-    <title>Acids and Bases Question 2</title>
+    <title>Acids and Bases Question 12</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
@@ -12,10 +12,17 @@
     
 </head>
 <body id='acids-and-bases'>
-    <main id="2">
+    <main id="12">
         <div id='question-container'>
-           
-
+           $$ \begin{array}{c c c} 
+           \text{Solution} & \text{Acid} & K_a \\ \hline 
+           1 & \ce{CH3CO2H} & 1.75\times 10^{-5} \\ 
+           2 & \ce{CF3CO2H} & 1.0\times 10^0 \\ 
+           \end{array} $$
+<p>Acid-dissociation constants of two acids are listed in the table above. A 20. mL sample of a \(0.10&nbspM\) solution of each acid 
+    is titrated to the equivalence point with 20. mL of \(0.10&nbspM&nbsp\ce{NaOH}\). Which of the following is a true statement about the pH
+    of the solutions at the equivalence point?
+</p>
                      
         </div>
         <hr>
@@ -23,13 +30,14 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    Solution 1 has a higher pH at the equivalence point because \(\ce{CH3CO2H}\) is the stronger acid.
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    Solution 1 has a higher pH at the equivalence point because \(\ce{CH3CO2H}\) has the stronger conjugate base.
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
@@ -37,6 +45,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    Solution 1 has a lower pH at the equivalence point because \(\ce{CH3CO2H}\) is the stronger acid.
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -44,6 +53,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    Solution 1 has a lower pH at the equivalence point because \(\ce{CH3CO2H}\) has the stronger conjugate base.
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -52,11 +62,13 @@
         <div id='button-container'>
             <button id='summary'>Summary</button>
             <button id='submit'>Submit</button>
-            <button id='skip'>Skip Question</button>
+           <!--  <button id='skip'>Skip Question</button> -->
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <p>Since the \(K_a\) value for \(\ce{CH3CO2H}\) is smaller than that of solution 2, \(\ce{CH3CO2H}\) is the weaker acid. 
+                Weak acids typically have strong conjugate bases. 
+                Therefore, the pH will be high since the solution will be basic at the equivalence point.</p>
         </div>
     </main>
 </body>

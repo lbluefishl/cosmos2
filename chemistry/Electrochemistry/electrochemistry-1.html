@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 </head>
 <body id='electrochemistry'>
     <main id="1">
         <div id='question-container'>
-           
+           <p>A galvanic cell is constructed using two half-cells based on the two half-reactions represented below.</p>
+$$ \ce{Zn^{2+}(aq) + 2e^- -> Zn(s)} \hskip{2em} E^\circ = \pu{-0.76 V}$$
+$$ \ce{Fe^{3+}(aq) + e^- -> Fe^{2+}(aq)} \hskip{2em} E^\circ = \pu{0.77 V}$$
 
+           <p>As the cell operates, ionic species that are found in the half-cell containing the cathode include which of the following? </p>
+<ol type="I" style="line-height: 1.5;">
+    <li>\(\ce{Zn^{2+}(aq)}\)</li>
+    <li>\(\ce{Fe^{2+}(aq)}\)</li>
+
+    <li>\(\ce{Fe^{3+}(aq)}\)</li>
+
+</ol>
                      
         </div>
         <hr>
@@ -22,28 +32,28 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+I only
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
-                    
+            II only        
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
-
+I and III
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
-
+II and III
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
             </div>
@@ -55,7 +65,9 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+<p>The cathode represents the electrode where reduction takes place. The half-reaction with the greater reduction potential will occur in the cathode. Therefore, the second equation \((0.77 \gt -0.76)\) will occur in the cathode. 
+    The two iron ions are present in this reaction. </p>
+    <p>Note that both ions will be present. It is unlikely that the reaction will go to completion. Equilibrium will be reached in which both ions exist.</p>
         </div>
     </main>
 </body>

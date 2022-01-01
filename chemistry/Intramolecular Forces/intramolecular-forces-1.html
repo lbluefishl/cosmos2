@@ -2,20 +2,21 @@
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
-    <title>Balancing Reactions Question 3</title>
+    <title>Intramolecular Forces Question 1</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
 </head>
-<body id='balancing-reactions'>
-    <main id="3">
+<body id='intramolecular-forces'>
+    <main id="1">
         <div id='question-container'>
            
-
+            <p>The lattice energy of a salt is related to the energy required to separate the ions. For which of the 
+                following pairs of ions is the energy that is required to separate the ions largest? (Assume that the distance between the ions in each pair is equal to the sum of the ionic radii.)
+            </p>
                      
         </div>
         <hr>
@@ -23,20 +24,22 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \(\ce{Na+(g)}  \) and  \(\ce{Cl-(g)}  \)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    \(\ce{Cs+(g)}  \) and  \(\ce{Br-(g)}  \)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \(\ce{Mg^2+(g)}  \) and  \(\ce{O^2-(g)}  \)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -44,6 +47,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \(\ce{Ca^2+(g)}  \) and  \(\ce{O^2-(g)}  \)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -56,7 +60,12 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
+            <p>The lattice energy equation is very similar to Coulomb's law. The force between two charged particles is given as:</p>
+            $$ F \propto \frac{q_1q_2}{r^2} $$
+            <p>Having larger charges and a smaller radius results in a larger force, and therefore larger energy required to separate the ions.</p>
+            <p>A \(+2\) and \(-2\) ion pair have a force \(4\) times the magnituide of a similarly sized \(+1\) and \(-1\) ion.</p>
+            <p>Among the last two choices, the magnesium ion is smaller that the calcium ion since atomic size increases as we go down a group. </p>
+        
         </div>
     </main>
 </body>

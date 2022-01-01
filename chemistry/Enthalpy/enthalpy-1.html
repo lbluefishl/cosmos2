@@ -2,19 +2,20 @@
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
-    <title>Enthalpy of Reaction Question 8</title>
+    <title>Enthalpy Question 1</title>
     <script src="../../scripts/question.js" defer></script>
     <link rel="stylesheet" href="../../styles/question.css">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
- 
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
 </head>
-<body id='enthalpy-of-reaction'>
-    <main id="8">
+<body id='enthalpy'>
+    <main id="1">
         <div id='question-container'>
-           
+           <p>The standard enthalpy of formation, \(\Delta H_{\text{f}}^\circ \), of \( \ce{HI(g)}\) is \(\pu{+26 kJ mol^{-1}}\). Which of the following is the approximate mass of \(\ce{HI(g)} \) that must decompose into \(\ce{H2(g)}\) and \(\ce{I2(s)} \) to release \(\pu{500}\). \(\pu{kJ}\) of energy?</p>
 
                      
         </div>
@@ -23,20 +24,22 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-1" name="answer">
                 <label for="option-1">
-
+                    \( \pu{250 g} \)
                 </label>
                 <span class='option-outcome' id="option-1-outcome"></span>
             </div>
             <div class='option-container ic'>
                 <input type="radio" id="option-2" name="answer">
                 <label for="option-2">
+                    \( \pu{650 g} \)
                     
                 </label>
                 <span class='option-outcome' id="option-2-outcome"></span>
             </div>
-            <div class='option-container ic'>
+            <div class='option-container c'>
                 <input type="radio" id="option-3" name="answer">
                 <label for="option-3">
+                    \( \pu{2,500 g} \)
 
                 </label>
                 <span class='option-outcome' id="option-3-outcome"></span>
@@ -44,6 +47,7 @@
             <div class='option-container ic'>
                 <input type="radio" id="option-4" name="answer">
                 <label for="option-4">
+                    \( \pu{13,000 g} \)
 
                 </label>
                 <span class='option-outcome' id="option-4-outcome"></span>
@@ -56,8 +60,18 @@
         </div>
         <div id='explanation' style="display: none;">
             <div class="explanation-header1">Approach</div>
-
-        </div>
+            <p>The formation of \(\ce{HI(g)}\) from its elements at standard state is:
+                </p>
+                $$ \ce{H2(g) + I2(s)->Hi(g)} \tag*{+26 kJ/mol}$$
+                <p>Note that both hydrogen and iodine are both diatomic molecules in their standard state. We balance the equation by adding a coefficient of 2 to \(\ce{HI(g)}\). We also need to double \(\Delta H_{\text{f}}^\circ\).</p>
+                $$ \ce{H2(g) + I2(s)->2Hi(g)} \tag*{+52 kJ/mol}$$
+                <p>The decomposition of \(\ce{HI(g)} \) is the reverse reaction:</p>
+                $$ \ce{2HI(g)->H2(g) + I2(s)} \tag*{-52 kJ/mol}$$
+                <p>We are asked to find the mass of \(\ce{HI(g)}\) that corresponds to a release of 500. kJ of energy. Our balanced equation shows that for every 2 moles of \(\ce{HI(g)}\) that decomposes, \(\pu{52 kJ}\) of energy is released.</p>
+                $$ \pu{500 kJ} \cdot \frac{\pu{2 mol }\ce{HI(g)}}{\pu{52 kJ}} \cdot \frac{\pu{128 g } \ce{HI(g)}}{\pu{1 mol }\ce{HI(g)}} $$
+                $$ \approx 500 \cdot \frac{2}{50} \cdot 125 &nbsp \pu{  g }\ce{HI(g)} $$ 
+                $$ = \boxed{\pu{2,500 g}} $$
+            </div>
     </main>
 </body>
 </html>
