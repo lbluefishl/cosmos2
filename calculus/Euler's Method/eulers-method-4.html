@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Euler's Method Question 4</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+   
+</head>
+<body id='eulers-method'>
+    <main id="4">
+        <div id='question-container'>
+
+             $$  \begin{array}{|c||c|c|c|c|c|} \hline
+            x & 0.0 & 0.5 & 1.0 & 1.5& 2.0 \\ \hline
+            f'(x) & 1.0 & 0.7 & 0.5 & 0.4 & 0.3 \\ \hline
+
+
+             \end{array} $$
+            <p style="line-height: 2;"><img src="../../calc.svg" alt="calculator allowed" width="20px">  Let \(y=f(x)\) be the solution to the differential equation \(\dfrac{dy}{dx}=f'(x)\) with initial condition 
+            \(f(1)=5\). Selected values of \(f'(x)\) are given in the table above. What is the approximation for \(f(2)\) if Euler's method is used with a step size 
+        of \(0.5\), starting at \(x=1\)&nbsp?</p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(5.35\)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \(5.45\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(5.50\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(5.90\)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <!--<button id='skip'>Skip Question</button>-->
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>Starting at \(x=1\):</p>
+            $$ f(1.5)=f(1)+ f'(1)(0.5) = 5 + 0.5(0.5) = 5.25 $$
+            $$ f(2)=f(1.5)+f'(1.5)(0.5)= 5.25 + 0.4(0.5) = 5.45 $$ 
+        </div>
+    </main>
+</body>
+</html>

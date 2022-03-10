@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Convergence and Divergence Question 1</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
+
+</head>
+<body id='convergence-and-divergence'>
+    <main id="1">
+        <div id='question-container'>
+           <p style="line-height: 2;">Which of the following statements about the series \( \displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{1+\sqrt{n}}\) is true?</p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    The series converges absolutely.
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    The series converges conditionally.
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    The series converges but neither conditionally nor absolutely.
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    The series diverges. 
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>We start with the alternating series test. We need to check two conditions:</p>
+            $$  \lim\limits_{n\to \infty} a_n=0 \hskip{2em} a_{n+1} \leq a_n \text{ for all } n$$
+            <p>Checking the first condition:</p>
+            $$ \lim\limits_{n\to\infty} \frac{1}{1+\sqrt{n}} &nbsp \checkmark$$
+            <p>As \(n\) approaches infinity, the denominator increases, and the value of the fraction approaches 0.</p>
+            <p>We can check the second condition by taking the derivative of the expression and confirming if the value is negative for all values. We can also write out the terms and check using inspection:</p>
+            $$ \sum_{n=1}^\infty  \frac{1}{1+\sqrt{n}} = \frac{1}{1+1} + \frac{1}{1+\sqrt{2}} + \frac{1}{1+\sqrt{3}} + \frac{1}{1+2} + \frac{1}{1+\sqrt{5}}...$$
+        
+            <p>Since the terms are decreasing, the second condition is met. The series converges. To check if the series converges absolutely, we need to check the convergence of the series: </p>
+            $$ \Big|  \sum_{n=1}^\infty \frac{(-1)^n}{1+\sqrt{n}} \Big | = \sum_{n=1}^\infty \frac{1}{1+\sqrt{n}} $$
+            <p>We can perform a limit comparison test with the divergent \(p\)-series \(\dfrac{1}{\sqrt{n}}\) where \(p\leq 1\). </p>
+            $$ \lim\limits_{n\to\infty} \frac{1/(1+\sqrt{n})}{1/\sqrt{n}} $$
+            $$ = \lim\limits_{n\to\infty} \frac{\sqrt{n}}{1+\sqrt{n}} = 1 $$        
+            <p>By the limit comparison test, both series diverge. </p>
+           
+        <hr>
+            <p style="line-height: 2;">Since \(\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{1+\sqrt{n}} \) converges but \(\displaystyle \sum_{n=1}^\infty \frac{1}{1+\sqrt{n}} \) diverges, the original series diverges conditionally.</p>
+        </div>
+    </main>
+</body>
+</html>

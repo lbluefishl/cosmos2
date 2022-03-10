@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Improper Integrals Question 4</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
+   
+</head>
+<body id='improper-integrals'>
+    <main id="4">
+        <div id='question-container'>
+           <p>\(\displaystyle \int\limits_1^\infty \frac{x^2}{(x^3+2)^2} \) is</p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( -\dfrac{1}{9}\)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \( \dfrac{1}{9}\)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( \dfrac{1}{3}\)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+Divergent
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <!--<button id='skip'>Skip Question</button>-->
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>Use \(u\)-substitution where \(u=x^3+2\) to obtain:</p>
+            $$  \int\limits_1^\infty \frac{x^2}{(x^3+2)^2}  = \lim_{b\to\infty} -\frac{1}{3(x^3+2)}\Big]_1^b$$ 
+            $$ = \lim_{b\to\infty} -\frac{1}{3} \left( \frac{1}{b^3+2} - \frac{1}{1^3+2} \right) $$
+            $$ = \lim_{b\to\infty}-\frac{1}{3}\cdot -\frac{1}{3} $$
+            $$ = \boxed{\frac{1}{9}}$$
+        </div>
+    </main>
+</body>
+</html>

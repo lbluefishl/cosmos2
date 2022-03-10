@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Convergence and Divergence Question 2</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
+    
+</head>
+<body id='convergence-and-divergence'>
+    <main id="2">
+        <div id='question-container'>
+           <div style="text-align: center; "><img src="2.jpg" style="width: 500px;"></div>
+<p style="line-height: 2;">For \(x\geq 1\), the continuous function \(g\) is decreasing and positive. A portion of the graph of \(g\) is shown above. For \(n\geq1\), the 
+    \(n\)th term of the series \(\displaystyle \sum_{n=1}^\infty a_n\) is defined by \(a_n=g(n)\). If \(\displaystyle \int\limits_1^\infty g(x) &nbsp dx\) converges to 8, which of the following could be true?
+</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+ \(\displaystyle \sum_{n=1}^\infty a_n=6 \)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+ \(\displaystyle \sum_{n=1}^\infty a_n=8 \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(\displaystyle \sum_{n=1}^\infty a_n=10 \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(\displaystyle \sum_{n=1}^\infty \) diverges
+ 
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>By the integral test, both the improper integral and series converges. </p>
+            <p>The value of the series is:</p>
+            $$ \sum_{n=1}^\infty a_n = g(1) + g(2) +g(3)+...+g(n) $$
+            <p>This is equivalent to a left riemann sum. The area under the curve is given as 8, so the sum of the series must be greater than 8. Only the third choice satisfies this.</p>
+        </div>
+    </main>
+</body>
+</html>

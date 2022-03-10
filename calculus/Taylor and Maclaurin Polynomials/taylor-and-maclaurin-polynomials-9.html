@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Taylor and Maclaurin Polynomials Question 9</title>
+    <script src="../../scripts/question.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script type="text/javascript" src="../../scripts/ASCIIsvg.js" defer></script>
+ 
+</head>
+<body id='taylor-and-maclaurin-polynomials'>
+    <main id="9">
+        <div id='question-container'>
+       <p>Let \(f\) be a function such that \(f'(x)=\sin{(x^2)}\) and \(f(0)=0 \). What are the first three nonzero terms of the Maclaurin series for \(f\)&nbsp?</p>    
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \(\displaystyle x-\frac{x^5}{10}+\frac{x^9}{216}  \)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \(\displaystyle 2x-x^5+\frac{x^9}{12}  \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(\displaystyle \frac{x^3}{3}-\frac{x^7}{21}+\frac{x^{11}}{55}  \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(\displaystyle \frac{x^3}{3}-\frac{x^7}{42}+\frac{x^{11}}{1320}  \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach 1</div>
+          
+       
+            <p>The Maclaurin polynomial for \(\sin{x} \) is</p>
+            $$ f'(x)=\sin{x} = x - \frac{x^3}{3!} + \frac{x^5}{5!}+ ... $$
+            <p>We can substitute \(x^2\) to obtain \(\sin{(x^2)}\).</p>
+            $$ \sin{(x^2)} = x^2 - \frac{x^6}{3!} + \frac{x^{10}}{5!}+ ...  $$
+            <p>Integrate \(f'(x)=\sin{(x^2)}\) to obtain the polynomial for \(f\).</p>
+            $$ \int f'(x) = \int x^2 - \frac{x^6}{3!} + \frac{x^{10}}{5!}+ ... $$
+            $$ = \frac{x^3}{3}- \frac{x^7}{7\cdot 3!} + \frac{x^{11}}{11\cdot 5!} + ... $$
+            $$ =  \boxed{\frac{x^3}{3}-\frac{x^7}{42}+\frac{x^{11}}{1320}} $$
+
+
+          
+            <div class="explanation-header1">Approach 2</div>
+<p>The terms of Maclaurin series are given by:</p>
+$$     f^{(n)}(0) \cdot \frac{x^n}{n!} $$
+$$ f(0)=0 $$
+$$ f'(0)=\sin{(0^2)} = 0 $$
+$$ f^{(2)}(0)=2x\cos{(x^2)}\Big|_{x=0}=2(0)\cos{(0^2)}=0 $$ 
+$$ f^{(3)}(0)=-4x^2\sin{(x^2)}+2\cos{(x^2)}\Big|_{x=0}=-4(0)^2\sin{(0^2)}+2\cos{(0^2)}= 2 $$ 
+<p>The first nonzero term would thus be:</p>
+$$ f^{(3)}(0)\cdot \frac{x^3}{3!} $$
+$$ = \frac{x^3}{3} $$
+<p>Continuing the process of taking derivatives can lead to subsequent terms. Note that this process is tedius and we would need to work our way up to the 7th and 11th derivative.</p>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
