@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Robot Maze Question 4</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body>
+    <main id="4">
+        <div id='question-container'>
+           <p>The question below uses a robot in a grid of squares. The robot is represented as a triangle, which is initially in the
+            center square of the grid and facing toward the top of the grid.</p>
+<div style="text-align: center;"><img src="4.jpg" width="200px"></div>
+             <p>The following code segment is used to move the robot within the grid.</p>        
+            <ul type="none" class="code">
+                <li>x &#8592; RANDOM (1, 3)</li>
+                <li>REPEAT x TIMES</li>
+                <li>{</li>
+                    <li>&emsp; ROTATE_RIGHT ()</li>
+                    <li>}</li>
+<li>y &#8592; RANDOM (1, 2)</li>
+<li>REPEAT y TIMES</li>
+<li>{</li>
+<li>&emsp; MOVE_FORWARD ()</li>
+<li>}</li>
+                </ul>
+<p>A gray square represents a possible final location of the robot after the code segment is executed. Which of the
+    following represents all possible final locations for the robot?</p>
+
+        </div>
+        <hr>
+        <div id='choices-container' class="twobytwo-grid">
+            <div class='option-container ic' >
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    <img src="4-1.jpg" width="200px">
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    <img src="4-2.jpg" width="200px">
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    <img src="4-3.jpg" width="200px">
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    <img src="4-4.jpg" width="200px">
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <!--<button id='skip'>Skip Question</button>-->
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>The robot first rotates right 1, 2, or 3 times. It will therefore either face right, down, or left. It then moves one or two spaces forward.</p>
+        </div>
+    </main>
+</body>
+</html>

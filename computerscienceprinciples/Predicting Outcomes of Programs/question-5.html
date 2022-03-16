@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Predicting Outcomes of Programs Question 5</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="5">
+        <div id='question-container'>
+           <p>The code segment below uses the procedure <span class="code">IsFound (list, item)</span>, which returns <span class="code">true</span> 
+        if <span class="code">item</span> appears in <span class="code">list</span> and returns <span class="code">false</span> otherwise. The 
+    list <span class="code">resultList</span> is initially empty.</p> 
+
+    <ul type="none">
+        <li class="code">FOR EACH item IN inputList1</li>
+        <li class="code">{</li>
+        <li class="code">&emsp; IF (IsFound (inputList2, item)</li>
+        <li class="code">&emsp; {</li>
+        <li class="code">&emsp; &emsp; APPEND (resultList, item)</li>
+        <li class="code">&emsp; }</li>
+        <li class="code"> }</li>
+
+    </ul>
+             <p>Which of the following best describes the contents of <span class="code">resultList</span> after the code segment is executed?         
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    All elements in <span class="code">inputList1</span> followed by all elements in <span class="code">inputList2</span>
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    Only elements that appear in both <span class="code">inputList1</span> and <span class="code">inputList2</span>
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    Only elements that appear in either <span class="code">inputList1</span> or <span class="code">inputList2</span> but not in both lists
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    Only elements that appear in <span class="code">inputList1</span> but not in <span class="code">inputList2</span>
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>The code iterates through every item in list 1. If the item appears in list 2, it gets added to <span class="code">resultList</span>. Therefore, only items that would appear in both lists get added to the <span class="code">resultList</span>. </p>
+        </div>
+    </main>
+</body>
+</html>

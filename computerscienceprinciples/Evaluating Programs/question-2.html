@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Evaluating Programs Question 2</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="2">
+        <div id='question-container'>
+            <p>In a certain country, a person must be at least 16 years old to drive a car and must be at least 18 years to vote. The 
+                variable <span class="code">age</span> represents the age of a person as an integer.
+            </p>
+            <p>Which of the following expressions evaluates to <span class="code">true</span> if the person is old enough to drive but 
+         not old enough to vote, and evaluates to <span class="code">false</span> otherwise?</p>
+ 
+         <ul type="I" style="line-height: 2;">
+             <li><span class="code">(age &#8805; 16) AND (age &#8804; 18)</span></li>
+             <li><span class="code">(age &#8805; 16) AND (NOT(age &#8805; 18))</span></li>
+             <li><span class="code">(age &#60; 18) AND (NOT(age &#60; 16))</span></li>
+ 
+         </ul>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    II only
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    I and II only  
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    I and III only
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    II and III only
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>I is incorrect since a person with age 18 would cause the expression to evaluate to true. We wish to exclude those that can vote.</p>
+            <p>II is correct. It includes those 16 and older and excludes those 18 or older. </p>
+            <p>III is correct. It includes those younger than 18 and includes those 16 or older.</p>
+        </div>
+    </main>
+</body>
+</html>

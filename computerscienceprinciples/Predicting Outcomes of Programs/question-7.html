@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Predicting Outcomes of Programs Question 7</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body>
+    <main id="7">
+        <div id='question-container'>
+         <p>The procedure <span class="code">Draw (length, direction)</span> is used to draw a line segment <span class="code">length</span> units long in a given <span class="code">direction</span> (left, right, up, or down), 
+            starting at the current cursor position. The cursor is then repositioned at the end of the line segment that was drawn. Consider the following program,
+            where the cursor starts in the upper left corner of a grid of dots. The dots are spaced one unit apart.</p>
+
+            <ul type="none" class="code">
+                <li>Draw (1, right)</li>
+                <li>Draw (2, down)</li>
+                <li>Draw (1, left)</li>
+                <li>Draw (1, right)</li>
+                <li>Draw (1, up)</li>
+                <li>Draw (1, left)</li>
+
+
+            </ul>
+                     
+
+            <p>Which of the following represents the figure that is drawn by the program?</p>
+        </div>
+        <hr>
+        <div id='choices-container' class="twobytwo-grid">
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    <img src="7-1.jpg" style="width: 100px;">
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    <img src="7-2.jpg" style="width: 100px;">
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    <img src="7-3.jpg" style="width: 100px;">
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    <img src="7-4.jpg" style="width: 100px;">
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <!--<button id='skip'>Skip Question</button>-->
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>Note that the program will retrace some lines as it goes through each operation.</p>
+        </div>
+    </main>
+</body>
+</html>

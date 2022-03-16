@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Data Compression and Transmission Question 2</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+ 
+</head>
+<body>
+    <main id="2" >
+        <div id='question-container'>
+           <p>When a cellular telephone user places a call, the carreir transmits the caller's voice as well as the voice of the person who is called. 
+               The encoded voices are the data of the call. In addition to transmitting the data, the carrier also stores metadata. The metadata of the call 
+               include information such as the time the call is placed and the phone numbers of both participants. For which of the following goals would 
+               it be more useful to computationally analyze the metadata instead of the data?
+           </p>
+           <ol type="I">
+            <li style="margin: 10px;">To determine if a caller frequently uses a specific word</li>
+            <li style="margin: 10px;">To estimate the number of phone calls that will be placed next Monday between 10:30 A.M. and noon</li>
+            <li style="margin: 10px;">To generate a list of criminal suspects when given the telephone number of a known criminal</li>
+           </ol>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    I only
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    II only    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    II and III only
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    I, II, and III
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            The metadata would include information on number of calls, the time of the calls, and the telephone numbers. The data would have information on specific words.
+        </div>
+    </main>
+</body>
+</html>

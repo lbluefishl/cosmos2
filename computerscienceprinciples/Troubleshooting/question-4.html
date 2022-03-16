@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Troubleshooting Question 4</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+ 
+</head>
+<body>
+    <main id="4">
+        <div id='question-container'>
+           <p>The following procedure is intended to return the number of times the value <span class="code">val</span> appears in the list 
+        <span class="code">myList</span>. The procedure does not work as intended.</p>
+
+        <ul type="none">
+            <li class="code">Line 1: PROCEDURE countNumOccurences(myList, val)</li>
+            <li class="code">Line 2: {</li>
+                <li class="code">Line 3: &emsp; FOR EACH item IN myList </li>
+                <li class="code">Line 4: &emsp;  {</li>
+                <li class="code">Line 5: &emsp; &emsp;   count &#8592; 0</li>
+                <li class="code">Line 6: &emsp; &emsp;   IF(item = val)</li>
+                <li class="code">Line 7: &emsp; &emsp;   {</li>
+                <li class="code">Line 8: &emsp; &emsp; &emsp;   count &#8592; count + 1</li>
+                <li class="code">Line 9: &emsp; &emsp;   }</li>
+                <li class="code">Line 10: &emsp;    }</li>
+     
+                <li class="code">Line 11:  &emsp;   RETURN(count)</li>
+                <li class="code">Line 12: }</li>
+        </ul>
+               
+        <p>Which of the following changes can be made so that the procedure will work as intended?</p>
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+Changing line 6 to <span class="code">IF(item = count)</span>
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+Changing line 6 to <span class="code">IF(myList[item] = val)</span>
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    Moving the statement in line 5 so that it appears between lines 2 and 3
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    Moving the statement in line 11 so that it appears between lines 9 and 10
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <!--<button id='skip'>Skip Question</button>-->
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>During every iteration of the loop, the <span class="code">count</span> is reset to <span class="code">0</span> (line 5). 
+                We need to move this statement outside of the for loop.</p>
+        </div>
+    </main>
+</body>
+</html>

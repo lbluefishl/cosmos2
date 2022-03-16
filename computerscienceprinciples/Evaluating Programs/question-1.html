@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Evaluating Programs Question 1</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="1">
+        <div id='question-container'>
+            <p>Central High School keeps a database of information about each student, including the numeric variables <span class="code">numberOfAbsences</span>
+            and <span class="code">gradePointAverage</span>. The expression below is used to determine whether a student is eligible to receive an academic award.
+            </p>
+                     
+            <ul class="code" type="none">
+                <li>(numberOfAbsences &#8804; 5) AND (gradePointAverage &#62; 3.5) </li>
+            </ul>
+            <p>Which of the following pairs of values indicates that a student is eligible to receive an academic award?</p>
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    <span class="code">numberOfAbsences = 3, gradePointAverage = 3.5</span>
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    <span class="code">numberOfAbsences = 5, gradePointAverage = 3.8</span>
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    <span class="code">numberOfAbsences = 6, gradePointAverage = 3.4</span>
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    <span class="code">numberOfAbsences = 6, gradePointAverage = 3.6</span>
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>The number of absences must be less than or equal to 5. The grade point average must also be greater than 3.5. </p>
+        </div>
+    </main>
+</body>
+</html>

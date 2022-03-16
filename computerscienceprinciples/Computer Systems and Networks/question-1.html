@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Computer Systems and Networks Question 1</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="1">
+        <div id='question-container'>
+            <p>Which of the following best explains how data is typically assembled in packets
+                for transmission over the Computer Systems and Networks?</p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    Each packet contains data to be transmitted, along with metadata
+                    containing information used for routing the data.
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    Each packet contains an encrypted version of the data to be transmitted,
+along with metadata containing the key needed to decrypt the data.
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    Each packet contains only the metadata used to establish a direct
+                    connection so that the data can be transmitted.
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    Each packet contains multiple data files bundled together, along with
+                    metadata describing how to categorize each data file.
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>A packet represents a segment of information sent over the internet. Multiple packets can be recombined by a computer once the computer receives them. Packets also contain metadata, such as IP addresses. </p>
+        </div>
+    </main>
+</body>
+</html>

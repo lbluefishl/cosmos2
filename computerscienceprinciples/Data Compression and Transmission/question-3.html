@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Data Compression and Transmission Question 3</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body>
+    <main id="3">
+        <div id='question-container'>
+           <p>Digital images are often represented by the red, green, and blue values (an RGB triplet) of each individual pixel in
+            the image. A photographer is manipulating a digital image and overwriting the original image. Which of the
+            following describes a lossless transformation of the digital image?</p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    Compressing the image in a way that may lose information but will suffer only a small loss of image quality.
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    Creating the gray scale of an image by averaging the amounts of red, green, and blue in each pixel and
+                    assigning this new value to the corresponding pixel in the new image. The new value of each pixel represents
+                    a shade of gray, ranging from white to black. 
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    Creating the negative of an image by creating a new RGB triplet for each pixel in which each value is
+                    calculated by subtracting the original value from 255. The negative of an image is reversed from the original;
+                    light areas appear dark, and colors are reversed.
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    Modifying part of the image by taking the pixels in one part of the picture and copying them to the pixels in
+                    another part of the picture.
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <!--<button id='skip'>Skip Question</button>-->
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>A lossless transformation implies no loss of information. We should be able to transform it back to normal. Compressing the image fundamentally results in the loss of information. Averaging the RGB values also results in the loss of information since we can not go from the averaged values back to the RGB values. If we copy and replace pixels, some pixel information is lost.  </p>
+
+            <p>Creating a negative of an image by subtracting each RGB value by 255 can be reversed by simply adding 255 to the modified values.</p>
+        </div>
+    </main>
+</body>
+</html>

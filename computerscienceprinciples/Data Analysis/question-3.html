@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Data Analysis Question 3</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body>
+    <main id="3">
+        <div id='question-container'>
+            <p>A cable television company stores information about movie purchases made by subscribers. Each day, the following information is summarized 
+                and stored in a publicly available database.
+            </p>
+            <ul>
+                <li>The day and date each movie was purchased</li>
+                <li>The title of each movie purchased</li>
+                <li>The cities where subscribers purchased each movie</li>
+                <li>The number of times each movie was purchased by subscribers in a given city</li>
+            </ul>
+                     <p>A sample portion of the database is shown below. The database is sorted by date and movie title.</p>
+                     <div style="text-align: center;"><img src="3.jpg" style="width: 700px;"></div>
+                     <p>Which of the following CANNOT be determined using only the information in the database?</p>
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+The date when a certain movie was purchased the greatest number of times
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                 The number of movies purchased by an individual subscriber for a particular month   
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+The total number of cities in which a certain movie was purchased
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+The total number of movies purchased in a certain city during a particular month
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>No data about any individual subscriber is maintained. This is a public database, so this would be a breach of privacy as well.</p>
+        </div>
+    </main>
+</body>
+</html>

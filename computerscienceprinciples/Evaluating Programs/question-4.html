@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Evaluating Programs Question 4</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body>
+    <main id="4">
+        <div id='question-container'>
+           <p>Consider the code segment below.</p>
+           <ul type="none" class="code">
+            <li>Line 1: IF (a=0)</li>
+            <li>{</li>
+            <li>&emsp; b &#8592; a + 10</li>
+            <li>}</li>
+                <li>ELSE</li>
+                <li>{</li>
+                    <li>&emsp; b &#8592; a + 20</li>
+                    <li>}</li>
+           
+           
+            </ul>
+<p>Which of the following changes will NOT affect the results when the code segment is executed?</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+Changing line 3 to  <span class="code">b &#8592; 10</span> 
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+Changing line 3 to  <span class="code">a &#8592; b + 10</span> 
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    Changing line 7 to  <span class="code">b &#8592; 20</span> 
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    Changing line 7 to  <span class="code">a &#8592; b + 20</span> 
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>Line 3 will only execute if <code class="span">a = 0</code>. Therefore, <code class="span">a</code> will always equal 0 for line 3.</p>
+        </div>
+    </main>
+</body>
+</html>

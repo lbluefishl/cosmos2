@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Cybersecurity Question 2</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+ 
+</head>
+<body>
+    <main id="2">
+        <div id='question-container'>
+        <p>A Web site uses several strategies to prevent unauthorized individuals from
+            accessing user accounts. Which of the following is NOT an example of
+            multifactor authentication?</p>   
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    Each employee for a company is issued a USB device that contains a unique
+                    token code. To log into a company computer, an employee must insert the
+                    USB device into the computer and provide a correct password.
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    After logging into an account from a new device, a user must enter a code
+that is sent via e-mail to the e-mail address on file with the account.
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    In order to log into an account, a user must provide both a password and a
+                    fingerprint that is captured using the user’s device.
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    When a user enters an incorrect password more than two times in a row,
+                    the user is locked out of the account for 24 hours.
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>Multifactor authentication suggests that more than one piece of identification is needed to access an account. All of the choices except the last one involves multiple pieces of evidence. </p>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Program Design Question 6</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body>
+    <main id="6">
+        <div id='question-container'>
+           <p>Two lists, <span class="code">list1</span> and <span class="code">list2</span>, contain the names of books found in two different collections. 
+            A librarian wants to create <code class="span">newList</code>, which will contain the names of all books found in either list, in alphabetical order, 
+            with duplicate entries removed.
+           </p>
+
+           <p>For example, if <span class="code">list1</span> contains <br>
+            <span class="code">["Macbeth", "Frankenstein", "Jane Eyre"]</span> <br>
+            and <span class="code">list2</span> contains <br>
+            <span class="code">["Frankenstein", "Dracula", "Macbeth", "Hamlet"],</span> <br>
+            then <span class="code">newList</span> will contain <br>
+            <span class="code">["Dracula", "Frankenstein", "Hamlet", "Jane Eyre", "Macbeth"]</span>. 
+
+      </p>
+
+      <p>The following procedures are available to create <span class="code">newList</span>.</p>
+                     <div style="text-align: center;"><img src="6.jpg" style="width: 800px;"></div>
+                     <p>Which of the following code segments will correctly create <span class="code">newList</span>?</p>
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    <ul type="none" class="code">
+                        <li>newList &#8592; Combine (list1, list2) </li>
+                        <li>newList &#8592; Sort (newList)</li>
+                        <li>newList &#8592; RemoveDuplicates (newList)</li>
+                    </ul>
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    <ul type="none" class="code">
+                        <li>list1 &#8592; Sort (list1)</li>
+                        <li>list2 &#8592; Sort (list2)</li>
+                        <li>newList &#8592; Combine (list1, list2) </li>
+                        <li>newList &#8592; RemoveDuplicates (newList)</li>
+                    </ul>
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    <ul type="none" class="code">
+  
+                        <li>list1 &#8592; RemoveDuplicates (list1)</li>
+                        <li>list2 &#8592; RemoveDuplicates (list2)</li>
+                        <li>newList &#8592; Combine (list1, list2) </li>
+                        <li>newList &#8592; Sort (newList)</li>
+                    </ul>
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    <ul type="none" class="code">
+                        <li>list1 &#8592; RemoveDuplicates (list1)</li>
+                        <li>list1 &#8592; Sort (list1)</li>
+
+                        <li>list2 &#8592; RemoveDuplicates (list2)</li>
+                        <li>list2 &#8592; Sort (list2)</li>
+
+                        <li>newList &#8592; Combine (list1, list2) </li>
+     
+                    </ul>
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <ul type="none" class="code">
+                <li>newList &#8592; Combine (list1, list2) </li>
+                <li>newList &#8592; Sort (newList)</li>
+                <li>newList &#8592; RemoveDuplicates (newList)</li>
+            </ul>
+            <p>This option is the best choice. It combines the lists, sorts them alphabetically, and then removes duplicates.</p>
+       
+            <ul type="none" class="code">
+                <li>list1 &#8592; Sort (list1)</li>
+                <li>list2 &#8592; Sort (list2)</li>
+                <li>newList &#8592; Combine (list1, list2) </li>
+                <li>newList &#8592; RemoveDuplicates (newList)</li>
+            </ul>
+            <p>The combined list will not be in alphabetical order. List 2 will be added to the end of list 1. </p>
+       
+            <ul type="none" class="code">
+  
+                <li>list1 &#8592; RemoveDuplicates (list1)</li>
+                <li>list2 &#8592; RemoveDuplicates (list2)</li>
+                <li>newList &#8592; Combine (list1, list2) </li>
+                <li>newList &#8592; Sort (newList)</li>
+            </ul>
+            <p>There are no duplicates in the initial lists. When they are combined, there will be duplicates.</p>
+
+            <ul type="none" class="code">
+                <li>list1 &#8592; RemoveDuplicates (list1)</li>
+                <li>list1 &#8592; Sort (list1)</li>
+
+                <li>list2 &#8592; RemoveDuplicates (list2)</li>
+                <li>list2 &#8592; Sort (list2)</li>
+
+                <li>newList &#8592; Combine (list1, list2) </li>
+
+            </ul>
+
+            <p>Similar to the previous choice, removing duplicates prior to combining the lists does nothing.</p>
+        </div>
+    </main>
+</body>
+</html>

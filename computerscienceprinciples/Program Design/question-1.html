@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Program Design Question 1</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="1">
+        <div id='question-container'>
+           <p>A list of numbers has <span class="code">n</span> elements, indexed from <span class="code">1</span> to <span class="code">n</span>. The following algorithm is intended to display the number of elements in the list that 
+        have a value greater than <span class="code">100</span>. The algorithm uses the variables <span class="code">count</span> and <span class="code">position</span>. Steps 3 and 4 are missing.</p>
+
+            <ul type="none" style="line-height: 2;">
+                <li>Step 1: Set <span class="code">count</span> to <span class="code">0</span> and <span class="code">position</span> to <span class="code">1</span>.</li>
+                <li>Step 2: If the value of the element at index <span class="code">position</span> is greater than <span class="code">100</span>, increase the value of <span class="code">count</span> by <span class="code">1</span>. </li>
+                <li>Step 3: (missing step)</li>
+                <li>Step 4: (missing step)</li>
+                <li>Step 5: Display the value of <span class="code">count</span>.</li>
+
+            </ul>
+                    <p>Which of the following could be used to replace steps 3 and 4 so that the algorithm works as intended?</p>   
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    <ul type="none" style="line-height: 2; margin:0">
+                    <li>Step 3: Increase the value of <span class="code">position</span> by <span class="code">1</span>.</li>
+                    <li>Step 4: Repeat steps 2 and 3 until the value of <span class="code">count</span> is greater than <span class="code">100</span>. </li>
+                    </ul>
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    <ul type="none" style="line-height: 2; margin: 0;">
+                        <li>Step 3: Increase the value of <span class="code">position</span> by <span class="code">1</span>. </li>
+                        <li>Step 4: Repeat steps 2 and 3 until the value of <span class="code">position</span> is greater than <span class="code">n</span>. </li>
+                        </ul>
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    <ul type="none" style="line-height: 2; margin:0">
+                        <li>Step 3: Repeat step 2 until the value of <span class="code">count</span> is greater than <span class="code">100</span>. </li>
+                        <li>Step 4: Increase the value of <span class="code">position</span> by <span class="code">1</span>.</li>
+                        </ul>
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    <ul type="none" style="line-height: 2; margin: 0;">
+                        <li>Step 3: Repeat step 2 until the value of <span class="code">position</span> is greater than <span class="code">n</span>. </li>
+                        <li>Step 4: Increase the value of by <span class="code">1</span>. </li>
+                        </ul>
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>Step 3 should increase the index position so we can iterate through all of the numbers. If we do not increase the value of position, we will be looking at the same number over and over.</p>
+            <p>We stop our program when the index position is greater than the number of terms, implying we went through all the numbers.</p>
+        </div>
+    </main>
+</body>
+</html>

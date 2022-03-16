@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Predicting Outcomes of Programs Question 6</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body>
+    <main id="6">
+        <div id='question-container'>
+           <p>In the program below, the initial value of <code class="span">x</code> is 5 and the initial value of <code class="span">y</code> is 10. </p>
+<ul type="none" class="code">
+    <li>IF (x &#60; 0)</li>
+    <li>{</li>
+        <li>&emsp; DISPLAY ("Foxtrot")</li>
+        <li>}</li>
+        <li>ELSE</li>
+        <li>{</li>
+            <li>&emsp; IF (x &#62; y) </li>
+            <li>&emsp; {</li>
+                <li>&emsp; &emsp; DISPLAY ("Hotel")</li>
+                <li>&emsp; }</li>
+                <li>&emsp; ELSE</li>
+            <li>&emsp; {</li>
+                <li>&emsp; &emsp; IF (y &#62; 0) </li>
+                <li>&emsp; &emsp; {</li>
+                <li>&emsp; &emsp; &emsp; DISPLAY ("November")</li>
+
+                    <li>&emsp; &emsp; }</li>
+                    <li>&emsp; &emsp;  ELSE</li>
+                    <li>&emsp; &emsp; {</li>
+                        <li>&emsp; &emsp; &emsp; DISPLAY ("Yankee")</li>
+        
+                            <li>&emsp; &emsp; }</li>
+                            <li>&emsp;  }</li>
+                            <li> }</li>
+
+
+</ul>
+                     <p>What is displayed as a result of running the program?</p>
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    <span class="code">Foxtrot</span>
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    <span class="code">Hotel</span>
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    <span class="code">November</span>
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+<span class="code">Yankee</span>
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p><code class="span">x</code> is not less than 0, so we move to the <span class="code">ELSE</span> statement. </p>
+            <p><span class="code">x</span> is not greater than <span class="code">y</span>, so we move to the next <span class="code">ELSE</span> statement. </p>
+            <p><span class="code">y</span> is greater than 0, so <span class="code">November</span> is displayed.</p>
+        </div>
+    </main>
+</body>
+</html>

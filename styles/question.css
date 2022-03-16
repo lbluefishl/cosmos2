@@ -10,7 +10,7 @@ main {
     justify-content: center;
     background-color: rgb(255, 255, 255);
     width: 60%;
-    margin: auto;
+    margin: 100px auto;
     padding: 15px;
 }
 
@@ -103,6 +103,30 @@ label {
     white-space: nowrap;
   } 
 
+    span.code {
+        font-family:'Courier New', Courier, monospace;
+
+    }
+    li.code, ul.code {
+        font-family:'Courier New', Courier, monospace;
+       
+    }
+
+    
+    span.icode {
+        font-family:'Courier New', Courier, monospace;
+        letter-spacing: 10px;
+
+    }
+
+
+    table, td {
+        border:1px solid black;
+        max-width: 1000px;
+      padding: 10px;
+        border-collapse:collapse;
+      }
+
 
   div#explanation {
       flex: 1;
@@ -132,4 +156,11 @@ div.explanation-header1 {
     text-align: center;
 
     text-decoration: underline;
+}
+
+p.code {
+    line-height: 1;
+    padding-left: 50px;
+    font-family:'Courier New', Courier, monospace;
+     margin:5px
 }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Robot Maze Question 3</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="3">
+        <div id='question-container'>
+           <p>The following grid contains a robot represented as a triangle. The robot is initially facing right.</p>
+            <div style="text-align: center;"><img src="3.jpg" style="width: 300px;"></div>
+                     <p>Which of the following code segments can be used to move the robot to the gray square along the path indicated by the arrows?</p>
+        </div>
+        <hr>
+        <div id='choices-container' class="twobytwo-grid">
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    <img src="3-1.jpg" style="width: 300px;">
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    <img src="3-2.jpg" style="width: 300px;">
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    <img src="3-3.jpg" style="width: 300px;">
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    <img src="3-4.jpg" style="width: 300px;">
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>The robot needs to move forward, turn left, move forward, and then turn right.</p>
+            <p>Afterwards, it repeats the same process, but must forward twice instead of once. It does this once more, moving forward three times instead of two.</p>
+        <p>Our program should increase the number of times the robot moves forward, but not repeat the number of rotations.</p>
+        
+        </div>
+    </main>
+</body>
+</html>

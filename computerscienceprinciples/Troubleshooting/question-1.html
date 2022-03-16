@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Troubleshooting Question 1</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="1">
+        <div id='question-container'>
+           <p>A programmer wrote the program below. The program uses a list of numbers called <span class="code">numList</span>. The 
+        program is intended to display the sum of the numbers in the list.</p>
+<div style="text-align: center;"><img src="1.jpg" style="width: 300px;"></div>
+           <p>In order to test the program, the programmer initializes <span class="code">numList</span> to <span class="code">[0, 1, 4, 5]</span>. 
+        The program displays <span class="code">10</span>, and the programmer concludes than the program works as intended. Which of the following is true?
+        
+        </p>          
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    The conclusion is correct; the program works as intended.
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    The conclusion is incorrect; the program does not display the correct value for the test case <span class="code">[0, 1, 4, 5]</span>.
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+The conclusion is incorrect; using the test case <code class="span">[0, 1, 4, 5]</code> is not sufficient to conclude the program is correct.
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    The conclusion is incorrect; using the test case <code class="span">[0, 1, 4, 5]</code> 
+                    
+                    only confirms that the program works for lists in increasing order.
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>The main issue with the program is that <code class="span">sum</code> is initialize with the value equal to the first item in <span class="code">numList</span>. 
+            If this value is 0, like in the scenario given, the program works correctly in adding the values. However, if the first value is not 0, the sum will not be correct. </p>
+
+            <p>For example, if we run <span class="code">[5, 1, 2]</span>through the program, the sum will be 13 instead of 8.</p>
+            
+        </div>
+    </main>
+</body>
+</html>

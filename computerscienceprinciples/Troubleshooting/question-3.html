@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Troubleshooting Question 3</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body>
+    <main id="3">
+        <div id='question-container'>
+           <p>The procedure below is intended to display the index in a list of unique names <span class="code">(nameList)</span> where 
+            a particular name <span class="code">(targetName)</span> is found. If <span class="code">targetName</span> is not found in <span class="code">nameList</span>, 
+            the code should display <code class="span">0</code>.
+           </p>
+
+           <ul type="none" class="code">
+<li>PROCEDURE FindName (nameList, targetName)</li>
+<li>{</li>
+<li>&emsp; index &#8592; 0</li>
+<li>&emsp; FOR EACH name IN nameList</li>
+<li>&emsp; {</li>           
+<li>&emsp; &emsp; index &#8592; index + 1</li>
+<li>&emsp; &emsp; IF (name = targetName)  </li>
+<li>&emsp; &emsp; { </li>
+<li>&emsp; &emsp; &emsp; foundIndex &#8592; index </li>
+<li>&emsp; &emsp; } </li>
+<li>&emsp; &emsp; ELSE </li>
+<li>&emsp; &emsp; { </li>
+    <li>&emsp; &emsp; &emsp; foundIndex &#8592; 0  </li>
+
+
+<li>&emsp; &emsp; } </li>
+<li>&emsp;  } </li>
+<li>&emsp;  DISPLAY (foundIndex) </li>
+<li> } </li>
+
+</ul>
+<p>Which of the following procedure calls can be used to demonstrate that the procedure does NOT work as intended?</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+<span class="code">FindName (["Andrea", "Ben"], "Ben")</span>
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+<span class="code">FindName (["Andrea", "Ben"], "Diane")</span>
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    <span class="code">FindName (["Andrea", "Ben", "Chris"], "Ben")</span>
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    <span class="code">FindName (["Andrea", "Chris", "Diane"], "Ben")</span>
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>Although <span class="code">foundIndex</span> will increase by 1 when the <span class="code">name</span> is <span class="code">"Ben"</span>,
+            it will revert to <span class="code">0</span> when the loop continues and checks if <span class="code">"Chris"</span> is in the list. 
+            </p>
+        </div>
+    </main>
+</body>
+</html>

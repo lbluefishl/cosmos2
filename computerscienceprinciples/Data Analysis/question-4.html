@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Data Analysis Question 4</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="4">
+        <div id='question-container'>
+           
+            <p>A large data set contains information about all students majoring in computer science in colleges across the United States. The data set 
+                contains the following information about each student.
+            </p>
+            <ul>
+                <li>The student's gender</li>
+                <li>The state in which the student attends college</li>
+                <li>The student's grade point average on a 4.0 scale</li>
+            </ul>         
+            <p>Which of the following questions could be answered by analyzing only information in the data set?</p>
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    Do students majoring in computer science tend to have higher grade point averages than students majoring in other subjects?
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    How many states have a higher percentage of female computer science majors than male computer science majors attending college in that state?
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    What percent of students attending college in a certain state are majoring in computer science?
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    Which college has the highest number of students majoring in computer science?
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>We do not have information on grade point averages for non-computer science majors. </p>
+            <p>Similarly, we don't know how many total non-computer science major students are in a state, so we would not be able to find a percentage.</p>
+            <p>We do not have information on specific colleges.</p>
+        </div>
+    </main>
+</body>
+</html>

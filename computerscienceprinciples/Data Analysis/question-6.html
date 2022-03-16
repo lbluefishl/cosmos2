@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Data Analysis Question 6</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body>
+    <main id="6">
+        <div id='question-container'>
+           <p>A retailer that sells footwear maintains a single database containing records with the following information about each item 
+               for sale in the retailer's store.
+           </p>
+           <ul>
+            <li>Item identification number</li>
+            <li>Footwear type (sneakers, boots, sandals, etc.)</li>
+            <li>Selling price (dollars)</li>
+            <li>Size</li>
+            <li>Color</li>
+            <li>Quantity available</li>
+
+           </ul>
+                <p>Using only the database, which of the following can be determined?</p>     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    Which items listed in the database are not currently in the store
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    Which colors are more popular among men than women
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    Which type of footwear is most popular among adults
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    The total number of shoes sold in a particular month
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <!--<button id='skip'>Skip Question</button>-->
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>Using the quantity available data, we can check if an item is still in the store. We do not know any of the buyer demographics and are unable to obtain information related to that. The database does not keep track of how many shoes are sold.</p>
+        </div>
+    </main>
+</body>
+</html>

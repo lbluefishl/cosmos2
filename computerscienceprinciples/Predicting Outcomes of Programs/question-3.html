@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Subject Question 3</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body>
+    <main id="3">
+        <div id='question-container'>
+           <p>The diagram
+               below shows a circuit composed of two logic gates labeled <span class="code">OR</span> and <span class="code">AND</span>. Each gate takes two inputs 
+               and produces a single output.
+           </p>
+           <div style="text-align: center;"><img src="3.jpg" style="width: 300px;"></div>
+           <p>If the inputs <span class="code">A</span> and <span class="code">C</span> are both <span class="code">true</span>,
+        which of the following best describes the output of the <span class="code">AND</span> gate?
+        </p>          
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+The output will be <span class="code">true</span> no matter what the value of input <span class="code">B</span> is.
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+The output will be <span class="code">false</span> no matter what the value of input <span class="code">B</span> is.
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+The output will be <span class="code">true</span> if input <span class="code">B</span> is <span class="code">true</span>; otherwise it will be <span class="code">false</span>.
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    The output will be <span class="code">false</span> if input <span class="code">B</span> is <span class="code">true</span>; otherwise it will be <span class="code">true</span>.
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>The <span class="code">OR</span> gate will always be true regardless of the value of <span class="code">B</span> since <span class="code">A</span> is given as true. The <span class="code">AND</span> gate will also evaluate to <span class="code">true</span> since both <span class="code">C</span> and the <span class="code">OR</span> gate are <span class="code">true</span>.</p>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Program Behavior Question 3</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body>
+    <main id="3">
+        <div id='question-container'>
+           <p>
+            In the procedure <span class="code">Mystery</span> below, the parameter <span class="code">number</span> is a positive integer.
+           </p>
+
+           <ul class="code" type="none">
+            <li>PROCEDURE Mystery (number)</li>
+<li>{</li>
+<li>  &emsp; REPEAT UNTIL (number &#8804; 0)</li>
+<li>&emsp; {</li>
+<li>&emsp; &emsp; number &#8592; number - 2 </li>
+<li>&emsp; }</li>
+<li>&emsp; IF (number = 0)</li>
+<li>&emsp; {</li>
+<li>&emsp; &emsp; RETURN (true)</li>
+<li>&emsp; }</li>
+<li>&emsp; ELSE</li>
+<li>&emsp; { </li>
+<li>&emsp; &emsp; RETURN (false)</li>
+<li>&emsp; } </li>
+    <li>} </li>
+
+           </ul>
+<p>Which of the following best describes the result of running the procedure <span class="code">Mystery</span>?</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+The procedure returns <span class="code">true</span> when the initial value of <span class="code">number</span> is 2, and it otherwise returns <span class="code">false</span>.
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+The procedure returns <span class="code">true</span> when the initial value of <span class="code">number</span> is greater than 2, and it otherwise returns <span class="code">false</span>.
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    The procedure returns <span class="code">true</span> when the initial value of <span class="code">number</span> is even, and it otherwise returns <span class="code">false</span>.
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    The procedure returns <span class="code">true</span> when the initial value of <span class="code">number</span> is odd, and it otherwise returns <span class="code">false</span>.
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>The procedure will repeat the process of subtracting 2 until the <span class="code">number</span> is 0 or negative. For even numbers, this will always result in 0 and the procedure will therefore return <span class="code">true</span>.</p>
+        </div>
+    </main>
+</body>
+</html>

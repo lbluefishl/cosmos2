@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title>Robot Maze Question 2</title>
+    <script src="../../scripts/question2.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+ 
+</head>
+<body>
+    <main id="2">
+        <div id='question-container'>
+           <p>Two grids are shown below. Each grid contains a robot represented as a triangle. Both robots are initially facing
+            left. Each robot can move into a white or gray square, but cannot move into a black region.</p>
+            <div style="text-align: center;"><img src="2.jpg" style="width: 400px;"></div>
+            <p>For each grid, the program below is intended to move the robot to the gray square. The program uses the procedure 
+                <span class="code">Goal_Reached ()</span>, which evaluates to <span class="code">true</span> if the robot is in the gray 
+                square and evaluates to <span class="code">false</span> otherwise.
+
+            </p>       
+            <ul class="code" type="none">
+                <li>REPEAT UNTIL (Goal_Reached ())</li>
+<li>{</li>
+    <li>&emsp; IF (CAN_MOVE (right))</li>
+    <li>&emsp; {</li>
+    <li>&emsp; &emsp; ROTATE_RIGHT ()</li>
+    <li>&emsp; }</li>
+    <li>&emsp; ELSE</li>
+    <li>&emsp; {</li>
+    <li>&emsp; &emsp; IF (CAN_MOVE (left))</li>
+    <li>&emsp; &emsp; {</li>
+    <li>&emsp; &emsp; &emsp; ROTATE_LEFT ()</li>
+    <li>&emsp; &emsp; }</li>
+    <li>&emsp; }</li>
+    <li>&emsp; IF (CAN_MOVE (forward))</li>
+    <li>&emsp; {</li>
+    <li>&emsp; &emsp; MOVE_FORWARD ()</li>
+    <li>&emsp; }</li>
+    <li> }</li>
+            </ul>
+            <p>For which of the grids does the program correctly move the robot to the gray square?</p>
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+Grid 1 only
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+          Grid II only          
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+Both grid I and grid II
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+Neither grid I nor grid II
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>The program first checks if the robot can move right. If it can, it does. Afterwards, it does this for the left direction. Then the robot moves forward as much as possible.</p>
+
+            <p>Grid I and II are similar, but the robot will only reach the gray square for Grid I. In Grid II, the robot will end up in the top right square. This is because the robot rotates right if possible before going left. At the last junction, the robot would therefore rotate right and move into the wrong final square. </p>
+        </div>
+    </main>
+</body>
+</html>
