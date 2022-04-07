@@ -1,4 +1,4 @@
-let topics = document.querySelectorAll('div.progress');
+const topics = document.querySelectorAll('div.progress');
 
 function getProgress() {
     topics.forEach(function (element) {
