@@ -8,8 +8,17 @@ html {
 }
 div.courses-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+
+div.course-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
 }
 
 a.course {
