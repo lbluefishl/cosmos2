@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question3.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="1">
+        <div id='question-container'>
+   <p>A blind taste test will be conducted with 9 volunteers to determine whether people can taste a difference between
+    bottled water and tap water. Each participant will taste the water from two different glasses and then identify
+    which glass he or she thinks contains the tap water. Assuming that people cannot taste a difference between
+    bottled water and tap water, what is the probability that at least 8 of the 9 participants will correctly identify
+    the tap water?</p>
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+      0.0020
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+        0.0195
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+          0.8889
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                0.9805
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>If there is no difference in ability to taste either water, the probability of correctly identifying tap water should be 50% or \(\frac{1}{2}\).</p>
+<p>The probability that at least 8 of the 9 participants correctly identifying tap water can be found with the formula (given in the formula sheet): </p>
+$$ \binom{n}{x}p^x(1-p)^{n-x} $$
+<p>We need to find the probability of 8 correct and the probability of 9 correct and then add them together.</p>
+<div style="columns: 2">
+<div style="text-align:center ;">
+8 Participants Correct
+</div>
+$$ \binom{9}{8}\left(\frac{1}{2}\right)^8\left(1-\frac{1}{2}\right)^{9-8} $$
+
+$$ \approx  0.01758 $$
+<div style="text-align:center ;">
+9 Participants Correct
+$$ \binom{9}{9}\left(\frac{1}{2}\right)^9\left(1-\frac{1}{2}\right)^{9-9} $$
+$$ \approx 0.00195 $$
+</div>
+</div>
+$$ 0.01758 + 0.00195 = \boxed{0.0195} $$
+
+        </div>
+    </main>
+</body>
+</html>

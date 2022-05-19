@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question3.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+ 
+</head>
+<body>
+    <main id="2">
+        <div id='question-container'>
+           <p>A one-sided hypothesis test is to be performed with a significance level of 0.05. Suppose that the null hypothesis
+            is false. If a significance level of 0.01 were to be used instead of a significance level of 0.05, which of the
+            following would be true?</p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    Neither the probability of a Type II error nor the power of the test would change.
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    Both the probability of a Type II error and the power of the test would decrease.
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    The probability of a Type II error would decrease and the power of the test would increase.
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    The probability of a Type II error would increase and the power of the test would decrease.
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>The power of a test increases as its significance level decreases. Therefore, an increase in significance level lowers the power of the test.</p>
+<p>In a Type II error, the null hypothesis is actually correct, but it is rejected. Since there is a 5% chance rather than a 1% chance of rejecting the null hypothesis, there is a greater chance of making a Type II error.</p>
+        </div>
+    </main>
+</body>
+</html>

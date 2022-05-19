@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question3.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body>
+    <main id="6">
+        <div id='question-container'>
+           <p>The computer output below shows the result of a linear regression analysis for predicting the concentration of
+            zinc, in parts per million (ppm), from the concentration of lead, in ppm, found in fish from a certain river.</p>
+            <div style="text-align: center"><img src="6.png" ></div>
+<p>Which of the following statements is a correct interpretation of the value 19.0 in the output?</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    On average there is a predicted increase of 19.0 ppm in concentration of lead for every increase of 1 ppm in
+concentration of zinc found in the fish.
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    On average there is a predicted increase of 19.0 ppm in concentration of zinc for every increase of 1 ppm in
+concentration of lead found in the fish.
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    The predicted concentration of lead is 19.0 ppm in fish with no concentration of zinc.
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    Approximately 19% of the variability in zinc concentration is predicted by its linear relationship with lead
+                    concentration.
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>The coefficient values correspond to \(\alpha\) and \(\beta\):</p>
+$$ \hat{y}=\alpha + \beta x $$
+$$ \hat{y}=16.3+19.0x $$
+<p>The slope \( \left(\dfrac{19.0}{1}\right)\) represents the change in \(\hat{y}\) for every change of \(x\). So for every 19.0 change in zinc, there is a change of 1 in lead.</p>
+
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question3.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="4">
+        <div id='question-container'>
+           <p>Suppose that 25 percent of women and 22 percent of men would answer yes to a particular question. In a simulation, a random sample of 100 
+               women and a random sample of 100 men were selected, and the difference in sample proportions of those who answered yes, 
+               \(\hat{p}_{\text{women}} - \hat{p}_{\text{men}} \), was calculated. The process was repeated 1,000 times. Which of the following is most likely to be a representation of the 
+               simulated sampling distributions of the difference between the two sample proportions?
+           </p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container' class="twobytwo-grid">
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    <img src="4-1.png">
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    <img src="4-2.png">
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    <img src="4-3.png">
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    <img src="4-4.png">
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>The top two graphs are corrected centered at the likely mean difference. </p>
+$$ \hat{p}_{\text{women}} - \hat{p}_{\text{men}} = 0.25-0.22 = 0.03 $$
+<p>Since the sample size is large, we do expect a normal distribution around this difference. </p>
+<p>The main difference between the two top two choices are that in one of them, the proportion of women is almost always greater than the proportion of men (positive difference). We should expect, just due to chance, instances of where the male proportion is greater (negative difference).</p>
+
+        </div>
+    </main>
+</body>
+</html>

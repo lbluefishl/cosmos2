@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question3.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="8">
+        <div id='question-container'>
+           
+<p>A random sample of 432 voters revealed that 100 are in favor of a certain bond issue. A 95 percent confidence
+    interval for the proportion of the population of voters who are in favor of the bond issue is</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+\(  100\pm 1.96\sqrt{\dfrac{0.5(0.5)}{432}}  \)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+\(  100\pm 1.645\sqrt{\dfrac{0.5(0.5)}{432}}  \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \(  0.231\pm 1.96\sqrt{\dfrac{0.231(0.769)}{432}}  \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \(  0.231\pm 1.645\sqrt{\dfrac{0.231(0.769)}{432}}  \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>A 95 percent confidence interval corresponds to a critical value of 1.96.</p>
+<p>The estimate for the population proportion is:</p>
+$$ \hat{p} = \frac{100}{432} = 0.231$$
+<p>The confidence interval is:</p>
+$$ \hat{p} \pm \text{critical value}\left(\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\right) $$
+$$ =0.231\pm 1.96\sqrt{\dfrac{0.231(0.769)}{432}} $$
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question3.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="4">
+        <div id='question-container'>
+           <p>A large clinical trial was designed to determine whether a certain vitamin improves the general health of adults.
+            The investigators first identified 85 variables that measure various aspects of the general health of adults.
+            Because each adult in the clinical trial was to serve as his or her own control, the 85 variables were measured for
+            each adult, both before taking the vitamin and after taking the vitamin for three months. The investigators then
+            performed 85 matched-pair \(t\)-tests, one for each variable. They found statistically significant results at the 0.05
+            level in 2 of the variables, both in the direction of improved general health. Which of the following should the
+            investigators conclude?</p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    There is evidence that the vitamin improves the health of adults because 2 of the 85 tests were statistically
+                    significant.
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    There is evidence that the vitamin improves the health of adults because in clinical trials investigators
+typically underestimate the proportion of the population that is helped by a vitamin.
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    There is insufficient evidence that the vitamin improves the health of adults because at the 0.05 significance
+                    level, one could easily get statistically significant results in 2 out of 85 tests just due to chance variability.
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    No conclusion can be drawn because an even number of variables is needed for a matched-pairs design.
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>Out of the 85 health variables, only 2 were significant. It is unlikely the vitamin is effective since the other 83 variables were unchanged. </p>
+            <p>The last choice may seem tempting, but there can be odd number of variables in a matched-pairs design. An individual was tested before the drug and after taking the drug for each variable.</p>
+        </div>
+    </main>
+</body>
+</html>

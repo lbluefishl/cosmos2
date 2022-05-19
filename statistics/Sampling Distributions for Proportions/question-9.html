@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question3.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+ 
+</head>
+<body >
+    <main id="9">
+        <div id='question-container'>
+           <p>In 1960 sociologists studied a random sample of 1,018 families that consisted of a husband, a wife, and at least one child. 
+               Of those families, 5.8 percent reported that the wife was the primary wage earner of the family. In 2011 the study was replicated with 
+               a random sample of 1,013 families that consisted of a husband, a wife, and at least one child. Of these families, 22.3 percent reported 
+               that the wife was the primary wage earner of the family. Which of the following represents a 99 percent confidence interval for the difference 
+               between the proportions of families that consisted of a husband, a wife, and at least one child from 1960 to 2011 that would have reported the 
+               wife as the primary wage earner?
+           </p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    \( \displaystyle(0.223-0.058) \pm 1.96\sqrt{\frac{(0.223)(0.777)}{1{,}013} + \frac{(0.058)(0.942)}{1{,}018}}               \)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    \( \displaystyle(0.223-0.058) \pm 2.576\sqrt{\frac{(0.223)(0.777)}{1{,}013} + \frac{(0.058)(0.942)}{1{,}018}}               \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( \displaystyle(0.223-0.058) \pm 2.326\sqrt{\frac{285}{2{,}031}\left(\frac{1}{1{,}013}+\frac{1}{1{,}018}\right)}               \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( \displaystyle(0.223-0.058) \pm 2.576\sqrt{\frac{285}{2{,}031}\left(\frac{1}{1{,}013}+\frac{1}{1{,}018}\right)}               \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>We are looking for the confidence interval corresponding to the difference between two population proportions.</p>
+$$ \text{Confidence interval} : \text{statistic} \pm (\text{critical value})(\text{standard error of statistic}) $$
+<p>The statistic is the population difference:</p>
+$$ \text{statistic} = \hat{p}_{2011}-\hat{p}_{1960} = 0.223-0.058$$
+<p>The critical value can be found in the table. A 99 percent confidence corresponds to a 0.005 tail probability or 2.576 critical value.</p>
+<p>The standard error of statistic for the difference between two population proportions:</p>
+$$ s_{\hat{p}_{2011}-\hat{p}_{1960}} =
+ \sqrt{  \frac{\hat{p}_{2011}(1-\hat{p}_{2011}) }{n_{2011}} 
+
++ \frac{\hat{p}_{1960}(1-\hat{p}_{1960})}{n_{1960}}} $$
+<p>Putting it all together:</p>
+$$ \text{Confidence interval} : \text{statistic} \pm (\text{critical value})(\text{standard error of statistic}) $$
+
+$$ (0.223-0.058) \pm 2.576\sqrt{\frac{(0.223)(0.777)}{1{,}013} + \frac{(0.058)(0.942)}{1{,}018}} $$
+        </div>
+    </main>
+</body>
+</html>

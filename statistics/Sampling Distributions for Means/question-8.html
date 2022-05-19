@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question3.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="8">
+        <div id='question-container'>
+           
+<p>A 95 percent confidence interval for the mean time, in minutes, for a volunteer fire company to respond to
+    emergency incidents is determined to be (2.8, 12.3). Which of the following is the best interpretation of the
+    interval?</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    Five percent of the time, the time for response is less than 2.8 minutes or greater than 12.3 minutes.
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    The probability is 0.95 that a randomly selected time for response will be between 2.8 minutes
+and 12.3 minutes.
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    Ninety-five percent of the time the mean time for response is between 2.8 minutes and 12.3 minutes.
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    We are 95% confident that the mean time for response is between 2.8 minutes and 12.3 minutes.
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>The confidence interval only refers to the confidence in the mean response time. Therefore, any options referring to any particular response time would be incorrect.</p>
+<p>The confidence interval tells you the likelihood that the actual mean time would fall within the interval.</p>
+<p>The third option is tempting, but it doesn't make sense to say 95 percent of the time since there is only one actual population mean. 
+    We can't really say 95 percent of one event. But we can say that given the population mean, 
+    there is a 95% chance (or confidence) it lands in the interval.</p>
+        </div>
+    </main>
+</body>
+</html>

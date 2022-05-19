@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question3.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="5">
+        <div id='question-container'>
+           
+<p>A carnival game allows the player a choice of simultaneously rolling two, four, six, eight, or ten fair dice. Each
+    die has six faces numbered 1 through 6, respectively. After the player rolls the dice, the numbers that appear on
+    the faces that land up are recorded. The player wins if the greatest number recorded is 1 or 2. How many dice
+    should the player choose to roll to maximize the chance of winning?</p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+Two
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+            Four        
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+Six
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+Eight
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>The probability of winning decreases as more dice is rolled.</p>
+<p>To win with one die, we would need to roll a 1 or a 2.</p>
+$$ P(\text{Win}) = \frac{2}{6} =\frac{1}{3}$$
+<p>As you roll more dice, the overall probability decreases since each subsequent die needs to also be a 1 or a 2. </p>
+$$ P(\text{Win}) = \frac{1}{3}\cdot \frac{1}{3} \tag*{two dice} $$
+$$ P(\text{Win}) = \left(\frac{1}{3}\right)^4 \tag*{four dice} $$
+
+        </div>
+    </main>
+</body>
+</html>

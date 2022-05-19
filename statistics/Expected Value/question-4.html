@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question3.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="4">
+        <div id='question-container'>
+          <p>A mathematics competition uses the following scoring procedure to discourage students from guessing
+            (choosing an answer randomly) on the multiple-choice questions. For each correct response, the score is 7. For
+            each question left unanswered, the score is 2. For each incorrect response, the score is 0. If there are 5 choices
+            for each question, what is the minimum number of choices that the student must eliminate before it is advan-
+            tageous to guess among the rest?</p> 
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+0
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    1
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+2
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+3
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>If no answer choices are eliminated, the expected value for guessing is:</p>
+$$   7\cdot \frac{1}{5} + 0\cdot \frac{4}{5} = \frac{7}{5}             $$
+<p>This is less than the value for leaving it unanswered, so we need to eliminate something. Suppose we were able to eliminate one answer and then guess:</p>
+$$ 7\cdot \frac{1}{4} + 0\cdot \frac{3}{4} = \frac{7}{4}$$
+<p>Eliminating one more choice:</p>
+$$ 7\cdot \frac{1}{3} + 0 \cdot \frac{2}{3} = \frac{7}{3} $$
+<p>The minimum number of choices we would need to eliminate is 2.</p> 
+</div>
+    </main>
+</body>
+</html>

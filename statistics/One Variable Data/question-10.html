@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question3.js" defer></script>
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body >
+    <main id="10">
+        <div id='question-container'>
+           <p>A local real estate magazine used the median instead of the mean when it reported the SAT score of the
+            average student who attends Groveland High School. A graphical display of SAT scores of students who
+            attend Groveland High School indicated that the data were strongly skewed to the right. Which of the
+            following explains why, in this situation, the median is a more accurate indicator of the SAT score of
+            the average student than the mean is?</p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container c'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    The mean is affected by the skewness, whereas the median is not.
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    The mean will be less than the median when the data are strongly skewed to the right.
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    The mean should be used only when data are strongly skewed to the left.
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    The median is equal to one-half the sum of the maximum and minimum SAT scores at Groveland High.
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <!--<button id='skip'>Skip Question</button>-->
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+            <p>A skew to the right implies that there are few top scorers. These higher scores cause the mean to be high and not representative of the entire population. A median will be in the 50th percentile regardless of skew.</p>
+        </div>
+    </main>
+</body>
+</html>

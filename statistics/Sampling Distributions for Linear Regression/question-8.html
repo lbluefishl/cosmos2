@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question3.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+   
+</head>
+<body>
+    <main id="8">
+        <div id='question-container'>
+           <p>Data were collected from a longitudinal study designed to investigate the relationship between blood sugar levels and brain shrinkage. 
+               The results of an analysis of the data for 22 observations are shown in the table below.
+           </p>
+           $$ \begin{array}{|l r r|} \hline
+           \text{Term} & \text{Coef} & \text{SE Coef} \\ 
+           \text{Constant} & -15.668 & 6.154 \\ 
+           \text{Blood Sugar} & 0.161 & 0.073 \\ \hline \end{array} $$
+           <p>Which of the following represents a 98 percent confidence interval for the slope of the least-squares regression line for brain
+               shrinkage on blood sugar levels? Assume the conditions for inference are met. 
+           </p>
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                   \( -15.668 \pm  2.528(6.154) \)
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                   \( -15.668 \pm  2.518(6.154) \)
+                    
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    \( 0.161 \pm  2.528(0.073) \)
+
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    \( 0.161 \pm  2.518(0.073) \)
+
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <!--<button id='skip'>Skip Question</button>-->
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+$$ \text{Confidence interval} : \text{statistic}\pm(\text{critical value})(\text{standard error of statistic}) $$
+$$ = b\pm t^*(s_b) $$
+<p>Our statistic is the slope, or coefficient corresponding to blood sugar. The \(t^*\) value for a 98 percent confidence interval can be found in the table, with \(22-2=20\) degrees of freedom.</p>
+$$ = 0.161\pm 2.528(0.073)$$
+        </div>
+    </main>
+</body>
+</html>

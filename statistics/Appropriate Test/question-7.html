@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <script src="../../scripts/question3.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../../styles/question.css">   
+  
+</head>
+<body>
+    <main id="7">
+        <div id='question-container'>
+           <p>The manager of a public swimming pool wants to compare the effectiveness of two laundry detergents,
+            Detergent A and Detergent B, in cleaning the towels that are used daily. As each dirty towel is turned in, it is
+            placed into the only washing machine on the premises. When the washing machine contains 20 towels, the
+            manager flips a coin to determine whether Detergent A or Detergent B will be used for that load. The cleanliness
+            of the load of towels is rated on a scale of 1 to 10 by a person who does not know which detergent was used. The
+            manager continues this experiment for many days. Which of the following best describes the manager's study?</p>
+
+                     
+        </div>
+        <hr>
+        <div id='choices-container'>
+            <div class='option-container ic'>
+                <input type="radio" id="option-1" name="answer">
+                <label for="option-1">
+                    A randomized block design with Detergent A and Detergent B as blocks
+                </label>
+                <span class='option-outcome' id="option-1-outcome"></span>
+            </div>
+            <div class='option-container c'>
+                <input type="radio" id="option-2" name="answer">
+                <label for="option-2">
+                    A completely randomized design
+                </label>
+                <span class='option-outcome' id="option-2-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-3" name="answer">
+                <label for="option-3">
+                    A matched-pairs design with Detergent A and Detergent B as the pair
+                </label>
+                <span class='option-outcome' id="option-3-outcome"></span>
+            </div>
+            <div class='option-container ic'>
+                <input type="radio" id="option-4" name="answer">
+                <label for="option-4">
+                    An observational study
+                </label>
+                <span class='option-outcome' id="option-4-outcome"></span>
+            </div>
+        </div>
+        <div id='button-container'>
+            <button id='summary'>Summary</button>
+            <button id='submit'>Submit</button>
+            <button id='skip'>Skip Question</button>
+        </div>
+        <div id='explanation' style="display: none;">
+            <div class="explanation-header1">Approach</div>
+<p>A randomized block would require that towels be put into blocks based on characteristics, but all of the towels are the same. A typical use for block randomization is when you separate males and females prior to treatment.</p>
+<p>A matched-pairs design would require that the towels be inspected before and after treatment.</p>
+<p>This is not an observational study because towels are assigned into treatment groups.</p>   
+</div>
+    </main>
+</body>
+</html>
