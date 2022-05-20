@@ -1,5 +1,5 @@
 const links = document.querySelectorAll('.link-to-question'); 
-const topic = window.location.pathname.split('/')[2].toLowerCase().replace(/%20/g,'-');
+const topic = window.location.pathname.split('/').slice(-2,-1)[0].toLowerCase().replace(/%20/g,'-');
 const clearButton = document.querySelector('button');
 const topicName1 = document.querySelector('.header')
 const topicName2 = document.querySelector('title')
@@ -28,8 +28,8 @@ function clearProgress() {
 
 
 function populateTopic() {
-    topicName1.innerHTML =  `${window.location.pathname.split('/')[2].replace(/%20/g,' ')}`;
-    topicName2.innerHTML =  `${window.location.pathname.split('/')[2].replace(/%20/g,' ')}`;
+    topicName1.innerHTML =  `${window.location.pathname.split('/').slice(-2,-1)[0].replace(/%20/g,' ')}`;
+    topicName2.innerHTML =  `${window.location.pathname.split('/').slice(-2,-1)[0].replace(/%20/g,' ')}`;
 }
 
 colorLinks();

@@ -6,7 +6,7 @@ const nextQuestionId = document.querySelector('body').id + '-' + (+document.quer
 */
 const titleName = document.querySelector('title')
 const questionIndex = document.querySelector('main').id;
-const questionId = window.location.pathname.split('/')[2].toLowerCase().replace(/%20/g,'-') + "-" + questionIndex;
+const questionId = window.location.pathname.split('/').slice(-2,-1)[0].toLowerCase().replace(/%20/g,'-') + "-" + questionIndex;
 const correctAnswerField = document.querySelector('.c');
 const correctAnswer = correctAnswerField.querySelector('input');
 const incorrectAnswers = document.querySelectorAll('.ic');
@@ -18,7 +18,7 @@ summaryButton.addEventListener('click', goSummary);
 submitButton.addEventListener('click', submitAnswer);
 
 function populateTopic() {
-    titleName.innerHTML =  `${window.location.pathname.split('/')[2].replace(/%20/g,' ')} Question ${questionIndex}`
+    titleName.innerHTML =  `${window.location.pathname.split('/').slice(-2,-1)[0].replace(/%20/g,' ')} Question ${questionIndex}`
 }
 
 
