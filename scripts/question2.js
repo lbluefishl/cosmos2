@@ -4,7 +4,7 @@ const skipButton = document.querySelector('#skip');
 /*const topic = document.querySelector('body').id;
 const nextQuestionId = document.querySelector('body').id + '-' + (+document.querySelector('main').id + 1);
 */
-const questionId = window.location.pathname.split('/')[2].toLowerCase().replace(/%20/g,'-') + "-" + document.querySelector('main').id;
+const questionId = window.location.pathname.split('/').splice(-2,-1)[0].toLowerCase().replace(/%20/g,'-') + "-" + document.querySelector('main').id;
 
 const correctAnswerField = document.querySelector('.c');
 const correctAnswer = correctAnswerField.querySelector('input');
